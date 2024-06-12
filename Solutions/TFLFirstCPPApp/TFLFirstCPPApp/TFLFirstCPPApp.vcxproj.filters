@@ -13,6 +13,27 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\LibraryMgmt">
+      <UniqueIdentifier>{4902ee7e-c085-4a21-b325-4ec06753ff99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\OrderProcessing">
+      <UniqueIdentifier>{883ca3f2-7841-4c97-8a56-f3a7ac807452}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SinglyLinkList">
+      <UniqueIdentifier>{fdab2e9b-a6e1-4f4b-9e3c-fdd13e9a90c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ProductSearch">
+      <UniqueIdentifier>{dd1f5291-88ad-4fd5-87d7-0b90c18708ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ProductSort">
+      <UniqueIdentifier>{b2fa2035-be20-4826-b530-0d07fe79d333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Inheritance">
+      <UniqueIdentifier>{d5d2b75e-e181-494b-be9f-7eb4298c66fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Polymorphism">
+      <UniqueIdentifier>{64549f90-7d88-4856-9c28-a6ce01dd214b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TAPClub.cpp">
@@ -66,5 +87,109 @@
     <ClCompile Include="TelephoneBook.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="insertionOperation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="deletionOperation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="queue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="binarySearch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bubbleSort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="selectionSort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BookStack.cpp">
+      <Filter>Source Files\LibraryMgmt</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files\LibraryMgmt</Filter>
+    </ClCompile>
+    <ClCompile Include="OrdersQueue.cpp">
+      <Filter>Source Files\OrderProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="SinglyLinkList.cpp">
+      <Filter>Source Files\SinglyLinkList</Filter>
+    </ClCompile>
+    <ClCompile Include="Product.cpp">
+      <Filter>Source Files\ProductSearch</Filter>
+    </ClCompile>
+    <ClCompile Include="Data.cpp">
+      <Filter>Source Files\ProductSort</Filter>
+    </ClCompile>
+    <ClCompile Include="MainData.cpp">
+      <Filter>Source Files\ProductSort</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchProduct.cpp">
+      <Filter>Source Files\ProductSearch</Filter>
+    </ClCompile>
+    <ClCompile Include="MethodOverriding.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Student.cpp">
+      <Filter>Source Files\Inheritance</Filter>
+    </ClCompile>
+    <ClCompile Include="Person.cpp">
+      <Filter>Source Files\Inheritance</Filter>
+    </ClCompile>
+    <ClCompile Include="MainOverriding.cpp">
+      <Filter>Source Files\Inheritance</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Source Files\Polymorphism</Filter>
+    </ClCompile>
+    <ClCompile Include="Circle.cpp">
+      <Filter>Source Files\Polymorphism</Filter>
+    </ClCompile>
+    <ClCompile Include="Square.cpp">
+      <Filter>Source Files\Polymorphism</Filter>
+    </ClCompile>
+    <ClCompile Include="Polymorphism.cpp">
+      <Filter>Source Files\Polymorphism</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BookStack.h">
+      <Filter>Source Files\LibraryMgmt</Filter>
+    </ClInclude>
+    <ClInclude Include="OrdersQueue.h">
+      <Filter>Source Files\OrderProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="SinglyLinkList.h">
+      <Filter>Source Files\SinglyLinkList</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Source Files\SinglyLinkList</Filter>
+    </ClInclude>
+    <ClInclude Include="Product.h">
+      <Filter>Source Files\ProductSearch</Filter>
+    </ClInclude>
+    <ClInclude Include="Data.h">
+      <Filter>Source Files\ProductSort</Filter>
+    </ClInclude>
+    <ClInclude Include="Student.h">
+      <Filter>Source Files\Inheritance</Filter>
+    </ClInclude>
+    <ClInclude Include="Person.h">
+      <Filter>Source Files\Inheritance</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>Source Files\Polymorphism</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Source Files\Polymorphism</Filter>
+    </ClInclude>
+    <ClInclude Include="Circle.h">
+      <Filter>Source Files\Polymorphism</Filter>
+    </ClInclude>
+    <ClInclude Include="Square.h">
+      <Filter>Source Files\Polymorphism</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

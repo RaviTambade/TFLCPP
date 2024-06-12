@@ -129,7 +129,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Assessment.cpp" />
+    <ClCompile Include="binarySearch.cpp" />
     <ClCompile Include="BookCMS.cpp" />
+    <ClCompile Include="bubbleSort.cpp" />
+    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="Data.cpp" />
+    <ClCompile Include="deletionOperation.cpp" />
     <ClCompile Include="dequeue.cpp" />
     <ClCompile Include="Dictionary.cpp" />
     <ClCompile Include="DictionayADT.cpp" />
@@ -138,13 +143,44 @@
     <ClCompile Include="FlightPathDFS.cpp" />
     <ClCompile Include="HRD.cpp" />
     <ClCompile Include="Icecream.cpp" />
+    <ClCompile Include="insertionOperation.cpp" />
     <ClCompile Include="JobOS.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MainData.cpp" />
+    <ClCompile Include="MainOverriding.cpp" />
+    <ClCompile Include="MethodOverriding.cpp" />
+    <ClCompile Include="OrdersQueue.cpp" />
     <ClCompile Include="Palindrom.cpp" />
+    <ClCompile Include="Person.cpp" />
     <ClCompile Include="PizzaHut.cpp" />
+    <ClCompile Include="Polymorphism.cpp" />
+    <ClCompile Include="Product.cpp" />
+    <ClCompile Include="queue.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="SearchProduct.cpp" />
+    <ClCompile Include="selectionSort.cpp" />
+    <ClCompile Include="SinglyLinkList.cpp" />
+    <ClCompile Include="BookStack.cpp" />
+    <ClCompile Include="Square.cpp" />
+    <ClCompile Include="Student.cpp" />
     <ClCompile Include="TAPClub.cpp" />
     <ClCompile Include="TelephoneBook.cpp" />
     <ClCompile Include="TimeSpaceComplexity.cpp" />
     <ClCompile Include="TreePostOrderTravesel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BookStack.h" />
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="Data.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="OrdersQueue.h" />
+    <ClInclude Include="Person.h" />
+    <ClInclude Include="Product.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="Shape.h" />
+    <ClInclude Include="SinglyLinkList.h" />
+    <ClInclude Include="Square.h" />
+    <ClInclude Include="Student.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
