@@ -34,6 +34,12 @@
     <Filter Include="Source Files\Polymorphism">
       <UniqueIdentifier>{64549f90-7d88-4856-9c28-a6ce01dd214b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\InterfaceInheritance">
+      <UniqueIdentifier>{dc27a7bf-5e39-4f13-9484-08b7254ca0b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Persistance">
+      <UniqueIdentifier>{6c9ca520-bedc-475c-928c-1a70ec7beefa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TAPClub.cpp">
@@ -153,6 +159,18 @@
     <ClCompile Include="Polymorphism.cpp">
       <Filter>Source Files\Polymorphism</Filter>
     </ClCompile>
+    <ClCompile Include="GeometricShape.cpp">
+      <Filter>Source Files\InterfaceInheritance</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawing.cpp">
+      <Filter>Source Files\InterfaceInheritance</Filter>
+    </ClCompile>
+    <ClCompile Include="Persistence.cpp">
+      <Filter>Source Files\Persistance</Filter>
+    </ClCompile>
+    <ClCompile Include="Customer.cpp">
+      <Filter>Source Files\Persistance</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BookStack.h">
@@ -191,5 +209,28 @@
     <ClInclude Include="Square.h">
       <Filter>Source Files\Polymorphism</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IDrawable.h">
+      <Filter>Source Files\InterfaceInheritance</Filter>
+    </ClInclude>
+    <ClInclude Include="IPrintable.h">
+      <Filter>Source Files\InterfaceInheritance</Filter>
+    </ClInclude>
+    <ClInclude Include="ISerializable.h">
+      <Filter>Source Files\InterfaceInheritance</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricShape.h">
+      <Filter>Source Files\InterfaceInheritance</Filter>
+    </ClInclude>
+    <ClInclude Include="Customer.h">
+      <Filter>Source Files\Persistance</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DSAApp.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

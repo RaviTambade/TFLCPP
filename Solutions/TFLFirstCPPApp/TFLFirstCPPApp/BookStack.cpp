@@ -1,5 +1,4 @@
 //Implementation of Class
-
 #include "BookStack.h"
 #include<stdio.h>           //Header files // System
 #include <iostream>         //System.IO

@@ -32,15 +32,10 @@ class Shape
         // abstract function should be the same as the data
         // member in the child class as it must be overriden.
 
-
     //Rule: each method declared pure virutal function should be overrided in child classes
 };
 
 //Extend key word is used in java for extending parent class to derived class 
-
-
-
-
 
 
 

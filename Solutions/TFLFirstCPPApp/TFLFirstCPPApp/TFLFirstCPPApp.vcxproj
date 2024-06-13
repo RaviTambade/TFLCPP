@@ -133,14 +133,17 @@
     <ClCompile Include="BookCMS.cpp" />
     <ClCompile Include="bubbleSort.cpp" />
     <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="Customer.cpp" />
     <ClCompile Include="Data.cpp" />
     <ClCompile Include="deletionOperation.cpp" />
     <ClCompile Include="dequeue.cpp" />
     <ClCompile Include="Dictionary.cpp" />
     <ClCompile Include="DictionayADT.cpp" />
+    <ClCompile Include="Drawing.cpp" />
     <ClCompile Include="FlightPath.cpp" />
     <ClCompile Include="FlightPathBFS.cpp" />
     <ClCompile Include="FlightPathDFS.cpp" />
+    <ClCompile Include="GeometricShape.cpp" />
     <ClCompile Include="HRD.cpp" />
     <ClCompile Include="Icecream.cpp" />
     <ClCompile Include="insertionOperation.cpp" />
@@ -151,6 +154,7 @@
     <ClCompile Include="MethodOverriding.cpp" />
     <ClCompile Include="OrdersQueue.cpp" />
     <ClCompile Include="Palindrom.cpp" />
+    <ClCompile Include="Persistence.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="PizzaHut.cpp" />
     <ClCompile Include="Polymorphism.cpp" />
@@ -171,16 +175,25 @@
   <ItemGroup>
     <ClInclude Include="BookStack.h" />
     <ClInclude Include="Circle.h" />
+    <ClInclude Include="Customer.h" />
     <ClInclude Include="Data.h" />
+    <ClInclude Include="GeometricShape.h" />
+    <ClInclude Include="IDrawable.h" />
+    <ClInclude Include="IPrintable.h" />
+    <ClInclude Include="ISerializable.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="OrdersQueue.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Shape.h" />
     <ClInclude Include="SinglyLinkList.h" />
     <ClInclude Include="Square.h" />
     <ClInclude Include="Student.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DSAApp.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
