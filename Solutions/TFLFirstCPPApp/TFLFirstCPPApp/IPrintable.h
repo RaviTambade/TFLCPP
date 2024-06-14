@@ -1,4 +1,6 @@
 #pragma once
+//Interface
+
 class IPrintable
 {
     public:

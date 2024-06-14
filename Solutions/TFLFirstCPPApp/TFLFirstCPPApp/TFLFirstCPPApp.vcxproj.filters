@@ -171,6 +171,9 @@
     <ClCompile Include="Customer.cpp">
       <Filter>Source Files\Persistance</Filter>
     </ClCompile>
+    <ClCompile Include="EnggStudent.cpp">
+      <Filter>Source Files\Inheritance</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BookStack.h">
@@ -226,6 +229,9 @@
     </ClInclude>
     <ClInclude Include="Customer.h">
       <Filter>Source Files\Persistance</Filter>
+    </ClInclude>
+    <ClInclude Include="EnggStudent.h">
+      <Filter>Source Files\Inheritance</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

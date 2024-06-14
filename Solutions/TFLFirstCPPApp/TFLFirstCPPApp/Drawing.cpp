@@ -19,6 +19,8 @@ for the pure virtual functions declared in the base classes.
 
 */
 int mainDrawing() {
+
+    //we can not create object of Abstract class
     GeometricShape shape;
     shape.draw();
     shape.serialize();

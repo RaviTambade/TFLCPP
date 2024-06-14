@@ -140,6 +140,7 @@
     <ClCompile Include="Dictionary.cpp" />
     <ClCompile Include="DictionayADT.cpp" />
     <ClCompile Include="Drawing.cpp" />
+    <ClCompile Include="EnggStudent.cpp" />
     <ClCompile Include="FlightPath.cpp" />
     <ClCompile Include="FlightPathBFS.cpp" />
     <ClCompile Include="FlightPathDFS.cpp" />
@@ -177,6 +178,7 @@
     <ClInclude Include="Circle.h" />
     <ClInclude Include="Customer.h" />
     <ClInclude Include="Data.h" />
+    <ClInclude Include="EnggStudent.h" />
     <ClInclude Include="GeometricShape.h" />
     <ClInclude Include="IDrawable.h" />
     <ClInclude Include="IPrintable.h" />

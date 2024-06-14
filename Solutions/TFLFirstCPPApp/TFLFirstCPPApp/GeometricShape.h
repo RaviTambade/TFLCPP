@@ -4,22 +4,23 @@
 #include "ISerializable.h"
 #include <iostream>
 
+
+//Multiple Interface Inheritance
+
 class GeometricShape:public IDrawable, public IPrintable, public ISerializable
 {
+    // All three interfaces IDrawable, IPrintable and ISerializable
+    // have to be implemted in it's child (sub) classes
+    // forcefully, essentially, compulsorily
 
+    //All interface pure virtual functions have to be implmented in their
+    //sub classes( child classes)
     public:
         // Implementation of the draw function
-        void draw() override {
-            std::cout << "Drawing the shape..." << std::endl;
-        }
-
-        void print() override {
-            std::cout << "Printing the shape..." << std::endl;
-        }
-
-        // Implementation of the serialize function
-        void serialize() override {
-            std::cout << "Serializing the shape..." << std::endl;
-        }
+        // It is compulsion
+        //Interfaces enforce implementtion in their child classes
+        void draw() override;
+        void print() override;
+        void serialize() override;
 };
 
