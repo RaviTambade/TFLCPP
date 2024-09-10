@@ -1,3 +1,5 @@
+# Stack and Heap memory
+
 In C programming, understanding the concepts of stack and heap memory is crucial for managing memory effectively. Both stack and heap are areas of memory used for different purposes, and they have distinct characteristics and uses.
 
 ### Stack Memory
