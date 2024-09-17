@@ -4,6 +4,7 @@
 #include "../include/point.h"
 #include "../include/line.h"
 #include "../include/circle.h"
+#include "../include/complex.h"
 //Entry Point Function : main
 int main()
 {
@@ -31,6 +32,19 @@ int main()
 
     struct  Line l1={pt1, pt2};
     struct  Circle c1={pt1, 5};
+
+    struct Complex comp1={3,4};   // 3+4i
+    struct Complex  comp2={5,7} ;   // 5+7i
+
+    struct  Complex cResult={
+                (comp1.real + comp2.real),
+                (comp1.imag + comp2.imag)
+    };
+
+    printf("New Complex Number\n ");
+    printf( "%d + %d i", cResult.real, cResult.imag);
+    // Guess: 8 + 11j
+
 
     printf("Marsk : %d \n", marks);
     printf("PI : %.3f \n",pi);
