@@ -9,13 +9,19 @@ int main()
     initgraph(&gd, &gm, "");
 
     // Set color and draw a line
-    setcolor(YELLOW);
-    line(0, 0, 200,200);
+    setcolor(RED);
+    line(20, 20, 200,20);
 
     //cleardevice();
     //bar(100, 100, 200, 200);
-    bar3d(100, 100, 200, 200, 20, 1);
+    //bar3d(100, 100, 200, 200, 20, 1);
     // Pause to view the result
+
+
+     int x=100, y=100, r=80;
+    circle(x, y, r);
+
+    rectangle(100,100,300,300);
     getch();
 
     // Close the graphics mode
