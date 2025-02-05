@@ -21,6 +21,7 @@ class Circle : public Shape
         void display();
 
         friend void getradius(Circle& r);  //Friend class
+        ~Circle(){}; 
 };
 
 
