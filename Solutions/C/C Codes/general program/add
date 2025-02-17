@@ -1,0 +1,9 @@
+ #include<stdio.h>
+ int main (){
+ int a,b,add;
+printf("enter the two values");
+scanf("%d%d",&a,&b);
+add= a+b;
+printf("the addition is :%d\n",add);
+return 0;
+ }
