@@ -16,3 +16,5 @@ int main(){
     push(&s1, 100);
     printf("Top value at start= %d\n", s1.top);
     display(&s1);
+
+}

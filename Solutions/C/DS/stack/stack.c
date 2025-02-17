@@ -23,13 +23,7 @@ void display(struct Stack *ptrStack){
     for(int i=0; i<=ptrStack->top; i++){
         printf("%d\n", ptrStack->arr[i]);
     }
-}
-void queue(struct queue *ptrqueue,int data){
-
-    
-}
-
-
+} 
 
 
 
