@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Ravi/TAP/TAP/TFLCPP/Solutions/C/DS/stack",
-      "program": "d:/Ravi/TAP/TAP/TFLCPP/Solutions/C/DS/stack/build/Debug/outDebug",
+      "cwd": "d:/Ravi/TAP/TAP/TFLCPP/Solutions/C/FileIO/FileIOApp",
+      "program": "d:/Ravi/TAP/TAP/TFLCPP/Solutions/C/FileIO/FileIOApp/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
