@@ -1,0 +1,1 @@
+ Ravivar=1, Somwar,Mangalwar, Budhwar, Gurwar, Shukrwar, Shanivar
