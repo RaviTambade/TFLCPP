@@ -2,8 +2,9 @@
 
 union Shape{
     struct  {float radius;} circle;
-    struct  {float length, width} reactangle;
-    struct  {float base; height } triangle;
+    struct  {float length, width; } reactangle;
+  
+    struct  {float base, height; } triangle;
 };
 
 union SensorData{
@@ -17,9 +18,9 @@ union SensorData{
 };
 
 union Vehicle{
-    struct { int wheels; int doors} car;
-    struct {int wheels} bike;
-    struct {int wheel; int capacity} bus;
+    struct { int wheels; int doors;} car;
+    struct {int wheels;} bike;
+    struct {int wheel; int capacity;} bus;
 };
 
 
