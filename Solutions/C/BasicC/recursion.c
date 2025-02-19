@@ -20,7 +20,6 @@
         }
         return result;
     }
-
 */
 
 //using recursion
