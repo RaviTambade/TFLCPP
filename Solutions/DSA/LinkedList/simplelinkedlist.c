@@ -4,14 +4,14 @@
 //1.Define the Node Structure
 struct  Node {
     int data;               //information
-    struct  Node * ptrNext; //pointer to the next node
+    struct  Node * next; //pointer to the next node
 };
 
 //2.Function to Create a New Node
 struct Node * createNode(int value){
     struct Node * ptrNode=(struct Node *)malloc(sizeof(struct Node));
     ptrNode->data=value;
-    ptrNode->ptrNext=NULL;
+    ptrNode->next=NULL;
     return ptrNode;
 }
 
@@ -26,18 +26,18 @@ void insertNode(struct Node** ptrHead, int value)
         return;
     }
     struct Node *ptrTemp=*ptrHead;
-    while(ptrTemp->ptrNext != NULL){
-        ptrTemp=ptrTemp->ptrNext;
+    while(ptrTemp->next != NULL){
+        ptrTemp=ptrTemp->next;
     }
-    ptrTemp->ptrNext=ptrNewNode;
+    ptrTemp->next=ptrNewNode;
 }
 //4.Function to print the list
 
   void printList(struct Node *ptrHead){
-    struct Node * ptrTemp=ptrHead;
-    while(ptrTemp->ptrNext != NULL){
-        printf(" %d  -> ", ptrTemp->data);
-        ptrTemp=ptrTemp->ptrNext;
+    struct Node * ptr=ptrHead;
+    while(ptr != NULL){
+        printf(" %d  -> ", ptr->data);
+        ptr=ptr->next;
     }
     printf("NULL\n");
   }
