@@ -1,0 +1,6 @@
+Transflower Acceleration Program (TAP)
+Projet based Learning Approach
+Data is collected, cleansed and processed, stored
+Data is queried, fetched, analyzed and visualized
+knowledge is built
+Intelligence is applied
