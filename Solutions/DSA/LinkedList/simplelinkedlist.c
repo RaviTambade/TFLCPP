@@ -51,8 +51,5 @@ int main(){
     insertNode(&head, 87);
     insertNode(&head, 86);
     insertNode(&head, 12);
-
     printList(head);
 }
-
-
