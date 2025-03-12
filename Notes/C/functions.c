@@ -35,9 +35,8 @@ void sayNamaste(){
     //code block
     printf("Ram Ram Sarthak\n");
     printf(" Suwagatam to Transflower\n");
-    printf("Shikane hi swaym prakriya aahe\n");
-    printf(" mentor has tumchya barobar asato. pn pratical");
-    printf(" understanding tumhalach karayche aste\n");
+    printf("Learning is a self exploring process under the guidance of mentor\n");
+    
 }
 
 //outparametertype  functionname  (input parameter1,  input parameter 2, input parmebter)
