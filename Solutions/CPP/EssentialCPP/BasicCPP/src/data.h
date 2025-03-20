@@ -1,0 +1,3 @@
+//declartion
+
+void initialize();
