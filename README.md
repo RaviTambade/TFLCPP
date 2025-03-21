@@ -1,4 +1,4 @@
-# Transflowers Unique Approach in Learning Data Structures and Algorithms
+# Transflowers Unique Approach in Learning Programming
 
 You can make learning data structures and algorithms not only educational but also enjoyable and fun!
 
