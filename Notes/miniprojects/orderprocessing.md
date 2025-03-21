@@ -636,3 +636,72 @@ Payment Status: Paid
 ### Notes:
 - This UI is text-based, where users enter commands based on the menu and interact with the system.
 - The flow mimics a simple e-commerce order system, where users can add products, apply discounts, and process orders.
+
+
+## Business Logic
+Here is a list of business logic for order processing that covers the typical flow from order creation to fulfillment and beyond:
+
+### 1. **Order Creation**
+   - **Customer Validation**: Ensure the customer is registered and active (check account status).
+   - **Product Availability Check**: Verify that the products requested are in stock and available for order.
+   - **Pricing Validation**: Ensure the product prices are accurate and applicable discounts are applied.
+   - **Order Limits**: Ensure the order does not exceed any predefined limits (e.g., quantity limits, total value limits).
+   - **Payment Method Validation**: Ensure the customer provides a valid payment method (e.g., credit card, PayPal, etc.).
+
+### 2. **Order Confirmation**
+   - **Inventory Reservation**: Reserve the requested stock in the inventory once the order is confirmed.
+   - **Payment Authorization**: Verify and authorize payment before proceeding with the order fulfillment.
+   - **Order Confirmation Email**: Send an order confirmation to the customer with details of the order and expected delivery.
+   - **Tax Calculation**: Calculate taxes based on the customer's location and the items being ordered.
+
+### 3. **Order Fulfillment**
+   - **Picking**: The warehouse or fulfillment center picks the items from stock.
+   - **Packaging**: Items are securely packaged for shipment.
+   - **Shipping Method Validation**: Validate the selected shipping method and calculate the corresponding delivery cost.
+   - **Shipping Label Generation**: Generate shipping labels with the correct shipping address and carrier details.
+   - **Inventory Update**: Deduct the ordered products from inventory after the items are packed.
+
+### 4. **Order Shipment**
+   - **Carrier Integration**: Integrate with shipping carriers for tracking and delivery updates.
+   - **Shipment Tracking**: Provide the customer with tracking information once the order is shipped.
+   - **Delivery Confirmation**: Confirm the delivery once the package is successfully delivered.
+
+### 5. **Order Status Updates**
+   - **Real-time Updates**: Provide real-time status updates to the customer (e.g., order received, shipped, out for delivery).
+   - **Backorder Management**: If items are out of stock, provide estimated delivery dates or allow the customer to cancel or modify the order.
+
+### 6. **Customer Service & Support**
+   - **Returns and Refunds**: Handle the process for order returns or exchanges based on return policies.
+   - **Customer Feedback**: Collect customer feedback post-purchase.
+   - **Order Cancellations**: Allow customers to cancel orders within a specific time frame before shipment.
+   - **Dispute Resolution**: Handle payment disputes or chargebacks.
+   
+### 7. **Inventory Management**
+   - **Stock Replenishment**: Set thresholds for reordering stock when inventory levels are low.
+   - **Inventory Adjustments**: Ensure that inventory is updated with each order placement, returns, and damaged goods.
+
+### 8. **Discount and Promotion Logic**
+   - **Coupon Validation**: Check if any coupons or promotional codes are applicable and validate them.
+   - **Discount Calculation**: Apply the correct discount based on the product, customer segment, or campaign.
+   - **Promotional Product Eligibility**: Ensure the customer meets the criteria for any promotions or special offers.
+
+### 9. **Fraud Prevention**
+   - **Fraud Detection**: Check for suspicious order behavior (e.g., mismatched address and payment details).
+   - **Payment Security**: Integrate with third-party fraud detection systems or use secure payment gateways to protect against fraudulent activities.
+
+### 10. **Accounting & Reporting**
+   - **Invoice Generation**: Generate and send an invoice to the customer post-purchase.
+   - **Financial Reporting**: Track total revenue, returns, and taxes for accounting and business reporting purposes.
+   - **Revenue Recognition**: Ensure that revenue is recognized correctly based on the timing of the order and delivery.
+
+### 11. **Compliance and Legal**
+   - **GDPR/Privacy Compliance**: Ensure customer data is handled according to privacy laws and regulations.
+   - **Tax Compliance**: Ensure tax calculations and practices comply with local tax laws and regulations.
+
+### 12. **After-Sales Service**
+   - **Warranty and Support**: Manage warranty claims and product support requests.
+   - **Loyalty Programs**: If applicable, apply loyalty program rewards or points to the customer’s account after purchase.
+
+### 13. **Analytics & Monitoring**
+   - **Sales Metrics**: Track key metrics like order volume, sales per product, and customer lifetime value.
+   - **Customer Behavior Tracking**: Monitor and analyze customer behavior for improving future orders and marketing efforts.
