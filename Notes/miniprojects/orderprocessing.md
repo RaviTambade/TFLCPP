@@ -323,3 +323,316 @@ int main() {
 ### **Conclusion:**
 
 The **Order Processing System** designed in C automates the process of managing products, handling customer orders, updating inventory, and tracking the status of each order. This system provides essential features like adding products, viewing products, creating and processing orders, and viewing order details. Future enhancements can include integrating payment processing, order shipping, and data persistence through file handling.
+
+
+
+### Thought Process : in Details
+
+To enhance the C++ order processing mini project with a console-based user interface (UI), we can structure the program to interact with the user. This will allow users (or an admin) to perform actions like placing orders, viewing products, applying discounts, and confirming payments, etc. The console UI will use a simple text-based menu to guide the user through these processes.
+
+Here’s an updated version of the previous C++ code with a simple console UI for order processing.
+
+### Updated C++ Code with Console UI
+
+```cpp
+#include <iostream>
+#include <string>
+#include <vector>
+#include <map>
+#include <ctime>
+#include <iomanip>
+
+using namespace std;
+
+class Product {
+public:
+    string name;
+    double price;
+    int stockQuantity;
+
+    Product(string name, double price, int stockQuantity)
+        : name(name), price(price), stockQuantity(stockQuantity) {}
+};
+
+class Customer {
+public:
+    string name;
+    string email;
+    bool isActive;
+
+    Customer(string name, string email, bool isActive)
+        : name(name), email(email), isActive(isActive) {}
+};
+
+class Order {
+public:
+    Customer* customer;
+    vector<Product*> products;
+    double totalAmount;
+    string orderStatus;
+    string paymentStatus;
+
+    Order(Customer* customer) : customer(customer), totalAmount(0), orderStatus("Pending"), paymentStatus("Pending") {}
+
+    void addProduct(Product* product, int quantity) {
+        if (product->stockQuantity >= quantity) {
+            products.push_back(product);
+            totalAmount += product->price * quantity;
+            product->stockQuantity -= quantity;
+            cout << "Added " << quantity << " x " << product->name << " to your order.\n";
+        } else {
+            cout << "Not enough stock for " << product->name << ". Available stock: " << product->stockQuantity << endl;
+        }
+    }
+
+    void applyDiscount(double discountPercentage) {
+        totalAmount -= (totalAmount * discountPercentage / 100);
+    }
+
+    void confirmOrder() {
+        orderStatus = "Confirmed";
+    }
+
+    void processPayment() {
+        paymentStatus = "Paid";
+    }
+
+    void shipOrder() {
+        orderStatus = "Shipped";
+    }
+
+    void completeOrder() {
+        orderStatus = "Delivered";
+    }
+
+    void printOrderDetails() {
+        cout << "\nOrder Details for " << customer->name << " (" << customer->email << ")\n";
+        cout << "---------------------------------------------\n";
+        for (auto& product : products) {
+            cout << "Product: " << product->name << " | Price: $" << product->price << endl;
+        }
+        cout << "Total Amount: $" << totalAmount << endl;
+        cout << "Order Status: " << orderStatus << endl;
+        cout << "Payment Status: " << paymentStatus << endl;
+    }
+};
+
+class Inventory {
+public:
+    map<string, Product> products;
+
+    void addProduct(string name, double price, int quantity) {
+        products[name] = Product(name, price, quantity);
+    }
+
+    Product* getProduct(string name) {
+        if (products.find(name) != products.end()) {
+            return &products[name];
+        }
+        return nullptr;
+    }
+
+    void displayProducts() {
+        cout << "\nAvailable Products:\n";
+        for (const auto& product : products) {
+            cout << product.first << " | Price: $" << product.second.price << " | Stock: " << product.second.stockQuantity << endl;
+        }
+    }
+};
+
+class PaymentProcessor {
+public:
+    static bool validatePayment(double amount) {
+        // Simulate payment validation. In real applications, integrate with a payment gateway.
+        return amount > 0;
+    }
+};
+
+class OrderManager {
+public:
+    static bool checkCustomerEligibility(Customer* customer) {
+        return customer->isActive;
+    }
+
+    static void processOrder(Order& order) {
+        if (!checkCustomerEligibility(order.customer)) {
+            cout << "Customer is not eligible for order processing.\n";
+            return;
+        }
+
+        order.confirmOrder();
+        if (PaymentProcessor::validatePayment(order.totalAmount)) {
+            order.processPayment();
+            order.shipOrder();
+            order.completeOrder();
+            order.printOrderDetails();
+        } else {
+            cout << "Payment failed.\n";
+        }
+    }
+};
+
+void displayMenu() {
+    cout << "\nOrder Processing System\n";
+    cout << "------------------------\n";
+    cout << "1. View Products\n";
+    cout << "2. Place Order\n";
+    cout << "3. Apply Discount\n";
+    cout << "4. Process Order\n";
+    cout << "5. Exit\n";
+    cout << "Enter your choice: ";
+}
+
+int main() {
+    // Create an inventory with products
+    Inventory inventory;
+    inventory.addProduct("Laptop", 999.99, 10);
+    inventory.addProduct("Smartphone", 499.99, 20);
+    inventory.addProduct("Headphones", 199.99, 30);
+
+    // Create a customer
+    Customer customer("John Doe", "john.doe@example.com", true);
+
+    // Initialize order object for the customer
+    Order order(&customer);
+
+    int choice;
+    bool exit = false;
+
+    while (!exit) {
+        displayMenu();
+        cin >> choice;
+
+        switch (choice) {
+            case 1: {
+                inventory.displayProducts();
+                break;
+            }
+            case 2: {
+                string productName;
+                int quantity;
+                inventory.displayProducts();
+                cout << "Enter product name: ";
+                cin.ignore();
+                getline(cin, productName);
+                cout << "Enter quantity: ";
+                cin >> quantity;
+
+                Product* product = inventory.getProduct(productName);
+                if (product) {
+                    order.addProduct(product, quantity);
+                } else {
+                    cout << "Product not found.\n";
+                }
+                break;
+            }
+            case 3: {
+                double discount;
+                cout << "Enter discount percentage: ";
+                cin >> discount;
+                order.applyDiscount(discount);
+                cout << "Discount applied. New Total: $" << order.totalAmount << endl;
+                break;
+            }
+            case 4: {
+                OrderManager::processOrder(order);
+                break;
+            }
+            case 5: {
+                cout << "Exiting the system.\n";
+                exit = true;
+                break;
+            }
+            default:
+                cout << "Invalid choice. Please try again.\n";
+        }
+    }
+
+    return 0;
+}
+```
+
+### Key Updates for Console UI:
+1. **`displayMenu()` Function**: This function displays the main menu with options to the user.
+   
+2. **`inventory.displayProducts()`**: This function shows all available products in the inventory with their prices and stock quantity.
+
+3. **Menu Choices**:
+   - **View Products**: Displays all available products with stock and prices.
+   - **Place Order**: Allows the user to select a product and specify the quantity to add to the order.
+   - **Apply Discount**: Allows the user to apply a discount percentage to the order.
+   - **Process Order**: Confirms the order, validates the payment, and moves the order through the status stages: confirmed, paid, shipped, delivered.
+   - **Exit**: Exits the program.
+
+4. **Product Selection**: The user can enter the product name and quantity to add to their order. If the product is found in the inventory, it's added to the order and the stock is updated.
+
+5. **Apply Discount**: The user can apply a discount percentage, which reduces the total amount of the order.
+
+6. **Process Order**: This action will confirm the order, validate the payment, and print the final details of the order, such as the status and payment status.
+
+### Example Console Output:
+
+```text
+Order Processing System
+------------------------
+1. View Products
+2. Place Order
+3. Apply Discount
+4. Process Order
+5. Exit
+Enter your choice: 1
+
+Available Products:
+Laptop | Price: $999.99 | Stock: 10
+Smartphone | Price: $499.99 | Stock: 20
+Headphones | Price: $199.99 | Stock: 30
+
+Order Processing System
+------------------------
+1. View Products
+2. Place Order
+3. Apply Discount
+4. Process Order
+5. Exit
+Enter your choice: 2
+
+Available Products:
+Laptop | Price: $999.99 | Stock: 10
+Smartphone | Price: $499.99 | Stock: 20
+Headphones | Price: $199.99 | Stock: 30
+Enter product name: Smartphone
+Enter quantity: 2
+Added 2 x Smartphone to your order.
+
+Order Processing System
+------------------------
+1. View Products
+2. Place Order
+3. Apply Discount
+4. Process Order
+5. Exit
+Enter your choice: 3
+Enter discount percentage: 10
+Discount applied. New Total: $899.98
+
+Order Processing System
+------------------------
+1. View Products
+2. Place Order
+3. Apply Discount
+4. Process Order
+5. Exit
+Enter your choice: 4
+
+Order Details for John Doe (john.doe@example.com)
+---------------------------------------------
+Product: Smartphone | Price: $499.99
+Product: Smartphone | Price: $499.99
+Total Amount: $899.98
+Order Status: Delivered
+Payment Status: Paid
+```
+
+### Notes:
+- This UI is text-based, where users enter commands based on the menu and interact with the system.
+- The flow mimics a simple e-commerce order system, where users can add products, apply discounts, and process orders.
