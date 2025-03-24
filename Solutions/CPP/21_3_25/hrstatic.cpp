@@ -9,7 +9,10 @@ using namespace std;
 namespace HR{
     class Person{
         public  :
-                //shared variable between number of objects created at runtime
+                //shared variable between 
+                //number of objects created at runtime
+                //Common variable among more than one objects of class
+
                 static int count;
                 int id;
                 string firstName;
@@ -43,6 +46,7 @@ namespace HR{
 }
 
 using namespace HR;
+//It is mandatory to initialize static variable before starting  main function
 int Person::count=0;
 
 int main(){
@@ -58,6 +62,8 @@ int main(){
         cout<<endl;
         cout<<" Number of objects in Iteration "<< i<<"--> "<<Person::count<<endl;
     }
+
+    //static variable is always accessed throgh class name
     cout<<"Number of objects  "<<Person::count<<endl;
 }
 
