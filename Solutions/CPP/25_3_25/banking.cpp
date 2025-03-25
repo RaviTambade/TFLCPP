@@ -88,10 +88,10 @@ namespace Banking {
                  acct2.display();
             }
     };
-}
 
 
-class UIManager{
+
+    class UIManager{
     public:
         static void showMenu(){
             cout<< endl<< "Welcome to Order Processing System."<<endl;;
@@ -105,7 +105,7 @@ class UIManager{
             cout<<"------------------------------------------------"<<endl;
         }
 };
-
+}
 using namespace Banking;
 
 int main(){
