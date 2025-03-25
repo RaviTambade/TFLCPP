@@ -30,7 +30,6 @@ class Person{
             }
 
             //3.Copy Constructor
-
             Person(const Person& other){
                 this->id=other.id;
                 this->age=other.age;
@@ -62,10 +61,10 @@ class Person{
                 return os;
             }
 
+            
 
             //In C malloc and free are functions for 
             //dynamic memory allocation
-
             //In C++ new and delete are operators for 
             //dynamic memory allocation
             ~Person(){
