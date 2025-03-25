@@ -62,6 +62,7 @@
     "*.dbclient-js": "javascript",
     ".fantomasignore": "ignore",
     "*.tcc": "cpp",
-    "iosfwd": "cpp"
+    "iosfwd": "cpp",
+    "iostream": "cpp"
   }
 }
