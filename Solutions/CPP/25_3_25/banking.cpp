@@ -14,11 +14,11 @@ namespace Banking {
         public :
             Account(int i=0, string nm="", double amount=0):id(i), name(nm), balance(amount){   }
 
-            void deposit(float amount){
+            void deposit(double amount){
                 balance=balance+ amount;
             }
 
-            void withdraw(float amount){
+            void withdraw(double amount){
                 balance=balance-amount;
             }
 
@@ -55,6 +55,7 @@ namespace Banking {
             }
 
             void display() const {
+                cout<<"Current Account Details "<<endl;
                 std::cout <<"Id: "<<id<< ", Name: " << name << ", balance: " << balance << std::endl;
             }
         };
@@ -62,27 +63,25 @@ namespace Banking {
     class RepositoryManager{
 
         public:
-
+            static Account currentAccount;
             static   void  saveAccountDetails(){
-                Account acct1(77,"Chaitanya Patil", 70);
+            
                 ofstream outFile("accounts.dat");
                 if (outFile.is_open()) {
-                    acct1.serialize(outFile);
+                    currentAccount.serialize(outFile);
                     outFile.close();
                     cout << "Object serialized to people.dat" << std::endl;
                 }
             }
 
-            static  Account&  getAccountDetails(){
-                Account acct2;
+            static void   getAccountDetails(){
+               
                 ifstream inFile("accounts.dat");
                     if (inFile.is_open()) {
-                        acct2.deserialize(inFile);
+                        currentAccount.deserialize(inFile);
                         inFile.close();
                     cout << "Object deserialized from people.dat" << std::endl;
                     }  
-                acct2.display();
-                return acct2;
             }
     };
 
@@ -104,12 +103,12 @@ namespace Banking {
 }
 using namespace Banking;
 
-
+Account RepositoryManager::currentAccount(34, "Chitra More",56000);
 int main()
 {
     int choice;
-    Account a1(1,"Nikita",1000);
-    Account a2;
+
+   
 
     do{
             UIManager::showMenu();
@@ -123,30 +122,30 @@ int main()
                     cout<<" Saving your  Account Details :"<<endl;
                 break;
                 case 3:
-                        {
-                           
-                           Account acct= RepositoryManager::getAccountDetails();
-                            
-                           cout<<" Depositing Amount into existing Bank Account:"<<endl;
+                        { 
+                            RepositoryManager::getAccountDetails();
+                            RepositoryManager::currentAccount.display();
+                            cout<<endl<<" Depositing Amount: "<<endl;
                             double amount;
-                            cout<< "Enter  Amount  to deposit  ";
+                            cout<< "Enter  Amount  to deposit  :";
                             cin>>amount;
-                            cout<<" The amount = "<<amount;
-
-                            acct.deposit(amount);
-                            acct.display();
+                          
+                            RepositoryManager::currentAccount.deposit(amount);
+                            RepositoryManager::currentAccount.display();
                         }
                 break;
                 case 4:
                         {
-                            Account acct= RepositoryManager::getAccountDetails();
-                            cout<<" Withdrawing Amount from existing Bank Account:"<<endl;
+                            RepositoryManager::getAccountDetails();
+                            RepositoryManager::currentAccount.display();
+
+                            cout<<endl<<"Withdrawing Amount: "<<endl;
                             double amount;
-                            cout<< "Enter  Amount  to withdra  ";
+                            cout<< "Enter  Amount  to withdraw  : ";
                             cin>>amount;
                             cout<<" The amount = "<<amount;
-                            acct.withdraw(amount);
-                            acct.display();
+                            RepositoryManager::currentAccount.withdraw(amount);
+                            RepositoryManager::currentAccount.display();
                         }
                 break;
                 case 5:
