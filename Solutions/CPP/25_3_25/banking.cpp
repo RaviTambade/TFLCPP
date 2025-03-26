@@ -61,11 +61,9 @@ namespace Banking {
         };
 
     class RepositoryManager{
-
         public:
             static Account currentAccount;
-            static   void  saveAccountDetails(){
-            
+            static void  saveAccountDetails(){
                 ofstream outFile("accounts.dat");
                 if (outFile.is_open()) {
                     currentAccount.serialize(outFile);
@@ -75,18 +73,17 @@ namespace Banking {
             }
 
             static void   getAccountDetails(){
-               
                 ifstream inFile("accounts.dat");
-                    if (inFile.is_open()) {
-                        currentAccount.deserialize(inFile);
-                        inFile.close();
+                if (inFile.is_open()) 
+                {
+                    currentAccount.deserialize(inFile);
+                    inFile.close();
                     cout << "Object deserialized from people.dat" << std::endl;
-                    }  
+                }  
             }
     };
 
     class UIManager{
-
         public:
             static void showMenu(){
                 cout<<"Welcome to HDFC Bank"<<endl<<endl;
@@ -103,12 +100,14 @@ namespace Banking {
 }
 using namespace Banking;
 
+
+//static variable has to be initialized before main function
+
 Account RepositoryManager::currentAccount(34, "Chitra More",56000);
+
 int main()
 {
     int choice;
-
-   
 
     do{
             UIManager::showMenu();
