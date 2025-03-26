@@ -115,6 +115,23 @@
     "xloctime": "cpp",
     "xmemory": "cpp",
     "xtr1common": "cpp",
-    "xutility": "cpp"
+    "xutility": "cpp",
+    "array": "cpp",
+    "condition_variable": "cpp",
+    "deque": "cpp",
+    "forward_list": "cpp",
+    "functional": "cpp",
+    "future": "cpp",
+    "list": "cpp",
+    "map": "cpp",
+    "mutex": "cpp",
+    "ratio": "cpp",
+    "set": "cpp",
+    "stop_token": "cpp",
+    "thread": "cpp",
+    "unordered_map": "cpp",
+    "unordered_set": "cpp",
+    "xhash": "cpp",
+    "xtree": "cpp"
   }
 }

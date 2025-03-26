@@ -1,11 +1,9 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-
 using namespace std;
 
 namespace Banking {
-
     class Account{
         private:
                 int id;
@@ -46,7 +44,6 @@ namespace Banking {
                 outFile << name << std::endl;
                 outFile << balance << std::endl;
             }
-
            
             void deserialize(std::ifstream& inFile) {
                 inFile>>id;
@@ -60,12 +57,11 @@ namespace Banking {
             }
         };
 
-
     class RepositoryManager{
 
         public:
 
-         static   void  saveAccountDetails(){
+            static   void  saveAccountDetails(){
                 Account acct1(77,"Chaitanya Patil", 70);
                 ofstream outFile("accounts.dat");
                 if (outFile.is_open()) {
@@ -75,23 +71,22 @@ namespace Banking {
                 }
             }
 
-           static  void showAccountDetails(){
+            static  void showAccountDetails(){
                 Account acct2;
 
                 ifstream inFile("accounts.dat");
-                 if (inFile.is_open()) {
-                     acct2.deserialize(inFile);
-                     inFile.close();
+                    if (inFile.is_open()) {
+                        acct2.deserialize(inFile);
+                        inFile.close();
                     cout << "Object deserialized from people.dat" << std::endl;
-                 }
-             
-                 acct2.display();
+                    }
+                
+                    acct2.display();
             }
     };
 
-
-
     class UIManager{
+
     public:
         static void showMenu(){
             cout<< endl<< "Welcome to Order Processing System."<<endl;;
@@ -115,15 +110,15 @@ int main(){
     cout<<"Welcome to HDFC Bank"<<endl;
     while(!exit){
 
-        UIManager::showMenu();
+        UIManager::showMenu();  //static function is always called using :: scope resolution operator
         cin>>choice;
 
         switch(choice){
             case 1:
-                RepositoryManager::saveAccountDetails();
+                RepositoryManager::showAccountDetails();
             break;
             case 2:
-                RepositoryManager::showAccountDetails();
+                RepositoryManager::saveAccountDetails();
             break;
             case 3:
                 cout<<"Deposit Amount"<<endl;     

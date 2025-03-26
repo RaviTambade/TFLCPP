@@ -171,10 +171,8 @@ int main(){
     Date *ptrOneMoreDate=new Date(1,2,2025);
     ptrOneMoreDate->show();
     
-
-     
+    
     Account acct123(45,"ravi tambade",56000,date);
     acct123.show();
-
     return 0;
 }
