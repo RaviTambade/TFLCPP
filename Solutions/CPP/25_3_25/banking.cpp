@@ -3,6 +3,8 @@
 #include <string>
 using namespace std;
 
+
+
 namespace Banking {
     class Account{
         private:
@@ -71,66 +73,88 @@ namespace Banking {
                 }
             }
 
-            static  void showAccountDetails(){
+            static  Account&  getAccountDetails(){
                 Account acct2;
-
                 ifstream inFile("accounts.dat");
                     if (inFile.is_open()) {
                         acct2.deserialize(inFile);
                         inFile.close();
                     cout << "Object deserialized from people.dat" << std::endl;
-                    }
-                
-                    acct2.display();
+                    }  
+                acct2.display();
+                return acct2;
             }
     };
 
     class UIManager{
 
-    public:
-        static void showMenu(){
-            cout<< endl<< "Welcome to Order Processing System."<<endl;;
-            cout<<"------------------------------------------------"<<endl;
-            cout<<" 1. Show Account Details"<<endl;
-            cout<<" 2. Save Account Details"<<endl;
-            cout<<" 3. Deposit"<<endl;
-            cout<<" 4. withdraw"<<endl;
-            cout<<" 5. Exit"<<endl;
-            cout<<"------------------------------------------------"<<endl;
-            cout<<"------------------------------------------------"<<endl;
-        }
-};
+        public:
+            static void showMenu(){
+                cout<<"Welcome to HDFC Bank"<<endl<<endl;
+                cout<<" 1. Show Account Details"<<endl;
+                cout<<" 2. Save Account Details"<<endl;
+                cout<<" 3. Deposit"<<endl;
+                cout<<" 4. withdraw"<<endl;
+                cout<<" 5. Exit"<<endl;
+                cout<<"------------------------------------------------"<<endl;
+                cout<<"------------------------------------------------"<<endl;
+                cout<<"Enter your option from Menu show above  :";
+            }
+    };
 }
 using namespace Banking;
 
-int main(){
+
+int main()
+{
     int choice;
-    bool exit=false;
+    Account a1(1,"Nikita",1000);
+    Account a2;
 
-    cout<<"Welcome to HDFC Bank"<<endl;
-    while(!exit){
+    do{
+            UIManager::showMenu();
+            cin>>choice;
+            cout<<endl<<"You have selected Option: "<<choice<<endl;
+            switch(choice){
+                case 1:         
+                    cout<<" Your Account Details :"<<endl;
+                break;
+                case 2:
+                    cout<<" Saving your  Account Details :"<<endl;
+                break;
+                case 3:
+                        {
+                           
+                           Account acct= RepositoryManager::getAccountDetails();
+                            
+                           cout<<" Depositing Amount into existing Bank Account:"<<endl;
+                            double amount;
+                            cout<< "Enter  Amount  to deposit  ";
+                            cin>>amount;
+                            cout<<" The amount = "<<amount;
 
-        UIManager::showMenu();  //static function is always called using :: scope resolution operator
-        cin>>choice;
-
-        switch(choice){
-            case 1:
-                RepositoryManager::showAccountDetails();
-            break;
-            case 2:
-                RepositoryManager::saveAccountDetails();
-            break;
-            case 3:
-                cout<<"Deposit Amount"<<endl;     
-            break;
-            case 4:
-                cout<<"Withdraw Amount"<<endl;    
-            break;
-            case 5:
-                    cout<<"Thank you for visiting HDFC Bank"<<endl;
-                    exit=true;
-            break;
+                            acct.deposit(amount);
+                            acct.display();
+                        }
+                break;
+                case 4:
+                        {
+                            Account acct= RepositoryManager::getAccountDetails();
+                            cout<<" Withdrawing Amount from existing Bank Account:"<<endl;
+                            double amount;
+                            cout<< "Enter  Amount  to withdra  ";
+                            cin>>amount;
+                            cout<<" The amount = "<<amount;
+                            acct.withdraw(amount);
+                            acct.display();
+                        }
+                break;
+                case 5:
+                    cout<<" You have decided to extit"<<endl;
+                break;
+            }
         }
+    while(choice !=5);
+    cout<<"Thank you for visiting HDFC Bank"<<endl;
     return 0;
     }
-}
