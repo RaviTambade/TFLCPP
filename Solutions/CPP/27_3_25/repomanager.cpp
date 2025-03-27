@@ -1,6 +1,12 @@
- #incluce "repomanager.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+# include "repomanager.h"
 
-        static void  RepoManager::saveAccountDetails(){
+ 
+namespace Banking{
+        Account RepositoryManager::currentAccount(34, "Chitra More",56000);
+        void  RepositoryManager::saveAccountDetails(){
             ofstream outFile("accounts.dat");
             if (outFile.is_open()) {
                 currentAccount.serialize(outFile);
@@ -9,7 +15,7 @@
             }
         }
 
-        static void    RepoManager::getAccountDetails(){
+        void    RepositoryManager::getAccountDetails(){
             ifstream inFile("accounts.dat");
             if (inFile.is_open()) 
             {
@@ -18,4 +24,5 @@
                 cout << "Object deserialized from people.dat" << std::endl;
             }  
         }
-};
+}
+

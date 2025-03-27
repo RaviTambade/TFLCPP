@@ -3,7 +3,6 @@
 #include "account.h"
 #include "repomanager.h"
 #include "uimanager.h"
-
 using namespace std;
 using namespace Banking;
 
@@ -15,17 +14,19 @@ int main()
             cin>>choice;
             cout<<endl<<"You have selected Option: "<<choice<<endl;
             switch(choice){
+                
                 case 1:         
                     cout<<" Your Account Details :"<<endl;
                 break;
+                
                 case 2:   
                 {
                     cout<<" Account Opening :"<<endl;
-                    //UIManager::acceptAccountDetails();
                     RepositoryManager::saveAccountDetails();
                     cout<<" Account has been successfully Opened in Bank"<<endl;
                 }
                 break;
+                
                 case 3:
                 { 
                     RepositoryManager::getAccountDetails();
@@ -39,6 +40,7 @@ int main()
                     RepositoryManager::currentAccount.display();
                 }
                 break;
+                
                 case 4:
                 {
                     RepositoryManager::getAccountDetails();
@@ -53,6 +55,7 @@ int main()
                     RepositoryManager::currentAccount.display();
                 }
                 break;
+                
                 case 5:
                     cout<<" You have decided to extit"<<endl;
                 break;
@@ -61,4 +64,4 @@ int main()
     while(choice !=5);
     cout<<"Thank you for visiting HDFC Bank"<<endl;
     return 0;
-    }
+}
