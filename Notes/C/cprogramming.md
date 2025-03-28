@@ -53,9 +53,9 @@ If you're interested in understanding the fundamentals of programming and want t
 
 Let us C !
 
-- <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/historycpp.md">Application Development</a>
-- <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/appdevelopment.md">Art of Programming</a>
-- <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/artofprogramming.md">Fundamentals</a>
+- <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/appdevelopment.md">Application Development</a>
+- <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/artofprogrmming.md">Art of Programming</a>
+- <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/fundamentals.md">Fundamentals</a>
 - <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/mingw.md">Build Enviornment MingW</a>
 - <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/datatypes.md">Data Types</a>
 - <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/functions.md">Functions</a>
