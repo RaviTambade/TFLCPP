@@ -1,8 +1,8 @@
-### 1. ** Class Relationships OOPs**
+###  Class Relationships OOP's
    - After discussing abstraction and encapsulation, the next major topic in OOP is **relationships between classes**.
    - These relationships define how multiple classes interact with each other.
    
-### 2. **Types of Relationships:**
+###  **Types of Relationships:**
    - **Has-A Relationship (Association):** 
      - This refers to situations where one class contains or uses another class. It’s called **association** or **containment**.
      - Example: An **Employee** class has a **Date** class, where the **Date** represents the employee's joining date. The `Employee` class will hold a reference to a `Date` object.
@@ -12,7 +12,7 @@
      - Example: A **Line** class can inherit from a **Shape** class. This means that every **Line** is a **Shape**, and thus, it will inherit features or properties of the **Shape** class.
      - Inheritance allows you to define shared behavior in a base class (like **Shape**) and then extend it in derived classes (like **Line** or **Circle**).
 
-### 3. **Code Example:**
+###  **Code Example:**
    - The speaker suggests creating a C++ program that demonstrates inheritance by designing two classes: `Shape` and `Line`.
    
    - **Step-by-step breakdown of the example:**
@@ -66,13 +66,12 @@ int main() {
 }
 ```
 
-### 4. **Explanation of the Code:**
    - **Point Class**: Represents a point in a 2D plane with `x` and `y` coordinates.
    - **Shape Class**: An abstract class with a pure virtual function `draw()`.
    - **Line Class**: Inherits from **Shape** and implements the `draw()` method. It also contains the attributes `thickness`, `color`, and `startPoint`/`endPoint`.
    - In the **main()** function, we create `Point` objects for the start and end of the line, instantiate a `Line` object, and then call `draw()`.
 
-### 5. **Key Concepts:**
+###  Key Concepts:
    - **Inheritance**: The **Line** class inherits from **Shape**.
    - **Composition**: The **Line** class contains objects of type **Point** to represent the start and end points.
    - **Encapsulation**: Data like `thickness`, `color`, and `coordinates` are encapsulated within the class, which can be accessed or modified through methods.
