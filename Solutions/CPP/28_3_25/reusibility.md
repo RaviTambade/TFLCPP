@@ -1,7 +1,3 @@
-It looks like you've transcribed a portion of a lecture or tutorial about object-oriented programming (OOP) concepts, specifically focusing on relationships between classes, inheritance, and associations.
-
-Here’s a breakdown of what’s covered:
-
 ### 1. **Introduction to Relationships in OOP**
    - After discussing abstraction and encapsulation, the next major topic in OOP is **relationships between classes**.
    - These relationships define how multiple classes interact with each other.
