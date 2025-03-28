@@ -53,15 +53,15 @@ If you're interested in understanding the fundamentals of programming and want t
 
 Let us C !
 
-- <a href="https://github.com/RaviTambade/ycp/tree/main/C/notes/historycpp.md">Application Development</a>
-- <a href="https://github.com/RaviTambade/ycp/tree/main/C/notes/appdevelopment.md">Art of Programming</a>
-- <a href="https://github.com/RaviTambade/ycp/tree/main/C/notes/artofprogramming.md">Fundamentals</a>
-- <a href="https://github.com/RaviTambade/ycp/tree/main/C/notes/mingw.md">Build Enviornment MingW</a>
-- <a href="https://github.com/RaviTambade/ycp/tree/main/C/notes/datatypes.md">Data Types</a>
-- <a href="https://github.com/RaviTambade/ycp/tree/main/C/notes/functions.md">Functions</a>
-- <a href="https://github.com/RaviTambade/ycp/tree/main/C/notes/structures.md">Structures</a>
-- <a href="https://github.com/RaviTambade/ycp/tree/main/C/notes/pointers.md">Pointers</a>
-- <a href="https://github.com/RaviTambade/ycp/tree/main/C/notes/arrays.md">Arrays</a>
-- <a href="https://github.com/RaviTambade/ycp/tree/main/C/notes/inbuiltfunctions.md">Inbuilt Functions</a>
-- <a href="https://github.com/RaviTambade/ycp/tree/main/C/notes/appmemory.md">Application Memory: Stack and Heap</a>
-- <a href="https://github.com/RaviTambade/ycp/tree/main/C/notes/fileio.md">File IO</a>
+- <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/historycpp.md">Application Development</a>
+- <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/appdevelopment.md">Art of Programming</a>
+- <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/artofprogramming.md">Fundamentals</a>
+- <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/mingw.md">Build Enviornment MingW</a>
+- <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/datatypes.md">Data Types</a>
+- <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/functions.md">Functions</a>
+- <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/structures.md">Structures</a>
+- <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/pointers.md">Pointers</a>
+- <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/arrays.md">Arrays</a>
+- <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/inbuiltfunctions.md">Inbuilt Functions</a>
+- <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/appmemory.md">Application Memory: Stack and Heap</a>
+- <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/fileio.md">File IO</a>
