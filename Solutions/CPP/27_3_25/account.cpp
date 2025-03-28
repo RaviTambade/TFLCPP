@@ -10,20 +10,20 @@ namespace Banking {
     //setter and getter
 
     void Account::setId(int i){
-    id=i;
-}
+        id=i;
+    }
 
     int Account::getId(){
-    return id;
-}
+        return id;
+    }
 
     void Account::setName(string nm){
-   name=nm;
-}
+        name=nm;
+    }
 
     string Account::getName(){
     return name;
-}
+}   
 
 
     void Account::setBalance(double bal){
