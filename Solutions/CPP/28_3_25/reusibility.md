@@ -1,4 +1,4 @@
-### 1. **Introduction to Relationships in OOP**
+### 1. ** Class Relationships OOPs**
    - After discussing abstraction and encapsulation, the next major topic in OOP is **relationships between classes**.
    - These relationships define how multiple classes interact with each other.
    
@@ -190,10 +190,6 @@ int main() {
 
 This is a core principle of **OOP**: **inheritance** allows you to design your software so that you can extend existing classes (base classes) rather than recreating them from scratch.
 
-It looks like you're exploring the concept of **inheritance** and **association** in object-oriented programming (OOP), specifically using classes such as `Shape`, `Line`, `Circle`, and `Point`. You're also working on how to structure these classes to reduce redundancy and make the code more maintainable by utilizing inheritance.
-
-Let's summarize and break down the key points you've covered, and then I'll help you implement the code for these classes.
-
 ### Key Concepts and Steps:
 
 1. **Inheritance (IS-A Relationship)**:
@@ -347,4 +343,95 @@ int main() {
 - **Association** represents the relationship between objects, such as the `Line` having `startPoint` and `endPoint`, which are instances of the `Point` class.
 - **Encapsulation** ensures that only the necessary data is exposed and that code can be easily reused or modified.
 
-This is a great way to organize and structure your code using object-oriented principles! Let me know if you need any further clarification or modifications to the code.
+This is a great way to organize and structure your code using object-oriented principles!
+
+In C++, **access specifiers** are used to define the visibility and accessibility of class members (variables and functions) from outside the class. They help in enforcing **encapsulation** — one of the key principles of object-oriented programming. There are three main access specifiers in C++:
+
+### 1. **public**
+- **Public members** can be accessed from anywhere, both inside and outside the class.
+- Functions and variables declared as `public` are visible to all other classes and functions.
+
+```cpp
+class MyClass {
+public:
+    int publicVar;
+
+    void publicFunction() {
+        // Function logic
+    }
+};
+
+int main() {
+    MyClass obj;
+    obj.publicVar = 10;      // Allowed (public)
+    obj.publicFunction();    // Allowed (public)
+}
+```
+
+### 2. **private**
+- **Private members** can only be accessed within the same class.
+- Private members cannot be accessed or modified directly by code outside the class, providing a way to protect the internal state of an object.
+- This is used to implement **encapsulation**, making sure that only specific functions (e.g., getters and setters) are used to interact with the object's data.
+
+```cpp
+class MyClass {
+private:
+    int privateVar;
+
+public:
+    void setPrivateVar(int val) {
+        privateVar = val;    // Can access the private variable via a public method
+    }
+
+    int getPrivateVar() {
+        return privateVar;   // Can access the private variable via a public method
+    }
+};
+
+int main() {
+    MyClass obj;
+    // obj.privateVar = 10;  // Error: privateVar is private and cannot be accessed outside the class
+    obj.setPrivateVar(10);  // Allowed (via public method)
+    cout << obj.getPrivateVar() << endl;  // Allowed (via public method)
+}
+```
+
+### 3. **protected**
+- **Protected members** can only be accessed within the same class and by derived (child) classes.
+- Protected members are useful when you want to allow derived classes to access the parent class's data but prevent access to external code.
+
+  
+
+###  Access Specifiers:
+| Access Specifier | Accessibility                                                 |
+|------------------|---------------------------------------------------------------|
+| `public`         | Accessible from anywhere (both inside and outside the class) |
+| `private`        | Accessible only within the same class                         |
+| `protected`      | Accessible within the class and by derived classes            |
+
+### Default Access Specifiers:
+- **For classes**: By default, members of a class are `private` if no access specifier is provided.
+- **For structs**: By default, members of a struct are `public`.
+
+```cpp
+// Default access in a class
+class MyClass {
+    int a; // private by default
+};
+
+// Default access in a struct
+struct MyStruct {
+    int a; // public by default
+};
+```
+
+### Access Specifiers and Inheritance:
+- **public inheritance**: Members of the base class retain their access level when inherited (public members remain public, protected members remain protected, and private members are not accessible).
+- **protected inheritance**: Public and protected members of the base class become protected in the derived class.
+- **private inheritance**: Public and protected members of the base class become private in the derived class.
+
+
+
+### Best Practices:
+- **Encapsulation**: Use `private` and `protected` access specifiers to protect the internal state of your classes. Only expose necessary data and functions as `public`.
+- **Inheritance**: When designing your classes, consider whether inherited classes should access members of the base class and choose the access specifier accordingly.
