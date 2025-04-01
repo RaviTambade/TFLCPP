@@ -60,6 +60,51 @@ class Rectangle:Shape{
             }
 };
 
+class Traingle:Shape{
+    private :
+        double base, edge1, edge2, height,;
+
+    public :
+            Traingle(double b, double h,double e1, double e2){
+                base=b;
+                height=h;
+                edge1=e1;
+                edge2=e2;
+            }
+
+            double calculateArea() const override{
+                //Formula for Triangle  area =
+                double area=(base * height)/2;
+                return area;  
+            }
+
+            double calculatePerimeter() const override{
+                //Formula for  rectangle= 2(length + width)
+                double perimieter=base + edge1 + edge2;
+                return perimieter;
+            }
+};
+
+class Square:Shape{
+    private:
+            double side;
+    private:
+            Square(double s){
+                side=s;
+            }
+
+            double calculateArea() const override{
+                //Formula for Sqaure  area =
+                double area= side * side;
+                return area;  
+            }
+
+            double calculatePerimeter() const override{
+                //Formula for  square= 
+                double perimieter=side * 4;
+                return perimieter;
+            }
+};
 
 //Consumer
 int main(){

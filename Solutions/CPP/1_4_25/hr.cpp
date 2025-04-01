@@ -17,9 +17,9 @@ public:
         double totalSalary = basicSalary - pf + bonus;
          cout << "Employee " << name << " Salary Details: " << endl;
          cout << "Basic Salary: " << basicSalary << endl;
-        cout << "Provident Fund Deduction: " << pf << endl;
-       cout << "Bonus: " << bonus << endl;
-        cout << "Total Salary: " << totalSalary << endl;
+         cout << "Provident Fund Deduction: " << pf << endl;
+         cout << "Bonus: " << bonus << endl;
+         cout << "Total Salary: " << totalSalary << endl;
     }
 
     virtual ~Employee() {}
@@ -55,7 +55,7 @@ public:
         : SalesEmployee(empName, basic, pfValue, bonusValue, comm), managerBonus(mgrBonus) {}
 
     void ComputePay() override {
-        double totalSalary = basicSalary - pf + bonus + commission + managerBonus;
+        double totalSalary = basicSalary - pf + bonus + (commission*2) + managerBonus;
         cout << "Sales Manager " << name << " Salary Details: " << endl;
         cout << "Basic Salary: " << basicSalary << endl;
         cout << "Provident Fund Deduction: " << pf << endl;
