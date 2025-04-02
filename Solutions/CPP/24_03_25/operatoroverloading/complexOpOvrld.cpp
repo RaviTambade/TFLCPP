@@ -17,7 +17,8 @@ class Complex {
             }
 
             //friend function
-            
+            //Operator overloading allows us to define new behaviour  of specific Operator in our Class
+
             friend  istream&  operator>>(istream& is,   Complex& c)
             {
                 cout << "Enter Complex Number"<<endl;
@@ -36,6 +37,7 @@ class Complex {
 
             //member function
 
+            //Method overloading
             //Arithmatic operator overloading
             Complex operator+(const Complex& other) const{
                 Complex temp;
@@ -44,6 +46,12 @@ class Complex {
                 return temp;     
             }
 
+           static  Complex operator+ (Complex& c1, Complex c2){
+                Complex temp;
+                temp.real=c1.real+ c2.real;
+                temp.imag=c2.imag+ c2.imag;
+                return temp;     
+            }
             ~Complex(){
 
             }
@@ -60,7 +68,10 @@ int main(){
     cout<<c1;
     cout<<c2;
 
-    Complex c3= c1+ c2;
+    Complex c3= c1 + c2;
+
+    Complex c5=c1.operator+(c2);
+
     cout<<"Ater Adding two complex numbers : "<<endl;
     cout<<c3;
 

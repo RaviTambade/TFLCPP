@@ -21,7 +21,7 @@ class Circle : public Shape {
         }
     };
     
-    class Rectangle : public Shape {
+class Rectangle : public Shape {
     public:
         void draw()  override  {
             std::cout << "Drawing a rectangle" << std::endl;
@@ -29,6 +29,8 @@ class Circle : public Shape {
     };
     
     int main() {
+        //Shape pShape=new Shape();
+
        
         Shape* shape1 = new Circle();
         Shape* shape2 = new Rectangle();

@@ -59,5 +59,3 @@ int main(){
     Person p1;
     p1.showDetails();
 }
-
-
