@@ -12,8 +12,8 @@ namespace HR{
                 //shared variable between 
                 //number of objects created at runtime
                 //Common variable among more than one objects of class
-
                 static int count;
+                //data members
                 int id;
                 string firstName;
                 string lastName;
@@ -42,6 +42,15 @@ namespace HR{
                     count--;
 
                 }
+                
+                void displayDetails(){
+                    cout<<id<<firstName <<lastName<<endl;
+                }
+                //static function
+                static int getCount(){
+                    return count;
+                }
+            
             };
 }
 
@@ -65,6 +74,10 @@ int main(){
 
     //static variable is always accessed throgh class name
     cout<<"Number of objects  "<<Person::count<<endl;
+
+    //static function is invoked using class name
+    int number=Person::getCount();
+
 }
 
 
