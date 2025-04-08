@@ -133,6 +133,10 @@
     "unordered_set": "cpp",
     "xhash": "cpp",
     "xtree": "cpp",
-    "chrono": "cpp"
+    "chrono": "cpp",
+    "coroutine": "cpp",
+    "resumable": "cpp",
+    "iomanip": "cpp",
+    "queue": "cpp"
   }
 }
