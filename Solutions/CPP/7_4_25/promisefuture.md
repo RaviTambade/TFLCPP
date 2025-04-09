@@ -32,18 +32,6 @@
     ( done )
 ```
 
----
-
-### 🧠 Summary:
-- **Producer thread**: uses `promise.set_value(value)` to send data.
-- **Consumer thread**: uses `future.get()` to receive the data.
-- **`get()` blocks** until `set_value()` is called.
-
----
-Absolutely! Let’s walk through the diagram step-by-step so you can fully understand how `std::promise` and `std::future` work together across threads:
-
----
-
 ### 🔧 Step-by-step explanation:
 
 #### **1. Main Thread creates a `std::promise`**
@@ -105,12 +93,6 @@ promise.set_value(42);
 | Consumer | Gets value  | `get()` (waits if needed) |
 
 ---
-
-
-Perfect! Let’s explain `std::promise` and `std::future` using a **pizza delivery analogy** 🍕 — simple, fun, and super relatable!
-
----
-
 ### 🍕 The Promise-Future Analogy: Pizza Edition
 
 #### 🎭 Characters:
@@ -132,8 +114,6 @@ Perfect! Let’s explain `std::promise` and `std::future` using a **pizza delive
 std::promise<Pizza> promise;
 std::future<Pizza> future = promise.get_future();
 ```
-
----
 
 #### 🍽️ 2. The customer waits with their pizza ticket:
 - The customer (consumer thread) holds the `future` and says:
