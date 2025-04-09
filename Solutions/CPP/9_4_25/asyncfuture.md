@@ -43,5 +43,3 @@ int main() {
 ### More Advanced Asynchronous Patterns
 
 For more advanced asynchronous programming, you might want to use `std::thread`, `std::promise`, and other tools in the C++ standard library. However, C++20 and beyond also introduce additional concurrency features, such as coroutines.
-
-Would you like to explore more advanced async concepts or use cases in C++?
