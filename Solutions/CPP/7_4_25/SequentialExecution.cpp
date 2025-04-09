@@ -56,6 +56,10 @@
 #include <iostream>
 using namespace std;
 
+
+enum ecommerceOption { browse, addItem, removeItem, placeOrder, cancelOrder, payAmount, trackOrder};
+ 
+
 //Product Search Task
 void search(){
 
@@ -78,13 +82,13 @@ void removeFromCart(){
     cout<< "Item is removed from shopping Cart"<<endl;
 }
 
-void placeOrder(){
+void processOrder(){
     // complex logic for  order placement
     cout<< "Thank you for successful payment. Your order has been confirmed."<<endl;
 }
 
-void trackOrder(){
-    cout<< "Your order has been dispatched and it is on the way"<<endl;
+void trackDelivery(){
+    cout<< "Your Parcel has been dispatched and it is on the way"<<endl;
 }
 
 
@@ -107,21 +111,45 @@ void trackOrder(){
 //Application consist of  Blocking Calls
 //Synchronous Call (Exeuction)
 
-//Multiple tasks are exeucted one after the another by primary Thread
+//Multiple tasks are exeucted one after the another by Primary Thread
 //entry point (main task)
-int main(){
-    cout<< "Welcome to Transflower"<<endl;
-    //Flow of Exeuction
 
-    //setting pipline for execution in main function
-    //Direct call
+
+
+int main(){
+    ecommerceOption shoppoingStatus;
+    cout<< "Welcome to Transflower"<<endl;
     sort();
-    search();
-    addToCart();
-    addToCart();
-    addToCart();
-    removeFromCart();
-    placeOrder();
-    trackOrder();
+    ecommerceOption  shoppoingStatus=addItem;
+    //due to some processing
+
+
+
+    //conditional sequencing execution
+
+    switch(shoppoingStatus)
+    {
+
+        case  browse:
+                sort();
+                search();
+        break;
+
+        case addItem:
+                addToCart();
+        break; 
+
+        case removeItem:
+                removeFromCart();
+        break; 
+        
+        case  placeOrder:
+                processOrder();
+        break;
+    
+        case trackOrder:
+                trackDelivery();
+        break;
+  
     cout<<"Thank you for  purchase product online from our TFL Store"<<endl;
 }

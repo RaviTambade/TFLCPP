@@ -5,7 +5,17 @@
 #include <chrono>
 
 using namespace std;
+
+enum ecommerceOption { browse, addItem, removeItem, placeOrder, cancelOrder, payAmount, trackOrder};
  
+//Parallel Execution:
+// hook functions-----react 
+// Action Listeners ----java
+// Callback function ---node js
+// Helper functions  ---- Event handling
+// Request Handlers
+
+
 string  getProductfromCatalog(){
 
     this_thread::sleep_for(chrono::seconds(6));
@@ -13,13 +23,14 @@ string  getProductfromCatalog(){
     return "Gerbera";
 }
 
- 
 void sort(){
     cout<< "All products have been sorted in ascending order based on sale"<<endl;
 }
-void addToCart(){
+
+string addToCart(){
     this_thread::sleep_for(chrono::seconds(3));
     cout<< "New Item is added to existing Shopping Cart"<<endl;
+    return "iPhone";
 }
 
 //Shopping Cart remove item Task
@@ -40,17 +51,22 @@ void trackOrder(){
 //Encapsulation:Hiding Complexity
 //Simplicity: is nothing but Hiding Complexity
 
-
 int main(){
     cout<<"Primary Thread executing  main code"<<endl; 
-
-    //a Promise is retured from async method
-    //assurance of geting value when the method is going to be exeucted
     
-    std::future<string> result=std::async(launch::async, getProductfromCatalog);
-    string actualProduct=result.get();
+    //Route mapping
+    std::future<string> resultCatalog=std::async(launch::async, getProductfromCatalog);
+    std::future<string> resultCart=std::async(launch::async, addToCart);
+    
+    //Receive Response
+    string actualProduct=resultCatalog.get();
+    string cartItem=resultCart.get();
+    
+    //Presentation
     cout<<"The Product is :"<<actualProduct;
+    cout<<"The Item added to Cart  :"<<cartItem;
+
+
     cout<<"Primary Thread is about to terminate"<<endl;
     return 0;
 }
-
