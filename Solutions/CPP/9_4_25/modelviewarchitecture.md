@@ -43,25 +43,5 @@
 ---
 
 If you're building something like a `DataModelProvider` and views like `TopView`, `FrontView`, and `SideView`, you're already thinking in a Model-View architecture!
-
-
-## Model-View Diagram
-
-+-------------------+       +----------------+
-|                   |<----->|                |
-|   DataModel       |       |   TopView      |
-|   (Model)         |<----->|   FrontView    |
-|                   |       |   SideView     |
-+-------------------+       +----------------+
-        ^   ^   ^
-        |   |   |
-        |   |   |     (Change notifications or async events)
-        |   |   |
-        +---+---+
-            ^
-            |
-  +----------------------+
-  |  DataModelProvider   |
-  |  (Creates & Shares   |
-  |   the Model)         |
-  +----------------------+
+ 
+ 
