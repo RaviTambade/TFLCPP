@@ -6,7 +6,6 @@ using namespace std;
 
 enum ecommerceOption { browse, addItem, removeItem, placeOrder, cancelOrder, payAmount, trackOrder};
  
-
 //Product Search Task
 void search(){
 
@@ -96,9 +95,6 @@ int main() {
 }
 
     
-    thread tBye(print_Bye);
-    tHello.join();  // Wait for the thread to finish
-    tBye.join();
     cout<<"Primary Thread Execution is about to terminate"<<endl;
     return 0;
 }

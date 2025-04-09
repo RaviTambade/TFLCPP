@@ -1,15 +1,14 @@
 //Programming Language:
 //  C, C++ ,C#
 //  java, python, dart, javascript
-//  
+
 //Execution: Runtime ( computational resources)
-// Hardware: CPU, RAM, Hard disk, Monitor, keyboard, mouse
-// Software: Operating System (Linux, Windows, Mac OS,  Unix, etc)
-// Application Software: commerce application  exe file
+//Hardware: CPU, RAM, Hard disk, Monitor, keyboard, mouse
+//Software: Operating System (Linux, Windows, Mac OS,  Unix, etc)
+//Application Software: commerce application  exe file
 
 
 //At the time exection :
-
 // Process:
 //          a program under exeuction
 //          consist of  heap, stack and thread
@@ -18,9 +17,6 @@
 //        a path of execution
 
 //Primary Thread:primary thread invokes main function
-
-
-
 
 // Language  C/C++  ------Source Code---.c or .cpp ( C++ 14)
 // Build tool: gcc/ g++, turbo c, borland C, (MingW- 64)
@@ -36,7 +32,6 @@
 //sync call ----------async call
 
 //
-
 // Topic: Asynchronous PRogramming
 //Multithreading:
 //Multitasking
@@ -56,10 +51,8 @@
 #include <iostream>
 using namespace std;
 
-
 enum ecommerceOption { browse, addItem, removeItem, placeOrder, cancelOrder, payAmount, trackOrder};
  
-
 //Product Search Task
 void search(){
 
