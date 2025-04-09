@@ -44,9 +44,6 @@ public:
     }
 };
 
-
-
-
 // Data Provider (Producer)
 class DataModelProvider {
 public:
