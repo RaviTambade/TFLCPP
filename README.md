@@ -29,7 +29,6 @@ It's widely used for developing software such as game engines, operating systems
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/operatoroverloading.md">Operator Overloading</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/hasaisa.md">Class Relationship</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/inheritance.md">Inheritance</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/inheritance.md">Shapes</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/polymorphism.md">Polymorphism</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/operatoroverloading.md">Function Pointer</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/inlinefunction.md">Inline function</a>
