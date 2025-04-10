@@ -94,7 +94,8 @@ But knowing function pointers is still essential — especially for:
 ---
 
  
- Awesome choice! 💡 Let's build a **Mini Calculator** using **Function Pointers in C++**. This project is perfect to demonstrate:
+💡 Let's build a **Mini Calculator** using **Function Pointers in C++**. 
+This project is perfect to demonstrate:
 
 - How to **store function addresses**
 - How to **pass them around**
