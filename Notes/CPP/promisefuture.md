@@ -24,12 +24,12 @@ To confirm this, the seller gives the buyer a **currency note** — a **promise*
 ### 🤝 How this relates to C++:
 
 | Real-World Analogy     | C++ Concept                     |
-|------------------------|---------------------------------|
-| Seller                 | The **thread producing** the value |
-| Currency (Note)        | A **`std::promise`**             |
+|------------------------|--------------------------------------|
+| Seller                 | The **thread producing** the value   |
+| Currency (Note)        | A **`std::promise`**                 |
 | Buyer                  | The **thread waiting** for the value |
-| Future delivery        | A **`std::future`**              |
-| Product (actual item)  | The **result value**             |
+| Future delivery        | A **`std::future`**                  |
+| Product (actual item)  | The **result value**                 |
 
 ---
 
@@ -122,8 +122,6 @@ promise.set_value(Pizza("Margherita"));
 | `set_exception()`    | Pizza delivery failed (exception thrown) |
 
 ---
-
-
 
 # promise  and future  Concept Visualization
 
