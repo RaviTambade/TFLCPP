@@ -1,3 +1,5 @@
+# static members
+
 In C++, **static members** refer to class members (variables and functions) that are shared by all instances (objects) of the class, rather than having a separate copy for each instance. Static members belong to the class itself, not to any specific object of the class. This can be useful when you need a member that should be shared across all instances, such as a counter tracking the number of objects created.
 
 ### Types of Static Members
