@@ -27,14 +27,11 @@ It's widely used for developing software such as game engines, operating systems
 
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/friendincpp.md">Friend in C++</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/operatoroverloading.md">Operator Overloading</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/hasaisa.md">Class Relationship</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/inheritance.md">Inheritance</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/polymorphism.md">Polymorphism</a>
 - <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/functionpointer.md">Function Pointer</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/inlinefunction.md">Inline function</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/template.md">Templates</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/exceptionhandling.md">Exception Handling</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/polymorphism.md">Polymorphism</a>
+ >
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/execution.md">Execution</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/concurrency.md">Concurrency</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/multithreading.md">Multithreading</a>
