@@ -15,24 +15,24 @@ It's widely used for developing software such as game engines, operating systems
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/operators.md">C++ Operators</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/oops.md">Object Oriented Programming</a>
 
-- <a href="https://github.com/RaviTambade/ycp/blob/main/Notes/CPP/copyconstructor.md">Copy Constructors</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/copyconstructor.md">Copy Constructors</a>
 
-- <a href="https://github.com/RaviTambade/ycp/blob/main/CPP/notes/CPP/shallowdeep.md">Shallow Copy / Deep Copy</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/staticmembers.md">Static Members</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/constantfunction.md">constant Member Functions</a>
-- <a href="https://github.com/RaviTambade/ycp/blob/main/notes/CPP/friendincpp.md">Shallow Copy / Deep Copy</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/operatoroverloading.md">Operator Overloading</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/hasaisa.md">Class Relationship</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/inheritance.md">Inheritance</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/polymorphism.md">Polymorphism</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/shallowdeep.md">Shallow Copy / Deep Copy</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/staticmembers.md">Static Members</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/constantfunction.md">constant Member Functions</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/friendincpp.md">Shallow Copy / Deep Copy</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/operatoroverloading.md">Operator Overloading</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/hasaisa.md">Class Relationship</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/inheritance.md">Inheritance</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/polymorphism.md">Polymorphism</a>
 
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/friendincpp.md">Friend in C++</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/operatoroverloading.md">Operator Overloading</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/hasaisa.md">Class Relationship</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/inheritance.md">Inheritance</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/inheritance.md">Shapes</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/polymorphism.md">Polymorphism</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/operatoroverloading.md">Function Pointer</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/friendincpp.md">Friend in C++</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/operatoroverloading.md">Operator Overloading</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/hasaisa.md">Class Relationship</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/inheritance.md">Inheritance</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/inheritance.md">Shapes</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/polymorphism.md">Polymorphism</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/operatoroverloading.md">Function Pointer</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/inlinefunction.md">Inline function</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/hasaisa.md">Templates</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/inheritance.md">Exception Handling</a>
