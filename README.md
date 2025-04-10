@@ -8,13 +8,16 @@ It's widely used for developing software such as game engines, operating systems
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/whycpp.md">Why C++ ?</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/cvscpp.md">C vs C++</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/featuresofcpp.md">Features of C++</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/class.md">Class in C++</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/accessspecifiers.md">Access Specifiers</a>
+- <a href="https://github.com/RaviTambade/ycp/blob/main/notes/CPP/copyconstructor.md">Namespace</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/cpptokens.md">C++ Tokens</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/operators.md">C++ Operators</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/oops.md">Object Oriented Programming</a>
 
 - <a href="https://github.com/RaviTambade/ycp/blob/main/Notes/CPP/copyconstructor.md">Copy Constructors</a>
+
 - <a href="https://github.com/RaviTambade/ycp/blob/main/CPP/notes/CPP/shallowdeep.md">Shallow Copy / Deep Copy</a>
-- <a href="https://github.com/RaviTambade/ycp/blob/main/notes/CPP/copyconstructor.md">Namespace</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/staticmembers.md">Static Members</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/constantfunction.md">constant Member Functions</a>
 - <a href="https://github.com/RaviTambade/ycp/blob/main/notes/CPP/friendincpp.md">Shallow Copy / Deep Copy</a>
