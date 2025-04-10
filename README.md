@@ -32,11 +32,11 @@ It's widely used for developing software such as game engines, operating systems
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/polymorphism.md">Polymorphism</a>
 - <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/functionpointer.md">Function Pointer</a>
 - <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/CPP/inlinefunction.md">Inline function</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/hasaisa.md">Templates</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/inheritance.md">Exception Handling</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/template.md">Templates</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/exceptionhandling.md">Exception Handling</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/polymorphism.md">Polymorphism</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/execution.md">Execution</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/hasaisa.md">Concurrency</a>
+- <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/concurrency.md">Concurrency</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/multithreading.md">Multithreading</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/asyncfuture.md">Asynchronous Programming</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/singleton.md">Singleton</a>
