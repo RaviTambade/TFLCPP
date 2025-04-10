@@ -36,7 +36,6 @@ It's widely used for developing software such as game engines, operating systems
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/hasaisa.md">Templates</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/inheritance.md">Exception Handling</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/polymorphism.md">Polymorphism</a>
-
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/execution.md">Execution</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/hasaisa.md">Concurrency</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/multithreading.md">Multithreading</a>
@@ -45,5 +44,4 @@ It's widely used for developing software such as game engines, operating systems
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/modelviewarchitecture.md">Model View Architecture</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/polymorphism.md">Publisher Subscriber Model</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/polymorphism.md">Strategy Pattern</a>
-
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/polymorphism.md">RTTI</a>
