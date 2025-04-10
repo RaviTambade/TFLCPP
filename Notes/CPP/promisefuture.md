@@ -1,4 +1,131 @@
-# promise  and future  in C++ thread communication
+# Asynchronous Communication using promise and future  
+
+In modern C++, we use **`std::promise`** and **`std::future`** to handle **asynchronous programming**, where one thread produces a value and another waits for it.
+
+Let’s think in terms of **trade and currency**:
+
+---
+
+### 💱 **Analogy: Currency as a Promise**
+
+Imagine you're in a market:
+
+- A buyer wants to buy a product (the **value**).
+- But the product isn't ready yet — the seller says:  
+  *"I'll give it to you tomorrow."*
+
+To confirm this, the seller gives the buyer a **currency note** — a **promise**.
+
+> 💡 That currency doesn’t give you the product immediately,  
+> but it **guarantees** you will get the value later.
+
+---
+
+### 🤝 How this relates to C++:
+
+| Real-World Analogy     | C++ Concept                     |
+|------------------------|---------------------------------|
+| Seller                 | The **thread producing** the value |
+| Currency (Note)        | A **`std::promise`**             |
+| Buyer                  | The **thread waiting** for the value |
+| Future delivery        | A **`std::future`**              |
+| Product (actual item)  | The **result value**             |
+
+---
+
+### 🧪 Code Snippet (Currency Example in C++)
+
+```cpp
+#include <iostream>
+#include <thread>
+#include <future>
+using namespace std;
+
+void makePayment(std::promise<int> paymentPromise) {
+    // Simulate some delay (like product preparation)
+    this_thread::sleep_for(chrono::seconds(2));
+    paymentPromise.set_value(500);  // Set the promised value (currency)
+}
+
+int main() {
+    std::promise<int> promiseObj;        // The currency note (promise)
+    std::future<int> futureObj = promiseObj.get_future();  // Buyer holds the future
+
+    std::thread seller(makePayment, std::move(promiseObj)); // Seller prepares the value
+
+    cout << "Waiting for payment...\n";
+    int payment = futureObj.get();  // Buyer waits until value is available
+    cout << "Received payment: " << payment << " units.\n";
+
+    seller.join();
+    return 0;
+}
+```
+
+ ### 📌 Key Takeaways:
+
+- A **`promise`** is like a **guarantee** from one thread that it will deliver a value in the future.
+- A **`future`** is like the **receipt** the other thread holds to wait for and receive that value.
+- This model allows **asynchronous communication** between threads in a clean, safe way.
+
+
+### 🔧 Step-by-Step, Pizza Style:
+
+#### 🧾 1. Main Thread places an order:
+- The organizer (main thread) creates a **promise** with the pizza chef:
+  > “Here’s a ticket (future) for the customer. You’ll make the pizza (promise).”
+
+```cpp
+std::promise<Pizza> promise;
+std::future<Pizza> future = promise.get_future();
+```
+
+#### 🍽️ 2. The customer waits with their pizza ticket:
+- The customer (consumer thread) holds the `future` and says:
+  > “I’ll wait until the pizza is ready.”
+
+```cpp
+Pizza myPizza = future.get(); // This blocks until pizza is delivered
+```
+
+---
+
+#### 🍳 3. The chef starts preparing the pizza:
+- The chef (producer thread) does some work — maybe dough tossing, sauce spreading.
+
+```cpp
+promise.set_value(Pizza("Margherita"));
+```
+
+---
+
+#### 🛵 4. Once the pizza is ready, it's delivered!
+- When the chef calls `set_value()`, the pizza is delivered instantly to the customer.
+- The customer’s `.get()` call **unblocks**, and they eat the pizza.
+
+---
+
+### 💥 If something goes wrong…
+- If the oven catches fire 🔥, the chef can call `promise.set_exception()` instead of `set_value()`.
+- The customer’s `future.get()` will then throw an exception: “Pizza failed to arrive!”
+
+---
+
+### ✅ Summary Table:
+
+| Real Thing           | Analogy Element         |
+|----------------------|-------------------------|
+| `std::promise<T>`     | Chef's commitment to deliver pizza |
+| `std::future<T>`      | Pizza order receipt held by customer |
+| `set_value(value)`   | Pizza is delivered |
+| `get()`              | Customer waits and eats pizza |
+| `set_exception()`    | Pizza delivery failed (exception thrown) |
+
+---
+
+
+
+# promise  and future  Concept Visualization
 
 ```
         [ Main Thread ]
@@ -104,56 +231,3 @@ promise.set_value(42);
 
 ---
 
-### 🔧 Step-by-Step, Pizza Style:
-
-#### 🧾 1. Main Thread places an order:
-- The organizer (main thread) creates a **promise** with the pizza chef:
-  > “Here’s a ticket (future) for the customer. You’ll make the pizza (promise).”
-
-```cpp
-std::promise<Pizza> promise;
-std::future<Pizza> future = promise.get_future();
-```
-
-#### 🍽️ 2. The customer waits with their pizza ticket:
-- The customer (consumer thread) holds the `future` and says:
-  > “I’ll wait until the pizza is ready.”
-
-```cpp
-Pizza myPizza = future.get(); // This blocks until pizza is delivered
-```
-
----
-
-#### 🍳 3. The chef starts preparing the pizza:
-- The chef (producer thread) does some work — maybe dough tossing, sauce spreading.
-
-```cpp
-promise.set_value(Pizza("Margherita"));
-```
-
----
-
-#### 🛵 4. Once the pizza is ready, it's delivered!
-- When the chef calls `set_value()`, the pizza is delivered instantly to the customer.
-- The customer’s `.get()` call **unblocks**, and they eat the pizza.
-
----
-
-### 💥 If something goes wrong…
-- If the oven catches fire 🔥, the chef can call `promise.set_exception()` instead of `set_value()`.
-- The customer’s `future.get()` will then throw an exception: “Pizza failed to arrive!”
-
----
-
-### ✅ Summary Table:
-
-| Real Thing           | Analogy Element         |
-|----------------------|-------------------------|
-| `std::promise<T>`     | Chef's commitment to deliver pizza |
-| `std::future<T>`      | Pizza order receipt held by customer |
-| `set_value(value)`   | Pizza is delivered |
-| `get()`              | Customer waits and eats pizza |
-| `set_exception()`    | Pizza delivery failed (exception thrown) |
-
----
