@@ -31,7 +31,7 @@ It's widely used for developing software such as game engines, operating systems
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/inheritance.md">Inheritance</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/polymorphism.md">Polymorphism</a>
 - <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/C/functionpointer.md">Function Pointer</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/inlinefunction.md">Inline function</a>
+- <a href="https://github.com/RaviTambade/TFLCPP/blob/main/Notes/CPP/inlinefunction.md">Inline function</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/hasaisa.md">Templates</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/inheritance.md">Exception Handling</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/notes/CPP/polymorphism.md">Polymorphism</a>
