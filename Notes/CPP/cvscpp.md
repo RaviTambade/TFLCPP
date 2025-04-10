@@ -1,3 +1,5 @@
+# C vs. C++
+ 
 The difference between **C** and **C++** programming languages is quite significant, as **C++** was developed as an extension of **C** to provide additional features for object-oriented programming (OOP), among other enhancements. Here's a breakdown of the major differences between **C** and **C++**:
 
 ### 1. **Paradigm:**
