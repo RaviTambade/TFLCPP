@@ -41,6 +41,4 @@ It's widely used for developing software such as game engines, operating systems
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/asyncfuture.md">Asynchronous Programming</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/singleton.md">Singleton</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/modelview.md">Model View Architecture</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/polymorphism.md">Publisher Subscriber Model</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/strategy.md">Strategy Pattern</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/rtti.md">RTTI</a>
