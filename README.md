@@ -20,7 +20,6 @@ It's widely used for developing software such as game engines, operating systems
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/shallowdeep.md">Shallow Copy / Deep Copy</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/staticmembers.md">Static Members</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/constantfunction.md">constant Member Functions</a>
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/friendincpp.md">Friend in C++</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/operatoroverloading.md">Operator Overloading</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/hasaisa.md">Class Relationship</a>
 - <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/inheritance.md">Inheritance</a>
