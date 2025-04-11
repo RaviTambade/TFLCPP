@@ -1,8 +1,6 @@
 #ifndef MARKSHEET_H
 #define MARKSHEET_H
 
- 
-//
 
 //Header file
 class Marksheet
