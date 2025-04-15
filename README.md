@@ -49,6 +49,4 @@ If you're serious, I can guide you through a roadmap:
 
 <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/cpp.md">Essential C++</a>
 
-<p>Transflower</p>
-<p>Tap your potential</p>
-<p>Mentor as a Service</p>
+<a href="https://github.com/RaviTambade/tap"> Tap your potential</a>
