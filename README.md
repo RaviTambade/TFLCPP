@@ -47,8 +47,8 @@ If you're serious, I can guide you through a roadmap:
 - What projects you can do
 - How to prepare for interviews
 
-- <a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/cpp.md">Essential C++</a>
+<a href="https://github.com/RaviTambade/tflcpp/tree/main/Notes/CPP/cpp.md">Essential C++</a>
 
-- Transflower
-- Tap your potential.
-- Mentor as a Service.
+<p>Transflower</p>
+<p>Tap your potential</p>
+<p>Mentor as a Service</p>
