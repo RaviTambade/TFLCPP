@@ -40,7 +40,6 @@
 - Firmware Engineer  
 - Software Engineer (Performance/Infrastructure)
 
-
 ### 💡 Want a C/C++ Career Path?
 If you're serious, I can guide you through a roadmap:
 - What to learn
