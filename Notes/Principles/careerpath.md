@@ -1,4 +1,4 @@
-# job opportunities using C and C++
+# Job opportunities using C and C++
 
 **C and C++ still have strong job opportunities** in 2025 and beyond, especially in areas where **performance, hardware interaction, or system-level control** is critical.
 
