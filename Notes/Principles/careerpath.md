@@ -4,7 +4,7 @@
 
 ---
 
-## ✅ ** list of sectors where C/C++ skills are highly value**
+## ✅ List of sectors where C/C++ skills are highly value
  
 #### 🔧 **1. Embedded Systems / IoT**
 - Firmware development for microcontrollers (e.g., Arduino, STM32)
@@ -49,4 +49,4 @@ If you're serious, I can guide you through a roadmap:
 
 Transflower
 Tap your potential.
-Mentor as a Service
+Mentor as a Service.
