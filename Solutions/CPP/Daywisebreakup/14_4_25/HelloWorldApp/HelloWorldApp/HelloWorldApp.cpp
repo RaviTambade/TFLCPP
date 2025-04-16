@@ -11,11 +11,29 @@
 
 using namespace std;
 
+//Each class has its own responsibility
+
+//Product class represents a product in the store
+//ProductRepository class manages a collection of products
+//ProductService class handles business logic related to products
+//ProductController class manages the interaction between the ProductRepository and ProductService
+//UIManager class handles user interface interactions
+
+
+//Abstraction
+// 
+//Namespace to encapsulate the classes and avoid naming conflicts
+
 namespace Catalog {
 
 	class Product {
 
+
+	//Encapsulation
 	private:
+
+		//state
+		// Attributes of the Product class
 		int productId;
 		string title;
 		string description;
@@ -24,7 +42,10 @@ namespace Catalog {
 		double price;
 
 	public:
+		//Behavior
+		//Member functions
 
+		//constructors
 		Product(int id) : productId(id), quantity(0), price(0.0) {}
 
 		Product(int id, const string& t, const string& d, const string& c, int q, double p)
@@ -51,9 +72,12 @@ namespace Catalog {
 		double getPrice() const { return price; }
 		void setPrice(double p) { price = p; }
 
+
 		// Additional methods for calculating total price and discounted price
 		double getTotalPrice() const { return quantity * price; }
 		double getDiscountedPrice(double discount) const { return price - (price * discount / 100); }
+
+		//Presentation method to display product details
 
 		void display() const {
 			cout << "Product ID: " << productId << endl;
@@ -86,6 +110,7 @@ namespace Catalog {
 
 		void addProduct(Product* product) {
 			if (productCount < 100) {
+				cout << "product count" << productCount<<endl;
 				products[productCount++] = product;
 			}
 			else {
@@ -203,10 +228,12 @@ namespace Catalog {
 
 		// This class acts as a controller to manage the interaction between the ProductRepository and ProductService
 	private:
+		//state
 		ProductRepository& repo;
 		ProductService& service;
 
 	public:
+		//behavior
 
 		ProductController(ProductRepository& r, ProductService& s) : repo(r), service(s) {}
 
@@ -258,6 +285,7 @@ namespace Catalog {
 		// This class can be used to manage the user interface
 		// For simplicity, we are not implementing a UI in this example
 	public:
+
 		void displayWelcomeMessage() {
 			std::cout << "Welcome to Transflower Store!" << std::endl;
 		}
