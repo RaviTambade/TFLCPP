@@ -58,7 +58,7 @@ int main()
 		delete repo.getProduct(i); // Delete each product in the repository
 	}
 	*/
-	// Load products from file
+
 	std::string filename = "products.txt";
 	std::vector<Product> products;
 
