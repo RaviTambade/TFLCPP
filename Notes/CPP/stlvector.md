@@ -1,4 +1,6 @@
-In C++, a **`vector`** is a part of the Standard Template Library (STL) and is one of the most commonly used **sequence containers**. It functions like a **dynamic array** that can **automatically resize** itself when elements are added or removed.
+# `vector` in C++
+
+vector is a part of the Standard Template Library (STL) and is one of the most commonly used **sequence containers**. It functions like a **dynamic array** that can **automatically resize** itself when elements are added or removed.
 
 ### Key Features of `vector`:
 - **Dynamic resizing**: Unlike regular arrays, vectors grow or shrink as needed.

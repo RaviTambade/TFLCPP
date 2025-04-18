@@ -1,4 +1,4 @@
-Absolutely! Here's a simple and clean set of notes to help you understand the **Standard Template Library (STL)** in C++.
+#Standard Template Library (STL)
 
 ---
 

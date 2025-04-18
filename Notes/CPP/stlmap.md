@@ -1,5 +1,4 @@
-Great! Let’s dive into **`map`** in C++ STL — one of the most powerful associative containers.
-
+# map
 ---
 
 ## 🗺️ What is `map` in C++ STL?

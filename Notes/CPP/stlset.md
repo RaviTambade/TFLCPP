@@ -1,4 +1,5 @@
-Awesome! Let's talk about **`set`** in C++ STL — a super useful container when you want to store **unique** elements in **sorted order**.
+# set  in C++ STL
+set is  a super useful container when you want to store **unique** elements in **sorted order**.
 
 ---
 
@@ -102,4 +103,3 @@ set<int, greater<int>> s;
 | Time Complexity| 🔁 O(log n) for insert/find/erase |
 
 ---
-
