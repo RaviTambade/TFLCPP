@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
 #include "Product.h"
 #include "ProductRepository.h"
 #include "ProductService.h"
@@ -63,13 +62,15 @@ int main()
 	std::vector<Product> products;
 
 	Product newProduct1(1, "Gerbera", "Wedding Flower", "Flower", 8, 15.99);
-	ProductIOManager::addProduct(products, newProduct1);
 	Product newProduct2(2, "Rose", "Valentine Flower", "Flower", 8, 15.99);
-	ProductIOManager::addProduct(products, newProduct2);
 	Product newProduct3(3, "Lotus", "Worship Flower", "Flower", 8, 15.99);
-	ProductIOManager::addProduct(products, newProduct3);
 	Product newProduct4(4, "Jasmine", "Semlling Flower", "Flower", 8, 15.99);
+
+	ProductIOManager::addProduct(products, newProduct1);
+	ProductIOManager::addProduct(products, newProduct2);
+	ProductIOManager::addProduct(products, newProduct3);
 	ProductIOManager::addProduct(products, newProduct4);
+	
 	// Display products
 	ProductIOManager::displayProducts(products);
 

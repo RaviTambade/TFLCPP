@@ -6,12 +6,7 @@
 using namespace std;
 #include "Product.h"
 
-//Here is the ProductIOManager class that handles file operations for products:
-// This class is responsible for
-/*saving, loading, displaying, adding, removing, and updating products in a file.*/
 
-// It provides static methods to perform these operations, 
-// //making it easy to manage product data.
 class ProductIOManager
 {
 public:

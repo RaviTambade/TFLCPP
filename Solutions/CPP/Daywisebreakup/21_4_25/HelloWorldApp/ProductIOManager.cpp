@@ -32,8 +32,6 @@ void ProductIOManager::saveProductsToFile(const std::string& filename, const std
 
 // Load products from a file
 std::vector<Product> ProductIOManager::loadProductsFromFile(const std::string& filename) {
-
-
 	std::vector<Product> products;
 	// Open the file in read mode
 	std::ifstream file(filename);
