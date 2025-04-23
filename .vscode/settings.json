@@ -137,6 +137,17 @@
     "coroutine": "cpp",
     "resumable": "cpp",
     "iomanip": "cpp",
-    "queue": "cpp"
+    "queue": "cpp",
+    "*.tcc": "cpp",
+    "cstdarg": "cpp",
+    "cwctype": "cpp",
+    "memory_resource": "cpp",
+    "numeric": "cpp",
+    "string_view": "cpp",
+    "numbers": "cpp",
+    "semaphore": "cpp",
+    "span": "cpp",
+    "text_encoding": "cpp",
+    "variant": "cpp"
   }
 }
