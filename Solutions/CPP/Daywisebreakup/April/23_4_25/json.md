@@ -158,3 +158,54 @@ No escaping `\n`, `\"`, etc.
 
 So, `R"(...)"` just makes your life easier when dealing with complex strings — like JSON in your case.
 
+
+
+Awesome question! Let's break this down 👇
+
+---
+
+## 📄 Why is the external library file named `.hpp` instead of `.h`?
+
+### 🔹 `.hpp` = C++ Header File  
+It stands for **Header Plus Plus**. It’s just a convention that means:
+
+> "This header is meant to be used in C++, not in plain C."
+
+---
+
+## 🔍 Difference Between `.h` and `.hpp`
+
+| Feature                | `.h`                        | `.hpp`                         |
+|------------------------|-----------------------------|--------------------------------|
+| Language               | Mostly for C                | Specifically for C++          |
+| Usage                  | Functions, structs          | Classes, templates, namespaces |
+| Can use C++ features   | ❌ Not guaranteed            | ✅ Yes, like `namespace`, `template`, `class`, etc. |
+| Convention             | C-style libraries           | C++-style libraries            |
+
+---
+
+## 🧠 Why does `nlohmann/json` use `.hpp`?
+
+Because it's a **header-only, template-based C++ library**, which uses:
+
+- `class`, `struct`, `template`
+- `namespace nlohmann`
+- operator overloading
+- and more C++-only features
+
+So `.hpp` makes it clear:  
+🗣️ “Hey! This header is not C-compatible, it's meant for **C++** only.”
+
+---
+
+## ✅ How to Use `.hpp` Files?
+
+Same as `.h`:
+
+```cpp
+#include "json.hpp"
+```
+
+> The compiler doesn’t care much about the extension — it’s mostly for **humans** and **code editors**.
+
+---
