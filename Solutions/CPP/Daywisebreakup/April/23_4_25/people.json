@@ -1,0 +1,6 @@
+{"Architect": {"age": 22,"name": "Nikita","score": 44.5},
+ "Mentor": {"age": 40,"name": "Ravi", "score": 44.5},
+ "Developer": {"age": 22, "name": "Sarthak","score": 87.5},
+ "Manager": { "age": 22, "name": "Kajal", "score": 88.5}
+}
+  

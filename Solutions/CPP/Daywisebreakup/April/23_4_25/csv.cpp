@@ -3,8 +3,9 @@
 #include <sstream>
 #include <string>
 #include <vector>
-
 using namespace std;
+
+
 
 class Person {
 public:
@@ -21,7 +22,7 @@ public:
 
 int main() {
 
-    std::ifstream file("people.csv");
+    std::ifstream file("mentors.csv");
     if (!file.is_open()) {
         std::cerr << "Failed to open file!" << std::endl;
         return 1;
@@ -40,6 +41,7 @@ int main() {
 
         //use operator>> to read from the stream
         // Note: This assumes the CSV format is correct and does not handle commas in names or other complexities.
+       
         iss >> age >> name >> gpa;
         people.emplace_back(age, name, gpa); // directly create and add Person
     }
