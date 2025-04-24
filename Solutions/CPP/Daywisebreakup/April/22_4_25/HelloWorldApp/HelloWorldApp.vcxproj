@@ -130,6 +130,7 @@
     <ClCompile Include="Customer.cpp" />
     <ClCompile Include="CustomersController.cpp" />
     <ClCompile Include="ProductBinaryIOManger.cpp" />
+    <ClCompile Include="ProductCSVIOManager.cpp" />
     <ClCompile Include="ProductJSONIOManager.cpp" />
     <ClCompile Include="ProductTextIOManager.cpp" />
     <ClCompile Include="ProductsController.cpp" />
@@ -145,6 +146,7 @@
     <ClInclude Include="IPersistManager.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="ProductBinaryIOManger.h" />
+    <ClInclude Include="ProductCSVIOManager.h" />
     <ClInclude Include="ProductJSONIOManager.h" />
     <ClInclude Include="ProductTextIOManager.h" />
     <ClInclude Include="ProductRepository.h" />

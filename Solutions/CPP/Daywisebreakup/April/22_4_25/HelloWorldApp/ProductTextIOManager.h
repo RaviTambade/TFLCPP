@@ -15,6 +15,7 @@ class ProductTextIOManager :public IPersistManager
 public:
 	  std::vector<Product> loadProducts() override; // Pure virtual function for loading products from a file
 	  void saveProducts(const std::vector<Product>& products) override;
+	
 	  void displayProducts(const std::vector<Product>& products) override ;
 	  void addProduct(std::vector<Product>& products, const Product& product) override;
 	  void removeProduct(std::vector<Product>& products, int productId) override;

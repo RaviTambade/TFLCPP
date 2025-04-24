@@ -84,6 +84,9 @@
     <ClCompile Include="ProductJSONIOManager.cpp">
       <Filter>Source Files\Helpers</Filter>
     </ClCompile>
+    <ClCompile Include="ProductCSVIOManager.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ProductsController.h">
@@ -117,6 +120,9 @@
       <Filter>Header Files\Helpers</Filter>
     </ClInclude>
     <ClInclude Include="ProductJSONIOManager.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="ProductCSVIOManager.h">
       <Filter>Header Files\Helpers</Filter>
     </ClInclude>
   </ItemGroup>
