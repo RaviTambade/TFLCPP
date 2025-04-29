@@ -1,4 +1,32 @@
-# 🎯 What is **Casting** in C++?
+# 🎯 What is Typecasting?
+
+**Type casting** means **converting a variable from one data type to another**.
+
+> You're telling the compiler:  
+> “Treat this value as if it belongs to a different type.”
+
+### 🔄 Example (Basic)
+
+```cpp
+int a = 10;
+float b = (float)a;       // C-style cast
+float c = static_cast<float>(a);  // C++-style cast
+```
+
+Here, you're **casting** an `int` into a `float`.
+
+---
+
+### 🔢 Why is it needed?
+
+- To perform calculations with **mixed types** (`int + float`)
+- To access different **object layers** in inheritance
+- To work with **pointers** and **low-level memory**
+- To **enforce a specific type interpretation**
+
+
+ **Type casting** changes how a value is **interpreted or treated** in memory and type system.
+
 
 **Casting** in C++ means **explicitly converting** a value **from one type to another**.
 
