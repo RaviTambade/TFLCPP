@@ -57,8 +57,6 @@ C++ gives you **different ways** of casting:
 
 *(You asked earlier about `static`, `dynamic`, `reinterpret`; there is also `const_cast`.)*
 
-
-
 # 🔵 Real-world simple analogy:
 
 > **Casting** is like saying:  

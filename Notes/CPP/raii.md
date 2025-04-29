@@ -1,4 +1,6 @@
-Great question! In C++, **RAII** (Resource Acquisition Is Initialization) is a design principle that ties **resource management** to **object lifetime**. It helps avoid resource leaks and ensures proper cleanup.
+# Resource Acquisition Is Initialization (RAII)
+
+ In C++, **RAII** (Resource Acquisition Is Initialization) is a design principle that ties **resource management** to **object lifetime**. It helps avoid resource leaks and ensures proper cleanup.
 
 ### 📌 Basic Idea:
 **Acquire the resource in the constructor, and release it in the destructor.**
@@ -58,6 +60,4 @@ public:
 };
 ```
 
----
-
-Let me know if you’d like a RAII example for memory management or mutex locking too!
+-
