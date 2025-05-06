@@ -7,14 +7,14 @@
 
 #pragma once
 
+//Concrete class for Product Persistence Manager
+
 class ProductBinaryIOManager : public IPersistManager
 {
 public:
 	void saveProducts(const std::vector<Product>& products) override;
 	std::vector<Product> loadProducts() override;
-
 	void displayProducts(const std::vector<Product>& products) override;
-
 	void addProduct(std::vector<Product>& products, const Product& product) override;
 	void removeProduct(std::vector<Product>& products, int productId) override;
 	void updateProduct(std::vector<Product>& products, const Product& updatedProduct) override;

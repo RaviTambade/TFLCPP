@@ -100,6 +100,7 @@ ProductRepository::~ProductRepository() {
 		// Save products to file using ProductIOManager
 		//create derived class and point to base class
 		IPersistManager* ptrMgr = new ProductTextIOManager();
+		
 		ptrMgr->saveProducts(tempProducts);   //Polymorphism 
 	}
 

@@ -1,22 +1,21 @@
-#pragma once
+#include "Product.h"
 #include <iostream>
 #include <string>
 #include <vector>
 #include <fstream>
-#include  "IPersistManager.h"
+#include "IPersistManager.h"
 
-using namespace std;
-#include "Product.h"
 #pragma once
 
-class ProductCSVIOManager :public IPersistManager
+class ProductBinaryIOManager : public IPersistManager
 {
 public:
-	std::vector<Product> loadProducts() override; // Pure virtual function for loading products from a file
-	//Overridable functions
 	void saveProducts(const std::vector<Product>& products) override;
+	std::vector<Product> loadProducts() override;
+
 	void displayProducts(const std::vector<Product>& products) override;
+
 	void addProduct(std::vector<Product>& products, const Product& product) override;
 	void removeProduct(std::vector<Product>& products, int productId) override;
-	void updateProduct(std::vector<Product>& products, const Product& updatedProduct)override;
+	void updateProduct(std::vector<Product>& products, const Product& updatedProduct) override;
 };
