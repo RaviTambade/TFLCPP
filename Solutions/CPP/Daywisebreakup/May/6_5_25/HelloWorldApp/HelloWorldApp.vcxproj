@@ -131,6 +131,7 @@
     <ClCompile Include="CustomerBinaryIOManager.cpp" />
     <ClCompile Include="CustomerRepository.cpp" />
     <ClCompile Include="CustomersController.cpp" />
+    <ClCompile Include="GUIManager.cpp" />
     <ClCompile Include="ProductBinaryIOManger.cpp" />
     <ClCompile Include="ProductCSVIOManager.cpp" />
     <ClCompile Include="ProductJSONIOManager.cpp" />
@@ -140,16 +141,19 @@
     <ClCompile Include="Product.cpp" />
     <ClCompile Include="ProductRepository.cpp" />
     <ClCompile Include="ProductService.cpp" />
-    <ClCompile Include="UIManager.cpp" />
+    <ClCompile Include="CUIManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Customer.h" />
     <ClInclude Include="CustomerBinaryIOManager.h" />
     <ClInclude Include="CustomerRepository.h" />
     <ClInclude Include="CustomersController.h" />
+    <ClInclude Include="GUIManager.h" />
     <ClInclude Include="ICustomerPersistManager.h" />
     <ClInclude Include="ICustomerRepository.h" />
     <ClInclude Include="IPersistManager.h" />
+    <ClInclude Include="IProductService.h" />
+    <ClInclude Include="IUIManager.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="ProductBinaryIOManger.h" />
     <ClInclude Include="ProductCSVIOManager.h" />
@@ -158,7 +162,10 @@
     <ClInclude Include="ProductRepository.h" />
     <ClInclude Include="ProductsController.h" />
     <ClInclude Include="ProductService.h" />
-    <ClInclude Include="UIManager.h" />
+    <ClInclude Include="CUIManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

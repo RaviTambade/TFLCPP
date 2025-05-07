@@ -77,7 +77,7 @@ void ProductBinaryIOManager::removeProduct(std::vector<Product>& products, int p
 
 void ProductBinaryIOManager::updateProduct(std::vector<Product>& products, const Product& updatedProduct) {
 	auto it = std::find_if(products.begin(), products.end(),
-		[updatedProduct]( Product& product)
+		[updatedProduct](const Product& product)
 		{ return product.getProductId() == updatedProduct.getProductId(); });
 	if (it != products.end()) {
 		*it = updatedProduct;

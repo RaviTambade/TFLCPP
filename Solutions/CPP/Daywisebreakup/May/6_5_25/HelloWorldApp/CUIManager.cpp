@@ -8,38 +8,38 @@
 using namespace std;
 
  
-	void UIManager::displayWelcomeMessage() {
+	void CUIManager::displayWelcomeMessage() {
 		std::cout << "Welcome to Transflower Store!" << std::endl;
 	}
-	void UIManager::displayGoodbyeMessage() {
+	void CUIManager::displayGoodbyeMessage() {
 		std::cout << "Thank you for visiting Transflower Store!" << std::endl;
 	}
-	void UIManager::displayErrorMessage(const std::string& message) {
+	void CUIManager::displayErrorMessage(const std::string& message) {
 		std::cout << "Error: " << message << std::endl;
 	}
-	void UIManager::displaySuccessMessage(const std::string& message) {
+	void CUIManager::displaySuccessMessage(const std::string& message) {
 		std::cout << "Success: " << message << std::endl;
 	}
 
 
-	void UIManager::displayProductDetails(const Product& product) {
+	void CUIManager::displayProductDetails(const Product& product) {
 		product.display();
 	}
 
-	void UIManager::displayProducts(const ProductRepository& repo) {
+	void CUIManager::displayProducts(const ProductRepository& repo) {
 		repo.displayProducts();
 	}
 
-	void UIManager::displayProductNotFound() {
+	void CUIManager::displayProductNotFound() {
 		std::cout << "Product not found!" << std::endl;
 	}
 
-	void UIManager::displayProductAdded() {
+	void UCIManager::displayProductAdded() {
 		std::cout << "Product added successfully!" << std::endl;
 	}
 
 
-	void UIManager::displayMenu() {
+	void CUIManager::displayMenu() {
 		std::cout << "1. Add Product" << std::endl;
 		std::cout << "2. Update Product" << std::endl;
 		std::cout << "3. Remove Product" << std::endl;
@@ -51,7 +51,7 @@ using namespace std;
 		std::cout << "9. Add To File" << std::endl;
 	}
 
-	void UIManager::getProductDetails(int& id, string& title, string& description, string& category, int& quantity, double& price) {
+	void CUIManager::getProductDetails(int& id, string& title, string& description, string& category, int& quantity, double& price) {
 		std::cout << "Enter Product ID: ";
 		std::cin >> id;
 		std::cout << "Enter Title: ";
@@ -67,7 +67,7 @@ using namespace std;
 		std::cin >> price;
 	}
 
-	void UIManager::getDiscountDetails(int& productId, double& discount) {
+	void CUIManager::getDiscountDetails(int& productId, double& discount) {
 		std::cout << "Enter Product ID: ";
 		std::cin >> productId;
 		std::cout << "Enter Discount Percentage: ";
@@ -75,7 +75,7 @@ using namespace std;
 	}
 
 
-	void UIManager::getProductId(int& productId) {
+	void CUIManager::getProductId(int& productId) {
 		std::cout << "Enter Product ID: ";
 		std::cin >> productId;
 	}
@@ -87,13 +87,13 @@ using namespace std;
 	}
 
 
-	void UIManager::getProductTitle(string& title) {
+	void CUIManager::getProductTitle(string& title) {
 		std::cout << "Enter Product Title: ";
 		std::cin.ignore();
 		std::getline(std::cin, title);
 	}
 
-	void UIManager::handleUserInput(ProductsController& controller) {
+	void CUIManager::handleUserInput(ProductsController& controller) {
 		int choice;
 		do {
 			displayMenu();
@@ -167,9 +167,6 @@ using namespace std;
 				std::cout << "Invalid choice! Please try again." << std::endl;
 			}
 		} while (choice != 8);
-
-		
-
 	}
 
  

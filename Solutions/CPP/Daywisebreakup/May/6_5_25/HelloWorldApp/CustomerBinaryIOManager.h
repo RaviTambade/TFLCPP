@@ -4,9 +4,7 @@
 #include <vector>
 #include <fstream>
 #include "ICustomerPersistManager.h"
-
 #pragma once
-
 class CustomerBinaryIOManager : public ICustomerPersistManager
 {
 public:

@@ -7,7 +7,7 @@
 #include "ProductService.h"
 
 using namespace std;
-class UIManager{
+class CUIManager{
 
 	public:
 

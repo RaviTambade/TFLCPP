@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
  #include "Product.h"
+#include "IProductService.h"
 #include "ProductRepository.h"	
  
 
@@ -12,17 +13,17 @@ class ProductRepository;
 
 using namespace std;
 #pragma once
-class ProductService {
+class ProductService:IProductService {
 
 private:
 	ProductRepository& repo; 
 
 public:
 	ProductService(ProductRepository& r);
-	void applyDiscount(int productId, double discount);
-	void calculateTotalPrice(int productId);
-	void searchProductByTitle(const std::string& title);
-	void saveProducts();
+	void applyDiscount(int productId, double discount) override;
+	void calculateTotalPrice(int productId) override;
+	void searchProductByTitle(const std::string& title) override;
+	void saveProducts() override;
 };
 
 

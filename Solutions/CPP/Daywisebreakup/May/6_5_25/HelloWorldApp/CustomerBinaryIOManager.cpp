@@ -8,7 +8,6 @@
 #include <string>
 
 using namespace std;
-
 void CustomerBinaryIOManager::saveCustomers(const std::vector<Customer>& Customers) {
 	std::string filename = "Customers.dat";
 	std::ofstream ofs(filename, std::ios::binary);
@@ -30,16 +29,12 @@ void CustomerBinaryIOManager::saveCustomers(const std::vector<Customer>& Custome
 
 
 std::vector<Customer> CustomerBinaryIOManager::loadCustomers() {
-
 	std::string filename = "customers.dat";
-
 	std::ifstream ifs(filename, std::ios::binary);
-
 	if (!ifs) {
 		std::cerr << "Failed to open file for reading: " << filename << "\n";
 		return {};
 	}
-
 	size_t size;
 	ifs.read(reinterpret_cast<char*>(&size), sizeof(size));
 

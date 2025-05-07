@@ -79,6 +79,12 @@
     <Filter Include="Header Files\Repositories\Product">
       <UniqueIdentifier>{54cc389c-8fc4-419f-87ca-ab65a543d15d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Services\Customer">
+      <UniqueIdentifier>{dbaab36b-89d6-4af6-b979-ea9ed60e2489}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Services\Product">
+      <UniqueIdentifier>{4f1abe97-da84-4396-98ec-9e8d2413aca1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -90,7 +96,7 @@
     <ClCompile Include="Product.cpp">
       <Filter>Source Files\Entities</Filter>
     </ClCompile>
-    <ClCompile Include="UIManager.cpp">
+    <ClCompile Include="CUIManager.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
     <ClCompile Include="CustomersController.cpp">
@@ -123,6 +129,9 @@
     <ClCompile Include="CustomerRepository.cpp">
       <Filter>Source Files\Repositories\Customer</Filter>
     </ClCompile>
+    <ClCompile Include="GUIManager.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ProductsController.h">
@@ -131,11 +140,8 @@
     <ClInclude Include="Product.h">
       <Filter>Header Files\Entities</Filter>
     </ClInclude>
-    <ClInclude Include="UIManager.h">
+    <ClInclude Include="CUIManager.h">
       <Filter>Header Files\UI</Filter>
-    </ClInclude>
-    <ClInclude Include="ProductService.h">
-      <Filter>Header Files\Services</Filter>
     </ClInclude>
     <ClInclude Include="CustomersController.h">
       <Filter>Header Files\Controllers</Filter>
@@ -173,5 +179,20 @@
     <ClInclude Include="ICustomerRepository.h">
       <Filter>Header Files\Repositories\Customer</Filter>
     </ClInclude>
+    <ClInclude Include="IProductService.h">
+      <Filter>Header Files\Services\Product</Filter>
+    </ClInclude>
+    <ClInclude Include="ProductService.h">
+      <Filter>Header Files\Services\Product</Filter>
+    </ClInclude>
+    <ClInclude Include="IUIManager.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIManager.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>
