@@ -5,9 +5,6 @@
 #include <string>
 #include "Product.h"
  
-
- 
-
 using namespace std;
 #pragma once
 class IProductService {

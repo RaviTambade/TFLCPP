@@ -75,7 +75,7 @@ void GUIManager::getProductId(int& productId) {
 }
 
 
-void UIManager::getProductIndex(int& index) {
+void GUIManager::getProductIndex(int& index) {
 	std::cout << "Enter Product Index: ";
 	std::cin >> index;
 }

@@ -25,8 +25,8 @@ public:
 	virtual void getProductDetails(int& id, string& title, string& description, string& category, int& quantity, double& price)=0;
 	virtual void getDiscountDetails(int& productId, double& discount)=0;
 
-	void getProductId(int& productId);
-	void getProductIndex(int& index);
-	void getProductTitle(string& title);
-	void handleUserInput(ProductsController& controller);
+	virtual void getProductId(int& productId);
+	virtual void getProductIndex(int& index);
+	virtual void getProductTitle(string& title);
+	virtual void handleUserInput(ProductsController& controller);
 };
