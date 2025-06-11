@@ -14,7 +14,8 @@ That “something” was brought to life with **C++** — a language that taught
 
 In a world full of modern high-level languages, C++ stands as a **foundation** that many great technologies are still built on.
 
-Here’s what makes C++ timeless and powerful:
+
+ ### wWhat makes C++ timeless and powerful:
 
 🧠 **Deep Understanding**: Grasp how memory, CPU, and OS interact with your code
 ⚙️ **Performance**: Write fast, efficient code used in games, embedded systems, and real-time applications
