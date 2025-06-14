@@ -1,8 +1,5 @@
-Certainly! Let me explain your **TCP server program** in the style of a **mentor's storytelling journey**, the way we would teach at **Transflower Learning** — with real-world metaphors and a guiding voice to help students feel confident, curious, and creative.
 
----
-
-## 🌱 **Transflower TCP Server: A Mentor’s Storytelling Guide**
+## 🌱 **Transflower TCP Server**
 
 > *"Every computer has a voice. But it takes a socket to let it speak to others."*
 
@@ -194,11 +191,11 @@ Absolutely! Let’s now shift from the **server’s reception desk** to the stor
 
 ---
 
-## 🌍 **The TCP Client: A Story of a Friendly Visit**
+## 🌍 **Transflower TCP Client**: A Story of a Friendly Visit**
 
 > *“If a server is the home, then the client is the visitor who knocks on the door and starts the conversation.”*
 
-Let’s walk through the code as if we are mentoring a student named **Riya**, who’s curious about how her C++ application can **connect to a remote computer using Winsock**.
+Let’s walk through the code as if we are mentoring a student named **Sanika**, who’s curious about how her C++ application can **connect to a remote computer using Winsock**.
 
 ---
 
@@ -211,7 +208,7 @@ int iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
 
 🎙️ *Mentor’s Voice*:
 
-> Riya, before you can send a message or visit someone’s digital home (the server), you must **switch on your communication device**.
+> Sanika, before you can send a message or visit someone’s digital home (the server), you must **switch on your communication device**.
 > That’s what `WSAStartup()` does — it powers up Windows Sockets so your program can talk on the network.
 
 ---
@@ -344,7 +341,7 @@ std::cin >> a;
 🎙️ *Mentor’s Voice*:
 
 > A little trick to **pause the console** so you can see the output.
-> It's like saying: “Riya, don't close the window yet — reflect on what just happened!”
+> It's like saying: “Sanika, don't close the window yet — reflect on what just happened!”
 
 ---
 
@@ -374,4 +371,4 @@ Would you like the **next part of the story**?
 * Running client and server on different machines
 * Visual diagrams of TCP connection flow?
 
-Just say the word, Riya 😊
+Just say the word, Sanika 😊
