@@ -1,8 +1,4 @@
-Certainly! Here's your content transformed into a **mentor storytelling style** to engage students while explaining the concept of **Debugging in Programming**:
-
----
-
-## 🧭 Mentor's Story: *“The Detective Inside Every Programmer”*
+## “The Detective Inside Every Programmer”
 
 *"Class, gather around! Today, I’m not going to teach you a new syntax or a keyword... Today, I want to awaken the detective inside you."*
 
@@ -10,7 +6,6 @@ You see, **debugging** isn’t just a technical task. It’s a mindset. A craft.
 
 Let me tell you a little story…
 
----
 
 ### 🧩 Act 1: The Unexpected Crash
 
@@ -27,7 +22,6 @@ But his mentor smiled and said,
 
 > *"Bugs are not mistakes… they are **clues**. And you, my dear Aarav, must become the detective."*
 
----
 
 ### 🔍 Act 2: Identifying the Problem
 
@@ -39,7 +33,6 @@ The mentor taught Aarav:
 
 And so Aarav learned to **read the signs** — the error messages, the warnings, or the strange outputs.
 
----
 
 ### 🧪 Act 3: Reproducing the Bug
 
@@ -52,7 +45,6 @@ The mentor smiled again,
 
 So Aarav tried the same inputs. Same steps. Over and over. Until the bug showed itself.
 
----
 
 ### 🧠 Act 4: Isolating the Culprit
 
@@ -66,7 +58,6 @@ How?
 
 And there it was: a divide-by-zero!
 
----
 
 ### 🔧 Act 5: Fixing the Bug
 
