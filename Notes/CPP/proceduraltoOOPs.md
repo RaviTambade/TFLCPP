@@ -1,5 +1,5 @@
 
-## From Procedural to Object-Oriented Thinking
+# From Procedural to Object-Oriented Thinking
 
 > *"Every great journey begins with the same question: not *how*, but *who* will do it."* — Ravi Tambade
 
@@ -70,7 +70,7 @@ Let me know. I'd love to help you preserve and expand this goldmine of wisdom fo
 
 Here are **proper, structured classroom notes** based on your session — cleaned up, organized, and written with clarity for student reference.
 
-# 🧑‍🏫 **TFL Classroom Notes**
+# **TFL Classroom Notes**
 
 ## 💻 From C to C++: Building Scalable Applications with Database using Procedural & OOP Approach
 
