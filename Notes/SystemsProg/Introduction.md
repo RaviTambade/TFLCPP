@@ -6,8 +6,6 @@ Let me take you through a journey — a journey every aspiring engineer must wal
 
 This isn’t just theory. It’s a **story of systems programming** — from the keyboard you type on, to the memory blocks your program resides in, and finally to the blinking cursor waiting for your next instruction.
 
-
-
 ## 📘 **What is Systems Programming, Really?**
 
 **Systems programming** is the *infrastructure layer* of software development — the backbone of everything you see on your screen.
@@ -90,8 +88,6 @@ Writing device drivers means understanding how data travels — from your mouse 
 
 > *Drivers made me appreciate the fact that every “click” is a small miracle of coordination.*
 
- 
-
 ### 10. 🧩 **Operating System – The Ultimate Project**
 
 And finally, the OS — the grand conductor of all components.
@@ -99,8 +95,6 @@ And finally, the OS — the grand conductor of all components.
 From early batch processors to today’s multitasking, real-time, virtualized OSes — operating systems manage **CPU time, memory, devices, users, and security**.
 
 > *If you truly want to grow as a systems thinker, understand the OS — it’s the most complex, beautiful piece of software ever built.*
-
- 
 
 ## 🔁 **How It All Connects: Systems Programming Workflow**
 
@@ -113,8 +107,6 @@ From early batch processors to today’s multitasking, real-time, virtualized OS
 6. Debugger          → Diagnose issues
 7. Device Drivers    → Enable hardware interaction
 ```
-
- 
 
 ## 🎓 **Final Words: Why It Still Matters**
 
@@ -130,11 +122,8 @@ Systems Programming gives you:
 * A deep respect for memory, processes, and architecture
 * And most importantly, a **sense of wonder** for how things truly work
 
- 
 
 So the next time you run a program or install an app, pause for a moment and smile —
 
 Because beneath that click…
 …a symphony of systems programming just played its tune.
-
- 
