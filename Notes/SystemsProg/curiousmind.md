@@ -1,4 +1,5 @@
-# Questions That Got Me Kicked Out of Class — But Taught Me Real Engineering
+# Questions That Got Me Kicked Out of Class —
+## ...But Taught Me Real Engineering
 
 ### *A Mentor's Story of Curiosity, Conflict & Core Computing*
 
