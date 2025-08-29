@@ -13,10 +13,7 @@ using namespace httplib;
 int main() {
     Server svr;
 
-
- 
-
-    svr.Get("/api/products", [](const Request &req, Response &res) {
+     svr.Get("/api/products", [](const Request &req, Response &res) {
         
        // IProductRepository * repository = new ProductRepository();
        // IProductService * service = new ProductService(repository);
