@@ -25,7 +25,6 @@ cpp-rest-crud/
 
 This project is a **C++ REST API implementing CRUD operations** using the `httplib.h` (a lightweight HTTP server library).
 
-
 ### 🔑 Components Explained
 
 1. **Entities (`entities/`)**
@@ -75,9 +74,7 @@ This project is a **C++ REST API implementing CRUD operations** using the `httpl
 5. Response serialized to JSON (likely using `nlohmann/json.hpp`).
 6. Sent back to client as HTTP response.
 
-
 ## main.cpp code Explaination
-
 
 ### 1. **Includes**
 
@@ -208,7 +205,7 @@ svr.Put(R"(/api/customers/(\d+))", [](const Request &req, Response &res) {
 * Extracts ID from URL (`req.matches[1]`).
 * Responds `"updated Customer"`.
 
----
+
 
 ### 7. **DELETE /api/customers/{id}**
 
