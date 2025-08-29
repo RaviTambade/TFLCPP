@@ -1,10 +1,9 @@
 #include <stdio.h>
 
-void 
 int main(){
-    int count;
-    count=56;
-    count=count+1;
-    count ++;
-    printf("Count =%d",count);
+    printf("Welcome to Sahakar Nagar");
+    return 0;
 }
+
+
+//gcc

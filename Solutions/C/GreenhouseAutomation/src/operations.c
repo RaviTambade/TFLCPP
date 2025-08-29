@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 #include "../include/datetime.h"
 #include "../include/climate.h"
 #include "../include/operations.h"
