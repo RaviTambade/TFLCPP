@@ -1,13 +1,10 @@
-Here's a **step-by-step guide** to building a **simplified C++ REST API CRUD application** and **containerizing** it using **Docker**.
-
-We'll use:
+# **step-by-step guide** to building a **simplified C++ REST API CRUD application**
 
 * **C++ REST SDK (Casablanca)** for the REST API.
 * **CMake** as the build tool.
 * **Docker** for containerization.
 * **In-memory data (e.g., `std::map`)** for simplicity.
 
----
 
 ## 🧱 Step 1: Set Up Your C++ Project
 
@@ -20,7 +17,6 @@ CppRestApiCrud/
 └── Dockerfile
 ```
 
----
 
 ## 📄 Step 2: Write Your C++ REST API (main.cpp)
 
@@ -100,8 +96,6 @@ int main() {
 }
 ```
 
----
-
 ## ⚙️ Step 3: CMake Configuration (CMakeLists.txt)
 
 ```cmake
@@ -115,8 +109,6 @@ find_package(cpprestsdk REQUIRED)
 add_executable(server main.cpp)
 target_link_libraries(server PRIVATE cpprestsdk::cpprest)
 ```
-
----
 
 ## 🐳 Step 4: Dockerfile
 
@@ -135,8 +127,6 @@ EXPOSE 8080
 CMD ["./server"]
 ```
 
----
-
 ## 🚀 Step 5: Build and Run with Docker
 
 ### ✅ Build the image
@@ -150,8 +140,6 @@ docker build -t cpp-rest-api .
 ```bash
 docker run -p 8080:8080 cpp-rest-api
 ```
-
----
 
 ## 🧪 Step 6: Test the API using cURL or Postman
 
@@ -179,6 +167,5 @@ curl -X PUT http://localhost:8080/students -H "Content-Type: application/json" -
 curl -X DELETE http://localhost:8080/students/1
 ```
 
----
 
-Would you like a version using file-based storage or connected to SQLite/MySQL instead of in-memory data?
+Nexe version could be using file-based storage or connected to SQLite/MySQL instead of in-memory data.

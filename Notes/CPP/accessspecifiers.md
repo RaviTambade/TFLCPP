@@ -8,7 +8,6 @@ C++ has **three main access specifiers** that control visibility of class member
 | `private` | 🔒 Only accessible inside the class |
 | `protected` | 🛡️ Like `private`, but also accessible in derived (child) classes |
 
----
 
 ### 🚦Access Specifier Example:
 
@@ -33,7 +32,6 @@ public:
 };
 ```
 
----
 
 ### 👶 Default Access Specifier:
 - In a **class**, members are **private** by default.
@@ -49,7 +47,6 @@ struct MyStruct {
 };
 ```
 
----
 
 ### 🧠 Why Use Access Specifiers?
 
@@ -57,5 +54,4 @@ struct MyStruct {
 - Only allow controlled access via `getters` and `setters`.
 - Prevent misuse or bugs from direct access.
 
----
  

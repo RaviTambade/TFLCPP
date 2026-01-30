@@ -234,9 +234,9 @@ int main() {
 
 | Feature              | Abstract Class | Interface (Pure Abstract) |
 | -------------------- | -------------- | ------------------------- |
-| Data members         | ✅              | ❌                         |
-| Constructors         | ✅              | ❌                         |
-| Multiple inheritance | ⚠️ Risky       | ✅ Safe                    |
+| Data members         | ✅              | ❌                      |
+| Constructors         | ✅              | ❌                      |
+| Multiple inheritance | ⚠️ Risky       | ✅ Safe                  |
 | Implementation       | Partial        | None                      |
 | Purpose              | Identity       | Capability                |
 

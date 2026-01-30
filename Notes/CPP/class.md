@@ -1,5 +1,3 @@
- 
-
 # What is a **Class**?
 
 A **class** in C++ is a **user-defined data type**.  
@@ -7,7 +5,6 @@ It lets you **combine data (variables)** and **functions (methods)** that operat
 
 > Think of a class as a **blueprint**, and an object as the **real-world item** built from that blueprint.
 
----
 
 ### 📦 Example: Class and Object
 
@@ -39,8 +36,6 @@ int main() {
 }
 ```
 
----
-
 ### 🧠 Key Concepts of a Class
 
 | Concept             | Description |
@@ -52,15 +47,11 @@ int main() {
 | **Constructor**     | Special function to initialize objects |
 | **Access Specifiers** | `public`, `private`, `protected` |
 
----
-
 ### 🔐 Access Specifiers (Quick Recap)
 
 - `public`: Accessible from outside the class
 - `private`: Only accessible inside the class
 - `protected`: Like private, but accessible in derived classes
-
----
 
 ### 🧰 Constructor Example
 
@@ -85,11 +76,9 @@ int main() {
 }
 ```
 
----
 
 ### 💬 In Simple Words:
 - Class = Plan
 - Object = Actual thing
 - You use classes to create **organized, reusable, clean code**.
 
----

@@ -1,8 +1,11 @@
+# Media Player: Multimedia Application
+
 Let's consider a **realistic application** where virtual base classes are necessary. A common example can be a **multimedia application** where multiple types of media elements (such as images, videos, and audio files) share common properties or behaviors but also have specific functionality that differs from one another. 
 
 For this example, let's design a **media player** that has different types of media files (e.g., `Image`, `Audio`, and `Video`), all inheriting from a common base class `Media`. Since both `Image` and `Audio` might be used by the `Video` class (e.g., a video has an image frame and an audio track), the `Media` class must be shared only once.
 
 ### Problem Scenario:
+
 - We have a common base class `Media`, which defines basic media properties such as `title`, `duration`, and `size`.
 - Classes `Image`, `Audio`, and `Video` all inherit from `Media`. The `Video` class, in particular, will inherit both `Image` (for the visual part of the video) and `Audio` (for the audio part).
 - Without **virtual inheritance**, the `Media` class would be inherited twice: once through `Image` and once through `Audio`, causing multiple instances of the `Media` class.

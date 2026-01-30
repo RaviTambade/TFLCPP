@@ -1,6 +1,6 @@
-Creating a **user-defined namespace** for a **shape hierarchy** in C++ is a great way to organize the code and encapsulate the classes related to different shapes. A **namespace** in C++ allows you to group related classes, functions, and variables, and prevent naming conflicts.
+# Shape hierarchy
 
-### Example: Shape Hierarchy with User-Defined Namespace in C++
+Creating a **user-defined namespace** for a **shape hierarchy** in C++ is a great way to organize the code and encapsulate the classes related to different shapes. A **namespace** in C++ allows you to group related classes, functions, and variables, and prevent naming conflicts.
 
 Let's create a **shape hierarchy** with the following structure:
 
@@ -118,8 +118,11 @@ Area of Triangle: 14
 ```
 
 ### Key Concepts Used:
+
 1. **Namespace**: We define a user-defined namespace `ShapeNamespace` to group all the shape-related classes, ensuring better organization and avoiding naming conflicts with other parts of the program.
+
 2. **Polymorphism**: The base class `Shape` has a pure virtual function, and the derived classes override this function to provide their own implementations for calculating the area. This allows dynamic polymorphism (i.e., the correct `displayArea()` function is called for each object at runtime).
+
 3. **Encapsulation**: The member variables of each shape (like `radius`, `length`, and `width`) are encapsulated within their respective classes, ensuring that data is only accessed through the appropriate member functions.
 
 ### Conclusion:

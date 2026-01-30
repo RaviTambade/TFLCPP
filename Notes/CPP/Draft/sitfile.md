@@ -1,6 +1,8 @@
+# Student Information System
 To add **file handling** to the **Student Information System** project using **C++ file streams**, we can use the **`fstream`** library to store and retrieve student data to/from a file. This will allow the system to persist student information even after the program is closed and reopened.
 
 ### Steps for Adding File Handling:
+
 1. **Saving Student Records to a File**: Whenever a student is added or updated, save the student information to a file.
 2. **Reading Student Records from a File**: When the program starts, read the data from the file and populate the system with existing student records.
 3. **Deleting Student Records from a File**: If a student record is deleted, the corresponding record in the file should also be removed.
