@@ -1,4 +1,5 @@
-# **Understanding the STL – C++'s Secret Superpower**
+# **
+STL – C++'s Secret Superpower**
 
 🧑‍🏫 *“Let me take you into a classroom from a few years ago. I once asked my students, ‘If you had to manage a long list of books, store them alphabetically, and search for a particular title quickly — would you write the entire logic from scratch?’*
 

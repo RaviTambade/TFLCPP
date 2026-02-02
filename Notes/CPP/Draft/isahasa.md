@@ -21,15 +21,12 @@ There are mainly **three types** of class relationships in C++:
 Understanding these relationships is essential for designing robust and scalable C++ applications.
 
 
----
-
 ### 🏢 Mini Project: Company System
 
 #### 🎯 Goal:
 - A **`Company`** has **`Employee`**s → "has-a" relationship
 - Different types of employees like `Manager`, `Developer` → "is-a" relationship
 
----
 
 ### 📦 Structure:
 
@@ -40,8 +37,6 @@ Employee (base class)
  ├── Manager (is-a Employee)
  └── Developer (is-a Employee)
 ```
-
----
 
 ### 🧑‍💻 Code:
 
@@ -135,8 +130,6 @@ int main() {
 }
 ```
 
----
-
 ### 🔍 Output:
 
 ```
@@ -147,22 +140,15 @@ Developer: Bob, ID: 102, Language: Python
 Manager: Charlie, ID: 201, Team Size: 5
 ```
 
----
-
 ### ✅ Concepts Covered:
 
-| Concept              | Used In                      |
-|----------------------|------------------------------|
-| Class & Object        | `Company`, `Employee`, etc.  |
-| Inheritance (`is-a`) | `Manager` and `Developer` from `Employee` |
-| Composition (`has-a`)| `Company` has `Employee`s     |
-| Polymorphism         | `showDetails()` via base class pointer |
-| Smart Pointers       | For safe memory handling      |
-
----
-
-Want to add features like salaries, roles, or file saving next?
-
+| Concept              | Used In                                    |
+|----------------------|--------------------------------------------|
+| Class & Object       | `Company`, `Employee`, etc.               |
+| Inheritance (`is-a`) | `Manager` and `Developer` from `Employee`  |
+| Composition (`has-a`)| `Company` has `Employee`s                  |
+| Polymorphism         | `showDetails()` via base class pointer     |
+| Smart Pointers       | For safe memory handling                   |
 
 
 ### Problem Statement ( Shape and Point)

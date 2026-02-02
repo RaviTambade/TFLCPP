@@ -33,7 +33,6 @@ The project follows a layered architecture, which ensures separation of concerns
    - Example: `ProductIOManager`
    - Provides utility functions, such as reading and writing data to files.
 
----
 
 #### **2. Application Flow**
 
@@ -60,8 +59,6 @@ The flow of the application is as follows:
 6. **Output**:
    - Results are displayed to the user via the `UIManager`.
 
----
-
 #### **3. Best Practices Followed**
 
 1. **Separation of Concerns**:
@@ -84,8 +81,6 @@ The flow of the application is as follows:
 
 7. **Error Handling**:
    - File operations and other critical sections include error handling to ensure robustness.
-
----
 
 #### **4. Example Class Roles**
 
@@ -110,7 +105,7 @@ The flow of the application is as follows:
 - **`ProductIOManager`**:
   - Handles file I/O operations for loading and saving product data.
 
----
+
 
 #### **5. Diagram**
 
@@ -118,7 +113,7 @@ The flow of the application is as follows:
 ```plaintext
 +-------------------+       +-------------------+       +-------------------+
 |                   |       |                   |       |                   |
-|  ProductIOManager | ----> | ProductRepository | ----> | ProductService     |
+|  ProductIOManager | ----> | ProductRepository | ----> | ProductService    |
 |  (File Handling)  |       | (Data Storage)    |       | (Business Logic)  |
 |                   |       |                   |       |                   |
 +-------------------+       +-------------------+       +-------------------+
@@ -126,13 +121,9 @@ The flow of the application is as follows:
         v                           v                           v
 +-------------------+       +-------------------+       +-------------------+
 |                   |       |                   |       |                   |
-|  ProductsController | <---|       UIManager   |       |     Customer      |
-|  (Controller Layer) |       | (User Interface)|       | (Entity Layer)    |
+|ProductsController | <---  |     UIManager     |       |     Customer      |
+|(Controller Layer) |       | (User Interface)  |       | (Entity Layer)    |
 |                   |       |                   |       |                   |
 +-------------------+       +-------------------+       +-------------------+
 
 ```
-
----
-
-Let me know if you need further details or specific examples!

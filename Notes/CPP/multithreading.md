@@ -1,9 +1,8 @@
-## **Understanding Multithreading in C++**
+## ** Multithreading in C++**
 
 🧑‍🏫 *“Imagine a busy restaurant kitchen during dinner rush. Orders are flying in. If only **one chef** is allowed to cook, prepare, and plate dishes one at a time — customers will be waiting forever. Now, bring in more chefs. Each chef works on a different dish — all at the same time. That’s **multithreading**.”*
 
 Welcome to the kitchen of high-performance software — let’s cook up some parallelism using **C++ multithreading**. 🍽️💻
-
 
 ## 🚦 What is Multithreading?
 
@@ -103,8 +102,6 @@ lock_guard<mutex> lock(mtx); // Automatically locks/unlocks
 * 📡 Web servers (handling many client requests in parallel)
 * 🧪 Scientific computing (parallel processing of large data sets)
 
-
-
 ## 🏁 Challenge for You
 
 🧪 Try this:
@@ -153,18 +150,16 @@ int main() {
 
 ### 💡 Key Concepts:
 
-| Term | Meaning |
-|------|--------|
-| `std::thread` | Standard C++ class for creating threads |
-| `join()` | Waits for a thread to finish |
-| `detach()` | Lets a thread run independently in background |
-| `this_thread::get_id()` | Gets the current thread's ID |
-| `mutex`, `lock_guard` | Used to manage shared data and avoid conflicts 🔐 |
+| Term | Meaning              |                                                    |
+|-----------------------------|----------------------------------------------------|
+| `std::thread`               | Standard C++ class for creating threads            |
+| `join()`                    | Waits for a thread to finish                       |
+| `detach()`                  | Lets a thread run independently in background      |
+| `this_thread::get_id()`     | Gets the current thread's ID                       |
+| `mutex`, `lock_guard`       | Used to manage shared data and avoid conflicts 🔐 |
 
 
 ### ⚠️ Be Careful With:
 - **Race conditions** (when two threads access the same data at the same time)
 - **Deadlocks** (when two threads are waiting on each other forever)
 - Always protect shared resources using **`std::mutex`**
-
----

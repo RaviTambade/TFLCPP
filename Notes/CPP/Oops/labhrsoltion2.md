@@ -1,5 +1,160 @@
+ 
 
-# 🧪 Lab 5 (C++ Version)
+## Lab Problem : Interface Inheritance & Polymorphism in HR Domain (C++)
+
+  
+
+## 🧠 Learning Context (Why this lab?)
+
+In real-world enterprise systems, **roles are not defined only by hierarchy**, but by **capabilities**.
+
+An employee may:
+
+* Conduct appraisals
+* Approve leaves
+* Take interviews
+* Train teams
+* Be eligible for bonuses
+
+These responsibilities **cut across hierarchies**.
+
+This lab introduces **interface-based design** in C++, helping learners understand how large systems avoid rigid inheritance trees and instead rely on **capability-driven contracts**.
+
+This mirrors how:
+
+* HR systems
+* ERP platforms
+* Enterprise frameworks
+  model responsibilities in a **loosely coupled** manner.
+
+## 🎯 Learning Objectives
+
+By completing this lab, learners will be able to:
+
+* Understand **interfaces in C++** using pure abstract classes
+* Apply **multiple inheritance safely** using interfaces
+* Model real-world roles using **capability-based design**
+* Use **interface inheritance** to group related responsibilities
+* Implement **runtime polymorphism** using interface pointers
+* Clearly differentiate **“what an object is” vs “what it can do”**
+
+## 🧩 Problem Statement
+
+Design and implement a **Human Resource (HR) role management system** in C++ that models employee responsibilities using **interface inheritance**.
+
+The system must support multiple HR capabilities such as appraisal, bonus eligibility, interviewing, training, and managerial approvals, while maintaining **clean separation between identity and behavior**.
+
+## 🏗️ System Design Requirements
+
+### 1️⃣ Base Entity: Employee
+
+* Represents the **identity** of an employee
+* May contain shared data (e.g., base bonus)
+* Must support safe polymorphic deletion
+
+
+### 2️⃣ Capability Interfaces (Pure Abstract Classes)
+
+Define interfaces representing **HR capabilities**, such as:
+
+* Appraisal responsibility
+* Bonus eligibility
+* Interview panel participation
+* Training responsibility
+
+Each interface must:
+
+* Contain only pure virtual functions
+* Have no data members
+* Act as a **contract**, not an implementation
+
+### 3️⃣ Interface Inheritance (Managerial Capabilities)
+
+Some roles require **combined responsibilities**.
+
+Design an interface that:
+
+* Inherits from multiple capability interfaces
+* Represents **manager-specific benefits**
+* Adds additional managerial responsibilities
+
+This models **capability aggregation**, not hierarchy.
+
+### 4️⃣ Role Implementations
+
+Implement HR roles such as:
+
+* A role that supports **single responsibility**
+* A managerial role that supports **multiple responsibilities**
+* Roles must inherit:
+
+  * From `Employee` for identity
+  * From one or more interfaces for capabilities
+
+## ⚙️ Technical Constraints
+
+* Programming Language: **C++**
+* Interface Representation: **Pure abstract classes**
+* Polymorphism: Must use base-class pointers or references
+* Multiple inheritance is allowed **only for interfaces**
+* Virtual destructors are mandatory where polymorphism is used
+* Console-based output is sufficient
+
+## 🧪 Expected Behaviour
+
+* Objects should be usable through different interface pointers
+* Same object must respond differently based on interface type
+* No ambiguity or duplication of data
+* Code must demonstrate loose coupling and role-based behavior
+* System must compile and execute safely
+
+## 📦 Deliverables
+
+1. Header files for:
+
+   * Base employee
+   * Capability interfaces
+   * Interface inheritance
+2. Concrete HR role implementations
+3. Test program demonstrating interface polymorphism
+4. Clear output validating role responsibilities
+5. Proper folder structure and naming conventions
+
+## 🧠 Concept Mapping (TLF Insight)
+
+| Software Design Concept | HR Mapping                  |
+| ----------------------- | --------------------------- |
+| Abstract Class          | Employee identity           |
+| Interface               | Capability / responsibility |
+| Interface Inheritance   | Managerial benefits         |
+| Multiple Inheritance    | Multiple capabilities       |
+| Polymorphism            | Role-based behavior         |
+| Loose Coupling          | Capability-driven design    |
+
+## 📊 Evaluation Criteria
+
+| Criteria                    | Weight |
+| --------------------------- | ------ |
+| Correct interface design    | 25%    |
+| Interface inheritance usage | 20%    |
+| Polymorphism demonstration  | 20%    |
+| Safe multiple inheritance   | 15%    |
+| Code structure & clarity    | 20%    |
+
+## 🚀 Extension Tasks (Next TLF Level)
+
+* Add more HR roles (HR Manager, Trainer, Recruiter)
+* Introduce runtime role switching
+* Convert capabilities into **service-based architecture**
+* Map interfaces to **Java / C# equivalents**
+* Compare interface-based design with deep inheritance trees
+
+## 🧬 Mentor Insight (Transflower Signature)
+
+> **Inheritance answers “what you are.”**
+> **Interfaces answer “what you can do.”**
+
+Strong systems are built on **capabilities**, not assumptions.
 
 ## Interface Inheritance in HR Domain
 

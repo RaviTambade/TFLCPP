@@ -1,12 +1,10 @@
-👨‍🏫 **Mentor Storytelling Style: Understanding Virtual Base Classes in C++**
+👨‍🏫 **Understanding Virtual Base Classes in C++**
 
----
 
 🧑‍🏫 \*“Class, gather around — today we’re going to talk about a very interesting twist in inheritance called a **Virtual Base Class**.
 
 But first… let me tell you a story.”\*
 
----
 
 ## 🧵 The Diamond Problem Story
 
@@ -38,8 +36,6 @@ This is the **Diamond Problem**:
 
 🔁 **Multiple inheritance** leads to duplication of the `Person` base — two copies, two constructors, and **ambiguity** when accessing `Person`'s members from `Scholar`.
 
----
-
 ## 🛡️ Enter: Virtual Base Class
 
 To solve this, we **virtually inherit** the `Person` class:
@@ -67,15 +63,11 @@ class Scholar : public Teacher, public Engineer {
 
 No duplication. No confusion. Just **clarity**. ✅
 
----
-
 ## 💡 Why Use Virtual Base Classes?
 
 * To solve the **Diamond Problem** in multiple inheritance.
 * To ensure there’s **only one base class instance** even if inherited through multiple paths.
 * To avoid ambiguity and duplication of base members.
-
----
 
 ## ⚠️ Key Notes for Students
 
@@ -85,7 +77,6 @@ No duplication. No confusion. Just **clarity**. ✅
 
 📌 Constructors of the **virtual base class** are initialized by the **most derived class** (e.g., `Scholar` in our story).
 
----
 
 ## 🧭 Mentor Wisdom
 
@@ -96,10 +87,6 @@ So next time you plan your class diagram and spot a diamond…
 💡 Remember to **make the base virtual** — and let your code sparkle! ✨
 
 Shall we try building this diamond hierarchy in code next?
-
-Absolutely! 👨‍🏫 Let’s dive right into building the **Diamond Hierarchy in C++** with and without **virtual base classes** — and see the difference firsthand.
-
----
 
 ## 🧱 **Without Virtual Inheritance – The Problem**
 
@@ -150,8 +137,6 @@ int main() {
 
 `Scholar` has **two copies** of `Person` — one via `Teacher`, one via `Engineer`.
 Calling `s.display()` causes **ambiguity** ❌.
-
----
 
 ## ✅ **With Virtual Inheritance – The Solution**
 
@@ -208,13 +193,10 @@ Scholar constructor called
 I am a Person
 ```
 
----
-
 ## 👨‍🏫 Mentor's Summary:
 
 > "By making `Teacher` and `Engineer` **virtual** when inheriting from `Person`, we ensured that `Scholar` gets **only one shared instance** of `Person`. This avoids ambiguity and duplication — especially important in complex class hierarchies."
 
----
 
 💡 **Lesson**:
 Whenever your inheritance structure resembles a diamond 💎 —

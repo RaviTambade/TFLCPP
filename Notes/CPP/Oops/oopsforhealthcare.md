@@ -1,5 +1,5 @@
 
-#  OOP Concepts Explained the *Healthcare Coding Way*
+#  OOP Explained the *Healthcare Coding Way*
 
 > **Mentor mindset:** Healthcare systems are perfect to teach OOP — data is sensitive, rules are strict, lifecycle matters, and mistakes are expensive.
 

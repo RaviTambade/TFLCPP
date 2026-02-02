@@ -98,13 +98,9 @@ Perfect. Let’s **draw this as a REAL hospital workflow**, the way a **Transflo
 No code.
 Only **flow, responsibility, and thinking**.
 
----
-
-# 🏥 Transflower Mentor Board Drawing
 
 ## *Hospital Workflow → Command Handler Architecture*
 
----
 
 ## 🧑‍🦱 1️⃣ Patient / Staff (Request Origin)
 
@@ -124,7 +120,6 @@ Only **flow, responsibility, and thinking**.
 > “The system doesn’t care *who* sent the request.
 > Only *what* is being requested.”
 
----
 
 ## 🧾 2️⃣ Reception Desk (Command Router)
 
@@ -150,8 +145,6 @@ Only **flow, responsibility, and thinking**.
 
 👉 This is your `unordered_map<string, std::function<>>`
 
----
-
 ## 👨‍⚕️ 3️⃣ Hospital Service (Specialist Doctors)
 
 ```
@@ -171,8 +164,6 @@ Only **flow, responsibility, and thinking**.
 
 👉 **Single Responsibility Principle**
 
----
-
 ## ✨ 4️⃣ Inline Decisions (Lambdas)
 
 ```
@@ -191,7 +182,6 @@ Only **flow, responsibility, and thinking**.
 
 👉 These are **lambdas**
 
----
 
 ## 🔁 5️⃣ Execution Flow (End-to-End)
 
@@ -215,7 +205,6 @@ Result / Status
 > No confusion.
 > Just responsibility.”
 
----
 
 ## 🧠 Mental Mapping (THIS is the gold)
 
@@ -228,7 +217,6 @@ Result / Status
 | Hospital policy | Business rule  |
 | Expansion ward  | New command    |
 
----
 
 ## 🔥 Why This Scales (Ask Students This)
 
@@ -242,8 +230,6 @@ Answer:
 * ✅ Only **register a new handler**
 
 That’s **open for extension, closed for modification**.
-
----
 
 ## 🌍 Industry Reality Translation
 
@@ -263,7 +249,7 @@ Business Logic
 
 > “Frameworks only automate what you just understood manually.”
 
----
+
 
 ## 🌱 Final Mentor Line (Stick this in students’ heads)
 
@@ -273,7 +259,7 @@ Business Logic
  Love this pattern 👌
 Let’s **reframe your exact Command Handler design into a Healthcare Domain**, keeping **`std::function` + lambdas + member functions** intact—so students clearly see how *math commands* become *real hospital actions*.
 
----
+
 
 ## 🏥 Healthcare Domain: Command Handler Example
 
@@ -288,7 +274,6 @@ We are building a **Hospital Console System** where commands trigger healthcare 
 * `dosage` → compute medicine dosage
 * `discharge` → inline lambda logic
 
----
 
 ## ✅ Final Version: Healthcare Command Handler
 
@@ -367,8 +352,6 @@ int main() {
 }
 ```
 
----
-
 ## 🧠 Mapping: Math → Healthcare Thinking
 
 | Math Example     | Healthcare Meaning    |
@@ -378,7 +361,6 @@ int main() {
 | `power(a, b)`    | Medicine dosage logic |
 | Lambda           | Discharge workflow    |
 
----
 
 ## 🔍 Why This Is a **Powerful Teaching Example**
 
@@ -396,7 +378,6 @@ int main() {
 * Runtime polymorphism
 * Microservice-style routing
 
----
 
 ## 🏥 Real-World Extension Ideas (Mentor Style)
 
@@ -426,8 +407,6 @@ commandMap["help"] = [](int, int) {
 UI → CommandRouter → HospitalService → Repository
 ```
 
----
-
 ## 🧩 How I’d Explain This to Students
 
 > “This is not just C++ syntax.
@@ -440,13 +419,11 @@ Let me **restructure this as a Transflower Mentor storytelling session** — the
 No code-first.
 **Thinking-first. Story-first. Architecture-first.**
 
----
 
-# 🌱 Transflower Mentor Story
+
+
 
 ## *“How a Hospital Learns to Respond Without Panic”*
-
----
 
 ## 🧑‍🏫 Mentor Opens the Session
 
@@ -463,7 +440,6 @@ Students usually say **No**.
 
 That’s where today’s lesson begins.
 
----
 
 ## 🏥 Act 1: The Problem – *If–Else Hospital*
 
@@ -488,7 +464,6 @@ Exactly.
 > “A hospital cannot run on `if-else`.
 > Neither can professional software.”
 
----
 
 ## 🧠 Act 2: The Mental Shift – *Commands Are Requests*
 
@@ -507,8 +482,6 @@ So we ask a better question:
 
 > “Can the system **look up** what to do instead of **deciding** every time?”
 
----
-
 ## 🧭 Act 3: The Big Idea – *Command Registry*
 
 I draw a simple diagram:
@@ -524,7 +497,6 @@ I explain:
 
 This is the birth of a **Command Handler**.
 
----
 
 ## 🧩 Act 4: Roles in Our Hospital Software
 
@@ -537,8 +509,6 @@ Now I introduce characters (students remember characters, not syntax).
 * Knows **medical rules**
 
 > “Doctors don’t sit at the reception counter.”
-
----
 
 ### 🧾 2. Command Map (The Reception Desk)
 
@@ -554,7 +524,6 @@ The map says:
 No business logic here.
 Only **routing**.
 
----
 
 ### 🧠 3. std::function (The Contract)
 
@@ -566,7 +535,6 @@ I tell students:
 
 That’s exactly what `std::function<int(int,int)>` means.
 
----
 
 ## 🪄 Act 5: Binding Doctors to the Desk
 
@@ -587,7 +555,6 @@ No inheritance.
 No tight coupling.
 Just **connection**.
 
----
 
 ## ✨ Act 6: Lambdas – Emergency Decisions
 
@@ -608,7 +575,6 @@ Small.
 Local.
 Purpose-driven.
 
----
 
 ## 🏗️ Act 7: What Architecture Did We Just Build?
 
@@ -638,8 +604,6 @@ Without frameworks.
 Without annotations.
 Without magic.
 
----
-
 ## 🌍 Act 8: Industry Mapping (Eye-Opener Moment)
 
 | Hospital Software | Real Industry        |
@@ -655,8 +619,6 @@ I pause and say:
 > “Frameworks did not teach you this.
 > **Thinking did.**”
 
----
-
 ## 🔑 Act 9: Mentor’s Golden Rule
 
 I end with:
@@ -670,12 +632,12 @@ And then:
 > Java, .NET, Node —
 > all become *syntax changes*, not **career changes**.”
 
----
+
 
 ## 🌱 Homework (Transflower Style)
 
-1️⃣ Add a new command without touching old logic
-2️⃣ Add `help` command listing registered commands
-3️⃣ Replace `string` command with `enum`
-4️⃣ Draw this as a **real hospital workflow**
+- 1️⃣ Add a new command without touching old logic
+- 2️⃣ Add `help` command listing registered commands
+- 3️⃣ Replace `string` command with `enum`
+- 4️⃣ Draw this as a **real hospital workflow**
 

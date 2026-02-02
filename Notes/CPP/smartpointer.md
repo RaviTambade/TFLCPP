@@ -87,8 +87,6 @@ if (auto temp = weak.lock()) {
 
 👨‍🏫 *“Managing memory manually is like carrying water in your hands — it’s tricky and error-prone. Smart pointers give you the bottle and the cap — safe, secure, and reusable.”*
 
-
-
 ## 🧪 Quick Example: Using `unique_ptr` in a Class
 
 ```cpp
@@ -109,14 +107,10 @@ public:
 };
 ```
 
- 
-
-## 🚨 Common Mistakes to Avoid
+ ## 🚨 Common Mistakes to Avoid
 
 ❌ Don’t mix `raw pointers` with smart pointers
 ❌ Don’t create circular references with `shared_ptr` (use `weak_ptr`)
-
- 
 
 ## 🧭 Final Mentor Words
 
@@ -127,9 +121,6 @@ So next time you're tempted to use `new` and `delete`, remember:
 > "Let the smart pointer do the thinking — you focus on building the logic."
 
 🧠💻🔒 Keep coding smart!
-
-
- 
 
 ## 💥 Why do we need it?
 
@@ -142,15 +133,12 @@ delete acc; // You MUST remember this
 
 If you forget to call `delete`, it causes a **memory leak**. If you call `delete` twice, you get **undefined behavior**.
 
----
-
 ## ✅ Smart Pointer Benefits
 
 - **No manual delete needed** ✅
 - **Safer and cleaner code** ✅
 - **Avoids memory leaks & dangling pointers** ✅
 
----
 
 ## 🚀 Types of Smart Pointers in C++
 
@@ -160,15 +148,12 @@ If you forget to call `delete`, it causes a **memory leak**. If you call `delete
 | `shared_ptr`  | Shared ownership  | Yes           | Many can share ownership.             |
 | `weak_ptr`    | No ownership      | No            | Used with `shared_ptr` to avoid loops.|
 
----
 
 ## 📦 Real-World Analogy
 
 Imagine a **unique_ptr** is like a **house key** that only one person can have. When they drop it (go out of scope), the house gets demolished (memory freed).
 
 A **shared_ptr** is like **a digital access code** — many people can access the house, but the house is demolished only when the last person stops using it.
-
----
 
 ## 🔧 Simple Example
 ```cpp
@@ -222,8 +207,7 @@ In C++, a **smart pointer** is an object that manages the lifetime and ownership
 
 Let me know if you want a demo example or want to see how they behave under the hood!
 
-
-
+```
 #include <iostream>
 #include <memory>  // For smart pointers
 
@@ -255,6 +239,7 @@ int main() {
     return 0;
 }
 
+```
 
 What happens here:
 std::make_unique<Account> creates a new Account object.

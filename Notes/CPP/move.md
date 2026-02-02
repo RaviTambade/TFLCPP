@@ -1,7 +1,3 @@
-Great! Let’s break down **Move Semantics** in C++ — one of the most important features introduced in **C++11** for performance optimization, especially with **temporaries** and **resource-heavy objects**.
-
----
-
 ## 🔄 What is Move Semantics?
 
 Move semantics allows you to **"steal" resources** from one object to another **instead of copying** them.
@@ -10,12 +6,10 @@ Move semantics allows you to **"steal" resources** from one object to another **
 - **Copy**: Duplicates resources (slow for big data).
 - **Move**: Transfers ownership (fast, no duplication).
 
----
 
 ## ✨ Real-life Analogy:
 Think of copying as **photocopying a document** and moving as **handing over the original**. With a move, you give it away, and the source becomes "empty" or invalid (but still safe).
 
----
 
 ## 🧪 Example:
 
@@ -38,7 +32,6 @@ int main() {
 
 Here, instead of copying all the elements of `a` into `b`, the **internal memory (like the dynamic array)** is transferred. It’s efficient.
 
----
 
 ## ⚙️ How It Works Internally
 
@@ -47,8 +40,6 @@ To support move semantics, a class must define:
 ClassName(ClassName&& other);            // Move constructor
 ClassName& operator=(ClassName&& other); // Move assignment
 ```
-
----
 
 ## 🧱 Custom Example with Resource:
 
@@ -79,7 +70,6 @@ public:
 };
 ```
 
----
 
 ## ✅ Why Use Move Semantics?
 
@@ -87,7 +77,6 @@ public:
 - Better performance (especially in return values, containers)
 - Safe and efficient resource handling
 
----
 
 ## 🧠 Bonus Tip: `std::move()`
 You use `std::move()` to **cast an object to an rvalue**, signaling it can be moved.

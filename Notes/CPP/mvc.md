@@ -1,4 +1,4 @@
-👨‍🏫  Understanding Model-View-Controller (MVC) in C++
+👨‍🏫  Model-View-Controller (MVC) in C++
 
 🧑‍🏫 *“Imagine a restaurant... The **chef** prepares the food, the **waiter** takes your order and brings your dish, and **you**, the customer, enjoy the experience without ever stepping into the kitchen. This smooth coordination is exactly how **MVC architecture** works in software!”*
 

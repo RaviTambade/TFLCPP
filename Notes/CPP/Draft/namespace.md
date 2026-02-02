@@ -1,7 +1,8 @@
-# Shape hierarchy
+# Namespace in C++
 
-Creating a **user-defined namespace** for a **shape hierarchy** in C++ is a great way to organize the code and encapsulate the classes related to different shapes. A **namespace** in C++ allows you to group related classes, functions, and variables, and prevent naming conflicts.
+A **namespace** in C++ allows you to group related classes, functions, and variables, and prevent naming conflicts.
 
+Creating a **user-defined namespace** for a **shape hierarchy** in C++ is a great way to organize the code and encapsulate the classes related to different shapes. 
 Let's create a **shape hierarchy** with the following structure:
 
 - **Shape** (Base class)
@@ -13,7 +14,7 @@ We will use a **namespace** to group all the classes related to shapes.
 
 ### Step 1: Define the `Shape` Base Class and Derived Classes
 
-We'll define a base class `Shape` and a few derived classes (`Circle`, `Rectangle`, `Triangle`) within the `ShapeNamespace`.
+We'll define a base class `Shape` and a few derived classes (`Circle`, `Rectangle`, `Triangle`) within the `Drawing`.
 
 ### Code Example:
 
@@ -23,7 +24,7 @@ We'll define a base class `Shape` and a few derived classes (`Circle`, `Rectangl
 using namespace std;
 
 // User-defined namespace for shapes
-namespace ShapeNamespace {
+namespace Drawing {
 
     // Base class: Shape
     class Shape {
@@ -81,9 +82,9 @@ namespace ShapeNamespace {
 
 int main() {
     // Create objects of Circle, Rectangle, and Triangle using the ShapeNamespace
-    ShapeNamespace::Circle circle(5.0);
-    ShapeNamespace::Rectangle rectangle(4.0, 6.0);
-    ShapeNamespace::Triangle triangle(4.0, 7.0);
+    Drawing::Circle circle(5.0);
+    Drawing::Rectangle rectangle(4.0, 6.0);
+    Drawing::Triangle triangle(4.0, 7.0);
 
     // Display area for each shape
     circle.displayArea();
@@ -96,8 +97,8 @@ int main() {
 
 ### **Explanation of the Code:**
 
-1. **Namespace (`ShapeNamespace`)**:
-   - The `ShapeNamespace` encapsulates all classes related to shapes. This helps avoid name conflicts and logically organizes related classes and functions.
+1. **Namespace (`Drawing`)**:
+   - The `Drawing` encapsulates all classes related to shapes. This helps avoid name conflicts and logically organizes related classes and functions.
 
 2. **Base Class `Shape`**:
    - This is an abstract class with a pure virtual function `displayArea()` to calculate the area of the shape. This makes `Shape` an abstract class, so it cannot be instantiated directly.
@@ -119,7 +120,7 @@ Area of Triangle: 14
 
 ### Key Concepts Used:
 
-1. **Namespace**: We define a user-defined namespace `ShapeNamespace` to group all the shape-related classes, ensuring better organization and avoiding naming conflicts with other parts of the program.
+1. **Namespace**: We define a user-defined namespace `Drawing` to group all the shape-related classes, ensuring better organization and avoiding naming conflicts with other parts of the program.
 
 2. **Polymorphism**: The base class `Shape` has a pure virtual function, and the derived classes override this function to provide their own implementations for calculating the area. This allows dynamic polymorphism (i.e., the correct `displayArea()` function is called for each object at runtime).
 

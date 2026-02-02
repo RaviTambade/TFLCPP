@@ -1,6 +1,5 @@
 # **Understanding Polymorphism in C++**
 
-
 🧑‍🏫 \*“Imagine you’re teaching a class where one student plays guitar, one plays violin, and another plays tabla. You say ‘Perform!’ — and each one responds differently based on their skill.
 
 That, my friends, is **Polymorphism** — one instruction, many forms!”\*

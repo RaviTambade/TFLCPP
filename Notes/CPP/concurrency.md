@@ -27,7 +27,6 @@ To summarize some important points from the conversation:
 6. **Real-Life Analogy**:
    - The instructor uses an analogy of serving guests in a house. If one person (main thread) tries to serve all 50 guests, it would take a long time. But if 50 family members (threads) each serve one guest, all guests can be served simultaneously in a much shorter time.
 
----
 
 ### Some Key Points on the Code from the Discussion:
 
@@ -52,8 +51,6 @@ To summarize some important points from the conversation:
 
 4. **Multiple Threads Example**:
    - The example showed two threads running `print_hello` and `print_by` concurrently. Both tasks run in parallel on different threads.
-
----
 
 ### Full Example Code (Based on Discussion):
 ```cpp

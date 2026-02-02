@@ -1,4 +1,3 @@
-
 # From Procedural to Object-Oriented Thinking
 
 > *"Every great journey begins with the same question: not *how*, but *who* will do it."* — Ravi Tambade

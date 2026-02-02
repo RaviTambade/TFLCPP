@@ -1,14 +1,8 @@
-Absolutely! Let’s dive into **Socket Programming in C++ on Windows** using **Mentor Storytelling Style** — where you, the curious student, are on a journey to build your **own communication system** like walkie-talkies — only digital!
-
----
-
 ## 🌟 Story Begins: “The Village of Digital People”
 
 Imagine a digital village where **people (computers)** want to **talk** to each other — to send messages, files, even video. But here’s the twist: they don’t shout out loud — they whisper through a **magical wire** called the *socket*.
 
 Let’s meet the heroes of this world...
-
----
 
 ## 🧑‍🏫 Scene 1: Who Are the Characters?
 
@@ -19,7 +13,6 @@ Let’s meet the heroes of this world...
 | **Socket**  | A magical pipe — once connected, allows both to send and receive data.       |
 | **Winsock** | A toolkit given by the Windows world to create, manage, and destroy sockets. |
 
----
 
 ## ⚙️ Scene 2: The Communication Ritual (Steps)
 
@@ -48,7 +41,7 @@ Like an ancient ritual, socket communication follows **a strict sequence**. Let�
 
 Both close the sockets, and perform `WSACleanup()` — “And they lived happily ever after…”
 
----
+
 
 ## 🖼️ Visual Map of Their Journey
 
@@ -70,7 +63,6 @@ Client                          Server
   |-- WSACleanup()                |-- WSACleanup()
 ```
 
----
 
 ## 💡 Why This Matters in Real Life
 
@@ -79,8 +71,6 @@ This simple idea is the **foundation of the Internet**:
 * WhatsApp? → Socket.
 * Zoom call? → Socket.
 * Multiplayer games? → Sockets behind the scenes.
-
----
 
 ## 🛠️ Sample Code Glimpse (You already know this one!)
 
@@ -93,7 +83,6 @@ recv(client, buffer, 512, 0);
 send(client, "Welcome!", 8, 0);
 ```
 
----
 
 ## 🧙 Final Message from the Mentor
 
@@ -108,15 +97,12 @@ Would you like:
 I'm here to guide you! Let's continue the story… 🚀
 
 
-
-
 ## 🌱 **Transflower TCP Server**
 
 > *"Every computer has a voice. But it takes a socket to let it speak to others."*
 
 Let’s go on a journey where you, the programmer, build a little server that waits patiently, listens attentively, and responds politely — just like a good host.
 
----
 
 ### 🏠 **Scene 1: Preparing the Host (Winsock Initialization)**
 
@@ -128,8 +114,6 @@ int iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
 🎙️ *Mentor’s Voice*:
 
 > Before any communication begins, our server must *wake up the network library* — that’s what `WSAStartup()` does. Like setting up your phone network before making calls. Version 2.2 is requested, which is stable and widely used.
-
----
 
 ### 🧭 **Scene 2: Telling the OS What Kind of Host You Want to Be**
 
@@ -146,8 +130,6 @@ hints.ai_flags = AI_PASSIVE;       // This server will wait for connections
 > Think of this as filling out a request form:
 > “Dear OS, I need a server socket that uses TCP over IPv4, and I want it to **listen for incoming connections**.”
 
----
-
 ### 📍 **Scene 3: Choosing a Spot (IP + Port)**
 
 ```cpp
@@ -161,8 +143,6 @@ iResult = getaddrinfo(NULL, "27015", &hints, &result);
 
 If you pass `NULL`, the server will listen on **all available local IP addresses** — that’s handy during development.
 
----
-
 ### 🧱 **Scene 4: Building the Door (Creating the Socket)**
 
 ```cpp
@@ -173,8 +153,6 @@ ListenSocket = socket(result->ai_family, result->ai_socktype, result->ai_protoco
 
 > Now we build the **doorway** — the TCP socket that will accept guests (clients).
 > Think of it as the **reception desk** of a hotel.
-
----
 
 ### 🔒 **Scene 5: Putting the Door in Place (Binding)**
 
@@ -188,8 +166,6 @@ bind(ListenSocket, result->ai_addr, (int)result->ai_addrlen);
 > “This socket will accept visitors on port 27015.”
 > Without binding, the door is built, but it’s **not placed anywhere**.
 
----
-
 ### 👂 **Scene 6: The Server Starts Listening**
 
 ```cpp
@@ -202,8 +178,6 @@ listen(ListenSocket, SOMAXCONN);
 > “I’m ready. Let any client knock — I’ll respond.”
 > `SOMAXCONN` means: **maximum allowed connections** in the queue.
 
----
-
 ### 🚪 **Scene 7: A Guest Arrives (Accept)**
 
 ```cpp
@@ -214,8 +188,6 @@ ClientSocket = accept(ListenSocket, NULL, NULL);
 
 > The door opens, and a **single client** walks in.
 > The receptionist (our server) assigns this client their own dedicated socket (`ClientSocket`) for a private conversation.
-
----
 
 ### 💬 **Scene 8: Talking with the Client**
 
@@ -239,8 +211,6 @@ send(ClientSocket, sendbuf, (int)strlen(sendbuf), 0);
 > That’s you being polite:
 > "Hello there! This is the Transflower Server. Glad you connected."
 
----
-
 ### 📴 **Scene 9: Client Leaves, Host Shuts Down**
 
 ```cpp
@@ -256,8 +226,6 @@ WSACleanup();
 
 > Always **clean up** after yourself — good practice, even in code.
 
----
-
 ### ⏳ **Bonus Line: Pause Before Exit**
 
 ```cpp
@@ -267,8 +235,6 @@ std::cin.get(); // Wait before closing console
 🎙️ *Mentor’s Voice*:
 
 > Let’s not be in a hurry. Wait for a key press before closing the window — so we can see what happened.
-
----
 
 ## 🔁 **Your TCP Server's Lifecycle in a Nutshell**
 
@@ -287,7 +253,7 @@ std::cin.get(); // Wait before closing console
 
 > *“A socket is not just code. It’s a handshake. A promise. A link between two thinking machines. If you can master this — you can make any computer in the world talk to any other one.”*
 
----
+
 
 Would you like a **story-based extension**:
 
@@ -298,9 +264,6 @@ Would you like a **story-based extension**:
 Let’s take this mentoring forward, your way.
 
 
-Absolutely! Let’s now shift from the **server’s reception desk** to the story of a **TCP client** — a curious visitor who wants to reach out, say hello, and have a conversation. We'll explain your program in a **mentor storytelling style**, filled with metaphors and guidance — the Transflower Learning way.
-
----
 
 ## 🌍 **Transflower TCP Client**: A Story of a Friendly Visit**
 
@@ -308,7 +271,6 @@ Absolutely! Let’s now shift from the **server’s reception desk** to the stor
 
 Let’s walk through the code as if we are mentoring a student named **Sanika**, who’s curious about how her C++ application can **connect to a remote computer using Winsock**.
 
----
 
 ### 🚪 Scene 1: “Mom, I want to go meet someone!” (Winsock Initialization)
 
@@ -321,8 +283,6 @@ int iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
 
 > Sanika, before you can send a message or visit someone’s digital home (the server), you must **switch on your communication device**.
 > That’s what `WSAStartup()` does — it powers up Windows Sockets so your program can talk on the network.
-
----
 
 ### 📬 Scene 2: “Whom should I visit?” (Setting up the target)
 
@@ -342,7 +302,6 @@ hints.ai_protocol = IPPROTO_TCP;
 > * TCP protocol (`IPPROTO_TCP`)
 >   It’s like saying: “I want to take a smooth highway ride to my destination.”
 
----
 
 ### 🗺️ Scene 3: “Give me the address, please!” (Resolve server IP + port)
 
@@ -358,8 +317,6 @@ iResult = getaddrinfo("127.0.0.1", "27015", &hints, &result);
 > * `27015` is the **port number** — like the specific room to knock on.
 >   You now know **where** to go.
 
----
-
 ### 🔨 Scene 4: “Build my phone” (Create a socket)
 
 ```cpp
@@ -370,8 +327,6 @@ ConnectSocket = socket(result->ai_family, result->ai_socktype, result->ai_protoc
 
 > Time to build the **phone** (the socket) to make the call.
 > Without a socket, you can’t talk to anyone — this is your communicator.
-
----
 
 ### 📞 Scene 5: “Call the server!” (Connect)
 
@@ -392,8 +347,6 @@ std::cerr << "Unable to connect to server!" << std::endl;
 
 > Just like getting a busy tone or wrong number.
 
----
-
 ### 💌 Scene 6: “Hi there, Server!” (Send a message)
 
 ```cpp
@@ -406,8 +359,6 @@ iResult = send(ConnectSocket, sendbuf, (int)strlen(sendbuf), 0);
 > Once connected, you cheerfully say:
 > **“Hello from client!”**
 > That’s what `send()` does — it transmits your message to the server.
-
----
 
 ### 📥 Scene 7: “What did the server say?” (Receive response)
 
@@ -422,8 +373,6 @@ iResult = recv(ConnectSocket, recvbuf, recvbuflen, 0);
 > If the server says: `"Hello from TFL server"`, you display it to the console.
 
 > It’s a beautiful back-and-forth. Like a digital handshake.
-
----
 
 ### 🧹 Scene 8: “Thanks for the talk — goodbye!” (Cleanup)
 
@@ -440,7 +389,6 @@ WSACleanup();
 > * Turn off the network library (`WSACleanup`)
 > * And gracefully exit.
 
----
 
 ### ⏳ Bonus Pause
 
@@ -454,8 +402,6 @@ std::cin >> a;
 > A little trick to **pause the console** so you can see the output.
 > It's like saying: “Sanika, don't close the window yet — reflect on what just happened!”
 
----
-
 ## 🧠 Learning Summary: The Client’s Mindset
 
 | Step    | Action                    | Analogy                   |
@@ -467,19 +413,8 @@ std::cin >> a;
 | Receive | `recv()`                  | Listen to the reply       |
 | Close   | `closesocket()` + cleanup | Hang up and shut down     |
 
----
+
 
 ## 💡 Mentor's Final Thoughts
 
 > *“Networking isn’t just about IPs and ports. It’s about trust, timing, and the beautiful dance of communication. Once you’ve written your first TCP client, you’ve stepped into a world where machines speak and collaborate — just like we do.”*
-
----
-
-Would you like the **next part of the story**?
-
-* Making a client-server chat
-* Handling multiple messages in a loop
-* Running client and server on different machines
-* Visual diagrams of TCP connection flow?
-
-Just say the word, Sanika 😊

@@ -1,6 +1,5 @@
 ## ** Mastering Object-Oriented Programming (OOP) in C++**
 
- 
 🧑‍🏫 *“Let me take you back to a time when I was mentoring a group of students working on a Library Management System. They were drowning in procedural code — functions here, data there, bugs everywhere. That’s when I introduced them to a magical concept that transformed their thinking — **Object-Oriented Programming**.”*
 
 
@@ -386,6 +385,7 @@ int main() {
 ```
 
 ### Summary of OOP Concepts in C++:
+
 1. **Classes and Objects**: Defines the structure and behavior of data.
 2. **Encapsulation**: Protects data by hiding it and only allowing access through methods.
 3. **Inheritance**: Allows a class to inherit properties and methods from another class.

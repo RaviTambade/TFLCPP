@@ -1,15 +1,150 @@
-# Media Player: Multimedia Application
 
-Let's consider a **realistic application** where virtual base classes are necessary. A common example can be a **multimedia application** where multiple types of media elements (such as images, videos, and audio files) share common properties or behaviors but also have specific functionality that differs from one another. 
+## Lab Problem: Media Player Design using Virtual Base Classes in C++
 
-For this example, let's design a **media player** that has different types of media files (e.g., `Image`, `Audio`, and `Video`), all inheriting from a common base class `Media`. Since both `Image` and `Audio` might be used by the `Video` class (e.g., a video has an image frame and an audio track), the `Media` class must be shared only once.
+## 🧠 Learning Context (Why this lab?)
 
-### Problem Scenario:
+As software systems grow, **inheritance hierarchies become complex**.
 
-- We have a common base class `Media`, which defines basic media properties such as `title`, `duration`, and `size`.
-- Classes `Image`, `Audio`, and `Video` all inherit from `Media`. The `Video` class, in particular, will inherit both `Image` (for the visual part of the video) and `Audio` (for the audio part).
-- Without **virtual inheritance**, the `Media` class would be inherited twice: once through `Image` and once through `Audio`, causing multiple instances of the `Media` class.
-- We need **virtual inheritance** to ensure that `Video` only has one instance of the `Media` base class.
+In multimedia applications:
+
+* A **video** contains both **visual** and **audio** components
+* These components share **common media properties**
+* Poor inheritance design leads to **duplication and ambiguity**
+
+This lab introduces a real-world problem known as the **Diamond Inheritance Problem** and demonstrates how **virtual base classes** solve it.
+
+This concept is widely used in:
+
+* Multimedia frameworks
+* Game engines
+* Device drivers
+* Large-scale system architectures
+
+
+## 🎯 Learning Objectives
+
+By completing this lab, learners will be able to:
+
+* Understand **diamond inheritance** in C++
+* Identify problems caused by multiple inheritance
+* Apply **virtual inheritance** correctly
+* Design clean and unambiguous class hierarchies
+* Model real-world multimedia systems using OOP principles
+
+
+## 🧩 Problem Statement
+
+Design and implement a **Media Player system** in C++ that supports different types of media content such as **images, audio, and videos**.
+
+All media types share common properties such as title, duration, and size.
+A video consists of **both visual and audio components**, requiring it to inherit from both `Image` and `Audio`.
+
+The design must ensure that the base class `Media` exists **only once** within the `Video` object.
+
+## 🏗️ System Design Requirements
+
+### 1️⃣ Base Class: `Media`
+
+* Common media attributes:
+
+  * Title
+  * Duration
+  * Size
+* Common behaviors:
+
+  * Display media information
+  * Load media
+
+### 2️⃣ Derived Class: `Image`
+
+* Inherits from `Media`
+* Adds image-specific attributes:
+
+  * Resolution
+  * Format
+* Provides image display functionality
+
+### 3️⃣ Derived Class: `Audio`
+
+* Inherits from `Media`
+* Adds audio-specific attributes:
+
+  * Bitrate
+  * Channels
+* Provides audio playback functionality
+
+### 4️⃣ Derived Class: `Video`
+
+* Inherits from both `Image` and `Audio`
+* Combines visual and audio behavior
+* Must share **only one instance of `Media`**
+
+⚠️ **Constraint:**
+`Media` must be inherited **virtually** by `Image` and `Audio`.
+
+## ⚙️ Technical Constraints
+
+* Programming Language: **C++**
+* Inheritance Type: **Multiple inheritance with virtual base class**
+* No external libraries
+* Console-based output
+* Proper constructor chaining must be demonstrated
+
+## 🧪 Expected Behaviour
+
+* Media properties must not be duplicated inside `Video`
+* Access to `Media` attributes from `Video` must be unambiguous
+* Constructors must initialize the `Media` class exactly once
+* Program output must clearly show correct object behavior
+
+## 📦 Deliverables
+
+1. C++ source file implementing:
+
+   * `Media`, `Image`, `Audio`, and `Video` classes
+2. Demonstration of:
+
+   * Diamond inheritance problem
+   * Virtual inheritance solution
+3. Clean, well-documented code
+4. Sample output showing correct behavior
+
+## 🧠 Concept Mapping (TLF Insight)
+
+| Concept              | Media Player Mapping         |
+| -------------------- | ---------------------------- |
+| Base Class           | Media                        |
+| Shared Resource      | Media properties             |
+| Diamond Problem      | Video inherits Image + Audio |
+| Virtual Inheritance  | Single Media instance        |
+| Ambiguity Resolution | Clean access to base class   |
+
+
+## 📊 Evaluation Criteria
+
+| Criteria                           | Weight |
+| ---------------------------------- | ------ |
+| Correct use of virtual inheritance | 30%    |
+| Class hierarchy design             | 25%    |
+| Constructor chaining               | 20%    |
+| Code clarity                       | 15%    |
+| Concept explanation                | 10%    |
+
+## 🚀 Extension Tasks (Next TLF Level)
+
+* Add `play()` and `pause()` virtual functions
+* Introduce polymorphic media playback
+* Add a `MediaPlayer` controller class
+* Visualize memory layout using ASCII diagrams
+* Compare with **interface-based design (Java / C#)**
+
+## 🧬 Mentor Insight (Transflower Signature)
+
+> “Bad inheritance creates confusion.
+> Virtual inheritance creates clarity.”
+
+Once students understand this lab, **diamond inheritance stops being scary** and becomes a **design tool**.
+
 
 ### Code Example:
 

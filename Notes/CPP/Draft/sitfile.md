@@ -1,4 +1,151 @@
-# Student Information System
+## Lab Problem (Continuation): Persistent Student Information System using File I/O in C++
+
+**In-memory → File → Database → API**.
+
+Below is the **TLF Lab Problem Statement (File I/O Extension)** written as a *continuation* of the previous **Student Information System (SIS)** lab.
+
+## 🧠 Learning Context (Why this continuation?)
+
+In the previous lab, the **Student Information System (SIS)** stored data **only in memory**.
+This meant all student records were **lost when the program terminated**.
+
+Real-world software systems **never behave like this**.
+
+Persistence is the next natural step in software evolution:
+
+* RAM → File System → Database → Cloud Storage
+
+This lab introduces **file-based persistence**, teaching learners how:
+
+* Applications store data beyond program execution
+* Files act as a **primitive database**
+* Data is serialized and deserialized manually
+
+This lab bridges the gap between **basic OOP** and **enterprise data management**.
+
+## 🎯 Learning Objectives
+
+By completing this lab, learners will be able to:
+
+* Use **File I/O in C++** for persistent storage
+* Serialize and deserialize objects manually
+* Load application state at startup
+* Save application state before exit
+* Understand how databases evolved from file systems
+* Design applications with **data durability in mind**
+
+## 🧩 Problem Statement
+
+Extend the existing **Student Information System (SIS)** to support **persistent storage using file handling** in C++.
+
+The system must save student records to a file and restore them when the application is restarted, ensuring data is not lost between executions.
+
+## 🏗️ System Design Requirements
+
+### 1️⃣ File-Based Storage
+
+* Student records must be stored in a file (e.g., `students.dat` or `students.txt`)
+* File should act as a **permanent data store**
+* Records must be loaded automatically when the program starts
+* Records must be saved automatically after modifications
+
+### 2️⃣ Supported Operations (Unchanged)
+
+The system must continue to support:
+
+| Operation        | Description              |
+| ---------------- | ------------------------ |
+| Add Student      | Add a new student        |
+| Display Students | Show all students        |
+| Search Student   | Find student by ID       |
+| Update Student   | Modify student details   |
+| Delete Student   | Remove a student         |
+| Exit             | Close application safely |
+
+### 3️⃣ Data Consistency Rules
+
+* Student IDs must remain unique
+* File data must remain consistent across runs
+* Partial or corrupted data should be handled safely
+* Application should not crash due to missing file
+
+## ⚙️ Technical Constraints
+
+* Programming Language: **C++**
+* Storage Medium: **File System**
+* File Handling: `fstream`
+* Storage Format:
+
+  * Text-based (CSV / delimiter-based) **or**
+  * Binary format
+* Console-based interface only
+* No database usage
+
+## 🧪 Expected Behaviour
+
+* On application startup:
+
+  * Student data is loaded from file into memory
+* On add/update/delete:
+
+  * Data is updated in memory
+  * Changes are written back to file
+* On exit:
+
+  * Data is safely persisted
+* If file does not exist:
+
+  * System initializes with empty records
+
+## 📦 Deliverables
+
+1. Updated C++ source code
+2. File storage implementation
+3. Sample data file (`students.txt` or `students.dat`)
+4. Demonstration of data persistence
+5. README explaining file format and flow
+
+## 🧠 Concept Mapping (TLF Insight)
+
+| Concept         | SIS Mapping            |
+| --------------- | ---------------------- |
+| RAM             | In-memory student list |
+| File System     | Persistent storage     |
+| Serialization   | Object → File          |
+| Deserialization | File → Object          |
+| Database        | Structured file        |
+| Durability      | Data survives restart  |
+
+## 📊 Evaluation Criteria
+
+| Criteria                     | Weight |
+| ---------------------------- | ------ |
+| File I/O implementation      | 30%    |
+| Data persistence correctness | 25%    |
+| Integration with SIS logic   | 20%    |
+| Error handling               | 15%    |
+| Code structure & clarity     | 10%    |
+
+
+## 🚀 Extension Tasks (Next TLF Level)
+
+* Encrypt student data file
+* Implement file locking
+* Add backup & restore support
+* Migrate file data to **SQLite/MySQL**
+* Convert SIS into a REST API
+
+## 🧬 Mentor Insight (Transflower Signature)
+
+> “Memory is fast.
+> Storage is reliable.
+> Good software knows how to use both.”
+
+This lab **completes the foundation** required before introducing databases.
+
+
+
+## Student Information System
 To add **file handling** to the **Student Information System** project using **C++ file streams**, we can use the **`fstream`** library to store and retrieve student data to/from a file. This will allow the system to persist student information even after the program is closed and reopened.
 
 ### Steps for Adding File Handling:

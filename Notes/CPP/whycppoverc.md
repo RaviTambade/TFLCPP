@@ -1,4 +1,4 @@
-# **Mentor Storytelling Style: Why Choose C++ Over C?**
+# **Why Choose C++ Over C?**
 
 🧑‍🏫 *"One evening during project mentoring, a student looked puzzled and asked me,*
 

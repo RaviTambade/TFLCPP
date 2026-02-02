@@ -1,4 +1,266 @@
-# **step-by-step guide** to building a **simplified C++ REST API CRUD application**
+# **Building a **simplified C++ REST API**
+
+
+## Lab Problem: Building a Simplified C++ REST API using Modern Tooling
+
+
+Modern backend systems are often taught using **high-level frameworks** such as ASP.NET Core, Spring Boot, or Node.js.
+However, these frameworks **hide the fundamentals** of how a REST API actually works.
+
+This lab is designed to **pull the curtain back**.
+
+Learners will build a **real REST API in C++**, using:
+
+* A low-level systems language
+* A REST SDK instead of a full-stack framework
+* Manual build tooling
+* Containerization for real-world deployment
+
+This mirrors how **high-performance services**, **embedded systems**, and **infrastructure-level APIs** are built in the industry.
+
+## 🎯 Learning Objectives
+
+By completing this lab, learners will be able to:
+
+* Understand REST APIs beyond frameworks
+* Build a CRUD-based REST API using **C++**
+* Use **C++ REST SDK (Casablanca)** for HTTP handling
+* Manage application builds using **CMake**
+* Containerize backend services using **Docker**
+* Implement REST endpoints with **in-memory data storage**
+* Compare low-level backend design with modern frameworks
+
+## 🧩 Problem Statement
+
+Design and implement a **simplified RESTful API in C++** that manages **Student records**.
+
+The API must support standard **CRUD operations** using HTTP methods and should be deployable as a **Docker container**.
+
+The application should run as a standalone service and respond to HTTP requests from tools such as **Postman** or **cURL**.
+
+## 🏗️ System Architecture (TLF View)
+
+```
+Client (Browser / Postman / cURL)
+              |
+              v
+        HTTP Request
+              |
+              v
++--------------------------------+
+|   C++ REST API Server          |
+|--------------------------------|
+| HTTP Listener (Casablanca)     |
+| Route Handling (GET/POST/etc.) |
+| Controller Logic               |
+| In-memory Data Store           |
+| JSON Serialization             |
++--------------------------------+
+              |
+              v
+        HTTP Response
+```
+
+ 
+
+## ⚙️ Technical Constraints
+
+* Programming Language: **C++ (C++17 or later)**
+* REST Framework: **C++ REST SDK (Casablanca)**
+* Build Tool: **CMake**
+* Container Platform: **Docker**
+* Data Storage: **In-memory (e.g., std::map)**
+* Port: **8080**
+
+## 🔌 Required REST Endpoints
+
+| HTTP Method | Endpoint         | Description                |
+| ----------- | ---------------- | -------------------------- |
+| GET         | `/students`      | Retrieve all students      |
+| POST        | `/students`      | Add a new student          |
+| PUT         | `/students`      | Update an existing student |
+| DELETE      | `/students/{id}` | Delete a student by ID     |
+
+## 📄 Data Model (Logical)
+
+Each student record should include at least:
+
+* `id` (integer)
+* `name` (string)
+
+Data should be exchanged using **JSON format**.
+
+## 🧪 Expected Behaviour
+
+* The server must start and listen on port `8080`
+* Requests must be processed based on HTTP method
+* Correct HTTP status codes must be returned:
+
+  * `200 OK`
+  * `201 Created`
+  * `404 Not Found`
+* API must handle multiple requests during runtime
+* The application must run inside a Docker container
+
+## 📦 Deliverables
+
+1. C++ source code for REST API
+2. `CMakeLists.txt` for build configuration
+3. `Dockerfile` for containerization
+4. Successful API testing screenshots or logs
+5. README explaining:
+
+   * Build steps
+   * Run instructions
+   * API usage
+
+ 
+## 🧠 Concept Mapping (TLF Insight)
+
+| Industry Concept | Lab Mapping            |
+| ---------------- | ---------------------- |
+| REST Controller  | HTTP handler functions |
+| Web Server       | C++ HTTP listener      |
+| Framework        | C++ REST SDK           |
+| ORM              | In-memory data map     |
+| Cloud Service    | Docker container       |
+| CI/CD Build      | CMake                  |
+
+## 📊 Evaluation Criteria
+
+| Criteria                 | Weight |
+| ------------------------ | ------ |
+| REST API correctness     | 25%    |
+| HTTP method handling     | 20%    |
+| JSON request/response    | 15%    |
+| Build & Docker setup     | 20%    |
+| Code clarity & structure | 20%    |
+
+## 🚀 Extension Tasks (Next TLF Level)
+
+* Replace in-memory storage with **file-based persistence**
+* Integrate **SQLite / MySQL**
+* Add request validation & error handling
+* Introduce logging middleware
+* Compare with **ASP.NET Core Web API pipeline**
+* Deploy container to cloud VM
+
+> “Frameworks teach you *how to use*.
+> Fundamentals teach you *how it works*.”
+
+This lab ensures learners **don’t just consume APIs — they understand them**.
+
+## 🌐 HTTP Pipeline – Conceptual Flow (TLF View)
+
+```
+ Client (Browser / Postman / cURL)
+               |
+               | 1. HTTP Request
+               |    (GET /students)
+               v
++------------------------------------------------+
+|            TCP / Network Layer                 |
+|------------------------------------------------|
+|  • Socket Accept                               |
+|  • Connection Handling                         |
++------------------------------------------------+
+               |
+               v
++------------------------------------------------+
+|          HTTP Listener (Web Server)            |
+|------------------------------------------------|
+|  • Reads raw HTTP bytes                        |
+|  • Parses Request Line                         |
+|    GET /students HTTP/1.1                      |
++------------------------------------------------+
+               |
+               v
++------------------------------------------------+
+|        HTTP Request Parser                     |
+|------------------------------------------------|
+|  • Extract Method (GET / POST / PUT / DELETE)  |
+|  • Extract URI (/students, /students/1)        |
+|  • Read Headers & Body                         |
++------------------------------------------------+
+               |
+               v
++------------------------------------------------+
+|           Routing Layer                        |
+|------------------------------------------------|
+|  if (method == GET && path == "/students")     |
+|      → handle_get()                            |
+|  if (method == POST && path == "/students")    |
+|      → handle_post()                           |
++------------------------------------------------+
+               |
+               v
++------------------------------------------------+
+|        Controller / Business Logic             |
+|------------------------------------------------|
+|  • Validate Input                              |
+|  • CRUD Operations                             |
+|  • In-memory / DB Access                       |
++------------------------------------------------+
+               |
+               v
++------------------------------------------------+
+|        Response Builder                        |
+|------------------------------------------------|
+|  • Create JSON Response                        |
+|  • Set Status Code (200, 201, 404)              |
+|  • Set Headers                                 |
++------------------------------------------------+
+               |
+               v
++------------------------------------------------+
+|           HTTP Response Writer                 |
+|------------------------------------------------|
+|  HTTP/1.1 200 OK                               |
+|  Content-Type: application/json                |
+|                                                |
+|  { "id": 1, "name": "Ravi" }                   |
++------------------------------------------------+
+               |
+               v
+ Client Receives HTTP Response
+```
+
+ 
+
+## 🧠 TLF Mapping: Framework vs Fundamentals
+
+```
+ASP.NET / Spring / Express
+----------------------------------
+Middleware
+   ↓
+Filters
+   ↓
+Controllers
+   ↓
+Services
+   ↓
+Repositories
+```
+
+⬇️ **Under the hood (What you built in C++)**
+
+```
+Socket → HTTP Listener → Parser → Router → Logic → Response
+```
+
+> “Every web framework is just a **beautifully organized HTTP pipeline**.”
+
+Once students see this diagram:
+
+* REST stops being magic ✨
+* Frameworks stop being scary 😌
+* System-level thinking begins 🧠
+
+ 
+
+
+
 
 * **C++ REST SDK (Casablanca)** for the REST API.
 * **CMake** as the build tool.

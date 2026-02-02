@@ -1,5 +1,5 @@
 
-# 🏥 Access Specifiers — Healthcare Domain Explanation
+# 🏥 Access Specifiers
 
 ## 1️⃣ Think Like a Hospital, Not Like a Compiler
 

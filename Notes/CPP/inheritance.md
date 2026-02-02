@@ -1,4 +1,4 @@
-# ** Understanding Inheritance in C++**
+# **Inheritance in C++**
  
 
 🧑‍🏫 *“Imagine a royal family where every generation passes down knowledge, traditions, and responsibilities to the next. The prince learns from the king, just like a child learns from a parent. In programming, this idea is beautifully captured through **inheritance**.”*

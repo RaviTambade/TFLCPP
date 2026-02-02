@@ -1,7 +1,5 @@
 # **Unlocking the Power of Static Members in C++**
 
-
-
 🧑‍🏫 *"Let me take you back to one of my early programming batches. A student named Anaya asked, 'Sir, I want to keep track of how many `Student` objects have been created, but each object has its own memory — how can I maintain a shared counter?'*
 
 That day, we uncovered a secret hidden in plain sight: the mighty `**static**` keyword."
@@ -12,14 +10,11 @@ That day, we uncovered a secret hidden in plain sight: the mighty `**static**` k
 In C++, a **static member** (variable or function) belongs to the **class itself**, not to any individual object.
 👉 That means **all objects share the same copy**.
 
-
-
 ### ✨ Real-World Analogy
 
 👨‍🏫 *"Imagine a classroom where each student has their own notebook (instance variable), but there's **one shared whiteboard** (static member) that everyone can read from and write to."*
 
 That whiteboard doesn’t belong to any one student — it belongs to the **classroom** itself.
-
 
 ## 🔍 Static Data Members
 
