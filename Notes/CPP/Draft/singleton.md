@@ -1,3 +1,5 @@
+## singleton Class
+
 In C++, a **singleton class** is a design pattern that ensures a class has only one instance and provides a global point of access to that instance. The singleton pattern is useful when you need to manage a shared resource (such as a configuration object, logging service, or database connection) and you want to ensure that only one instance of the class is created.
 
 ### Key Characteristics of Singleton Class:
