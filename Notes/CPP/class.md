@@ -9,31 +9,38 @@ It lets you **combine data (variables)** and **functions (methods)** that operat
 ### 📦 Example: Class and Object
 
 ```cpp
-#include <iostream>
+  #include <iostream>
 using namespace std;
 
 // Define a class
-class Animal {
+class Patient {
 public:
-    // Data members (variables)
+    // Data members (attributes)
     string name;
     int age;
+    string disease;
 
-    // Member function
-    void speak() {
-        cout << name << " says Hello!" << endl;
+    // Member function (behavior)
+    void showDetails() {
+        cout << "Patient Name : " << name << endl;
+        cout << "Age          : " << age << endl;
+        cout << "Disease      : " << disease << endl;
     }
 };
 
 int main() {
-    // Create an object
-    Animal dog;
-    dog.name = "Buddy";
-    dog.age = 3;
+    // Create an object of Patient class
+    Patient patient1;
 
-    dog.speak();  // Output: Buddy says Hello!
+    patient1.name = "Ravi Kumar";
+    patient1.age = 45;
+    patient1.disease = "Diabetes";
+
+    patient1.showDetails();
+
     return 0;
 }
+
 ```
 
 ### 🧠 Key Concepts of a Class
@@ -53,32 +60,48 @@ int main() {
 - `private`: Only accessible inside the class
 - `protected`: Like private, but accessible in derived classes
 
-### 🧰 Constructor Example
+
+
+
+
+### 💬 In Simple Words:
+- Class = Plan### 🧰 Constructor Example
 
 ```cpp
-class Car {
+#include <iostream>
+using namespace std;
+
+class Patient {
 public:
-    string model;
+    string name;
+    int age;
+    string disease;
 
     // Constructor
-    Car(string m) {
-        model = m;
+    Patient(string n, int a, string d) {
+        name = n;
+        age = a;
+        disease = d;
     }
 
-    void show() {
-        cout << "Car model: " << model << endl;
+    void showDetails() {
+        cout << "Patient Name : " << name << endl;
+        cout << "Age          : " << age << endl;
+        cout << "Disease      : " << disease << endl;
     }
 };
 
 int main() {
-    Car c("Tesla");
-    c.show(); // Output: Car model: Tesla
+    // Object creation using constructor
+    Patient p1("Anita Sharma", 38, "Hypertension");
+
+    p1.showDetails();
+
+    return 0;
 }
+
 ```
 
-
-### 💬 In Simple Words:
-- Class = Plan
 - Object = Actual thing
 - You use classes to create **organized, reusable, clean code**.
 
