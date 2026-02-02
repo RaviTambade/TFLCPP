@@ -679,6 +679,3 @@ And then:
 3️⃣ Replace `string` command with `enum`
 4️⃣ Draw this as a **real hospital workflow**
 
-
-
-
