@@ -123,5 +123,153 @@ Want to:
 * Design a **real-time elevator system** using procedural steps?
 * Simulate **library book borrowing**?
 * Build a **calculator app** that follows a step-by-step flow?
+ 
 
-Just say the word. I’ll guide you through the steps — mentor-style. 🤝🧠💻
+## 🧠 Procedural Thinking — **From Thought → Steps → Code (ASCII Diagram)**
+
+```
+        ┌─────────────────────────┐
+        │   PROBLEM / GOAL        │
+        │ "Reset Bank Password"   │
+        └──────────┬──────────────┘
+                   │
+                   ▼
+        ┌─────────────────────────┐
+        │ THINK IN STEPS          │
+        │ (Procedural Thinking)   │
+        └──────────┬──────────────┘
+                   │
+        ┌──────────┴──────────┐
+        │  Write Steps        │
+        │  (Plain English)    │
+        └──────────┬──────────┘
+                   │
+                   ▼
+        ┌─────────────────────────┐
+        │  PSEUDOCODE             │
+        │  step-by-step logic     │
+        └──────────┬──────────────┘
+                   │
+                   ▼
+        ┌─────────────────────────┐
+        │  FLOW CONTROL           │
+        │  if / else / loops      │
+        └──────────┬──────────────┘
+                   │
+                   ▼
+        ┌─────────────────────────┐
+        │  PROCEDURAL CODE        │
+        │  (C / C++ / Java)       │
+        └──────────┬──────────────┘
+                   │
+                   ▼
+        ┌─────────────────────────┐
+        │  PREDICTABLE OUTPUT     │
+        │  Same input → same out  │
+        └─────────────────────────┘
+```
+
+  
+
+## ☕ Everyday Analogy — Making Tea (Machine’s View)
+
+```
+START
+  │
+  ▼
+Boil Water
+  │
+  ▼
+Add Tea Leaves
+  │
+  ▼
+Simmer
+  │
+  ▼
+Add Milk + Sugar
+  │
+  ▼
+Strain & Pour
+  │
+  ▼
+END (Tea Ready)
+```
+
+🧓 *“Skip one step and the machine gets confused. That’s how computers feel too.”*
+
+---
+
+## 💻 Procedural Thinking → Program Flow (C Example)
+
+```
+START
+  │
+  ▼
+Read n
+  │
+  ▼
+sum = 0
+  │
+  ▼
+i = 1
+  │
+  ▼
+i <= n ? ── No ───────────────┐
+  │ Yes                       │
+  ▼                           │
+sum = sum + i                 │
+  │                           │
+i = i + 1                     │
+  │                           │
+  └─────────── LOOP ──────────┘
+              │
+              ▼
+         Print sum
+              │
+              ▼
+             END
+```
+
+📌 **This diagram alone explains**:
+
+* sequencing
+* looping
+* predictability
+* why procedural code is easy to trace and debug
+
+ 
+
+## 🏦 Real-World Flow — Password Reset (Procedural Lens)
+
+```
+START
+  │
+  ▼
+Enter User ID
+  │
+  ▼
+User Exists?
+  │ Yes            No
+  ▼                ▼
+Send OTP        Show Error
+  │
+  ▼
+Verify OTP
+  │
+  ▼
+OTP Valid?
+  │ Yes            No
+  ▼                ▼
+Set New Pwd    Retry / Exit
+  │
+  ▼
+Confirm & Exit
+```
+
+🧠 *This is why Ria asked to write steps first — she was already thinking like a system.*
+
+ 
+
+> **Procedural thinking means solving problems by defining clear, ordered, executable steps — exactly how a computer works.**
+ 
+

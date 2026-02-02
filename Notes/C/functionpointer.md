@@ -156,8 +156,6 @@ int main() {
 It’s like attaching functionality to data — *a C-style method binding*.
 
 
-### 🔚 **Final Mentor Message**
-
 🧓 *“When you understand function pointers, you’re no longer writing static code. You’re writing flexible, dynamic logic that adjusts like a Swiss Army knife.”*
 
 So remember:
@@ -192,7 +190,6 @@ int main() {
 
 🎉 Here, `apply` can **dynamically choose** which operation to perform using a function pointer.
 
----
 
 ### ✅ When to Use Function Pointers?
 
@@ -201,7 +198,6 @@ int main() {
 - **Plugin systems**
 - **Custom sorting (like `qsort()` in C)**
 
----
 
 ### ⚡ Bonus: Modern Alternative
 
@@ -214,7 +210,6 @@ But knowing function pointers is still essential — especially for:
 - Legacy code
 - Performance-critical applications
 
----
 
  
 💡 Let's build a **Mini Calculator** using **Function Pointers in C++**. 
@@ -224,7 +219,7 @@ This project is perfect to demonstrate:
 - How to **pass them around**
 - How to **execute functions dynamically** (based on user input)
 
----
+
 
 ## 🧮 Mini Project: Function Pointer Based Calculator
 
@@ -233,7 +228,6 @@ This project is perfect to demonstrate:
 - Uses a **function pointer array** to map operations
 - Simple CLI-based user interface
 
----
 
 ### 📦 Code:
 
@@ -294,7 +288,6 @@ int main() {
 }
 ```
 
----
 
 ### 📌 What Students Will Learn:
 
@@ -313,5 +306,4 @@ Ask them to:
 - Add support for **float operations** using overloaded functions
 - Use **`std::function`** or **lambdas** for a modern twist
 
----
 

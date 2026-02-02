@@ -1,6 +1,6 @@
-Let’s break this down using **mechanical engineering analogies** and a focus on **stack memory usage**:
+## **stack memory usage**:
 
----
+ 
 
 ### 1. **Pass by Value vs. Pass by Address: The Workshop Analogy**
 Imagine you’re working in a machine shop, and you need to modify a **large metal part** (data).  
@@ -14,8 +14,7 @@ Imagine you’re working in a machine shop, and you need to modify a **large met
 - Instead of copying, you hand your colleague a **map** (memory address) to the original part’s location.  
 - Your colleague modifies the **original part directly** using the map.  
 - **Advantage**: No extra copies clutter the workbench (stack). Only the small map is passed.  
-
----
+ 
 
 ### 2. **Code Example (C++)**  
 Let’s see this in code:
@@ -46,7 +45,7 @@ int main() {
 }
 ```
 
----
+ 
 
 ### 3. **Stack Memory Overhead: Why Pass by Value Can Be Wasteful**
 Think of the **stack** as a **limited-size workbench**. Every time you call a function, tools (data) are placed on the bench.  
@@ -81,7 +80,7 @@ int main() {
 }
 ```
 
----
+  
 
 ### 4. **Real-World Consequences**  
 - **Pass by Value**: Safe (no unintended changes) but **inefficient for large data**. Use for small, simple objects.  
@@ -97,7 +96,7 @@ Imagine stacking plates (function calls):
 
 Too many full-sized plates? The stack collapses 💥.  
 
----
+  
 
 ### Summary for a Mechanical Engineer:  
 - **Pass by Value** = Copying a part; safe but wastes bench space.  
@@ -147,7 +146,7 @@ Stack (Workbench) during `processPart()`:
 - Addresses are tiny (e.g., 4-8 bytes).  
 - Stack stays lightweight, even with many calls.  
 
----
+ 
 
 ### **3. Combined Visualization**  
 ```
@@ -160,7 +159,7 @@ Stack:                       Stack:
 (Overflow risk!)             (Efficient!)  
 ```
 
----
+ 
 
 ### **Analogy Breakdown**  
 - **Original Data**: Stored on the "shelf" (heap or main memory).  
@@ -168,7 +167,7 @@ Stack:                       Stack:
 - **Address**: A tiny map (📍) pointing to the shelf.  
 - **Copy**: A full-sized duplicate part (wastes bench space).  
 
----
+ 
 
 ### **Why This Matters**  
 Mechanical systems (like hydraulic controls or CNC machines) often use software where **stack efficiency** is critical. For example:  

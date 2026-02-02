@@ -90,7 +90,7 @@ Aryan learned the hard way:
 
 ```plaintext
 ┌────────────┐        ┌─────────────┐        ┌─────────────┐
-│ Compilation│ ───▶   │   Linking   │ ───▶   │   Execution  │
+│ Compilation│ ───▶  │   Linking   │ ───▶   │   Execution  │
 └────────────┘        └─────────────┘        └─────────────┘
      ⬇                     ⬇                       ⬇
  Compile-Time Errors   Linking Errors         Runtime Errors

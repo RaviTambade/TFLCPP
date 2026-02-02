@@ -155,7 +155,3 @@ Need SEO tools? Add the Yoast plugin.
 
 So whether you're building a **game engine**, **hospital app**, or **e-commerce platform** — **modular thinking** will be your strongest ally.
 
-Shall we take this further and **design a modular payroll system**, or break a real-world project into reusable **C modules with headers and test files**?
-
-Just say the word.
-I’ll be there — mentor-style. 🧠💻🧱
