@@ -672,10 +672,10 @@ This is **real-world polymorphism**.
 
 | Aspect                  | Abstract Class | Concrete Class |
 | ----------------------- | -------------- | -------------- |
-| Can create object?      | ❌ No           | ✅ Yes          |
+| Can create object?      | ❌ No          | ✅ Yes        |
 | Represents              | Role           | Real person    |
 | Contains implementation | Partial        | Full           |
-| Forces override         | ✅ Yes          | ❌ No           |
+| Forces override         | ✅ Yes         | ❌ No        |
 
 > **An abstract class defines *what must be done*, not *how it is done*.**
 

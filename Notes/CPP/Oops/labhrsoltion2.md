@@ -1,8 +1,4 @@
- 
-
 ## Lab Problem : Interface Inheritance & Polymorphism in HR Domain (C++)
-
-  
 
 ## 🧠 Learning Context (Why this lab?)
 
@@ -389,8 +385,8 @@ int main() {
 
 | Feature              | Abstract Class | Interface (Pure Abstract) |
 | -------------------- | -------------- | ------------------------- |
-| Data members         | ✅              | ❌                      |
-| Constructors         | ✅              | ❌                      |
+| Data members         | ✅             | ❌                       |
+| Constructors         | ✅             | ❌                       |
 | Multiple inheritance | ⚠️ Risky       | ✅ Safe                  |
 | Implementation       | Partial        | None                      |
 | Purpose              | Identity       | Capability                |

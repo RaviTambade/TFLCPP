@@ -10,7 +10,6 @@ Maybe earlier, I wrote a **pure C application**, but now I want to write somethi
 
 This isn't just any file—it’s going to be a **graphics editor cum game** we’ll craft using the power of **C++**.
 
-
 ### 🧠 **Now, here's the key thought**:
 
 🔹 In **C**, everything revolved around **functions and variables**.
